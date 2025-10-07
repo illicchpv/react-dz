@@ -1,9 +1,10 @@
 import './Button.css';
 
-function Button({ children }) {
+function Button({ className, children, onClick }) {
+  const cl = (`button ${className}`).trim();
 
   return (
-    <button className="button">{children}</button>
+    <button className={cl} onClick={onClick}>{children}</button>
   );
 }
 
