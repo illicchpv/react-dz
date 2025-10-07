@@ -1,5 +1,9 @@
 # read
 
+## фигма
+  [🔗figma](https://www.figma.com/design/rsIcOuTUrqSuC0Ry1QAPDk/React-3--Copy-?node-id=0-1&p=f&t=b0dqBKXv9HYfFDUR-0)
+  
+
 ## задания:
 
 ### 1-start

@@ -1,0 +1,15 @@
+.counter {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #7B6EF6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
