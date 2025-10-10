@@ -37,3 +37,20 @@
       - Добавить фоновое оформление если не выполнено ранее
 
 ---
+
+### 5-show-data. Отображение данных
+
+https://app.purpleschool.ru/courses/15/sections/213/lessons/1610
+
+
+- [Домашнее задание - Отображение данных](https://app.purpleschool.ru/courses/15/sections/213/lessons/1618)
+    - Компонент карточки фильма
+    - Список фильмов
+
+    bodyCard {
+      img: '',
+      name: '',
+      rating: 324,
+    }
+
+---

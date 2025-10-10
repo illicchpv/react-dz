@@ -1,3 +1,17 @@
-.search-section{
-  
+.search-section {
+  padding: 16px 10px;
+  max-width: 1220px;
+  width: 100%;
+  margin-inline: auto;
+  min-height: 80px;
+
+}
+
+.search-section__content {
+  max-width: 588px;
+}
+
+.margins {
+  margin-top: 16px;
+  margin-bottom: 24px;
 }

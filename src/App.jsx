@@ -9,6 +9,10 @@ import Paragraph from './components/Paragraph/Paragraph';
 import Search from './components/Search/Search';
 import Title from './components/Title/Title';
 import HeaderSection from './layouts/HeaderSection/HeaderSection';
+import SearchSection from './layouts/SearchSection/SearchSection';
+import BodySection from './layouts/BodySection/BodySection';
+import { CARDS } from './constant.js';
+import {markSelectedCards} from './utils.js';
 
 function App() {
 
@@ -34,24 +38,36 @@ function App() {
         </Button>
       </HeaderSection>
 
-      <hr />
+      <SearchSection>
+        <Search icon placeholder="Введите название" />
+      </SearchSection>
+
+      <BodySection>
+        {markSelectedCards(CARDS).map(card => <BodyCard key={card.id} card={card}></BodyCard>)}
+      </BodySection>
+
+      {/* <hr />
       <Search icon placeholder="Введите название" />
-      <Search icon={false} placeholder="Введите название фильма" />
-      <hr />
-      <BodyCard />
-      <hr />
+      <Search icon={false} placeholder="Введите название фильма" /> 
+      */}
+      {/* <hr />
       <div>
         <Button >Искать</Button>
-      </div>
+      </div> 
+      */}
+      {/* <hr />
       <div>
         <Paragraph size="large" >Введите название фильма, сериала или мультфильма для поиска и добавления в избранное.</Paragraph>
         <Paragraph >Введите название фильма, сериала или мультфильма для поиска и добавления в избранное.</Paragraph>
         <Paragraph size="small" >Введите название фильма, сериала или мультфильма для поиска и добавления в избранное.</Paragraph>
-      </div>
+      </div> 
+      */}
+      {/* <hr />
       <div>
         <Title as="h1" >h1 Поиск</Title>
         <Title as="h2" >h2 Поиск</Title>
-      </div>
+      </div> 
+      */}
     </>
   );
 }
