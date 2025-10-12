@@ -1,4 +1,4 @@
-.search-section {
+.searchSection {
   padding: 16px 10px;
   max-width: 1220px;
   width: 100%;
@@ -7,7 +7,7 @@
 
 }
 
-.search-section__content {
+.searchSection__content {
   max-width: 588px;
 }
 

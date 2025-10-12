@@ -1,8 +1,10 @@
-import './BodySection.css';
+import s from './BodySection.module.css';
+// import cn from 'classnames';
+
 function BodySection({children}) {
   return (
-    <main className="body-section">
-      <section className="body-section__content">
+    <main className={s.bodySection}>
+      <section className={s.bodySection__content}>
         {children}
       </section>
     </main>

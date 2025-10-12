@@ -1,4 +1,4 @@
-import './App.css';
+import s from './App.module.css';
 import Button from './components/Button/Button';
 import BodyCard from './components/BodyCard/BodyCard';
 import Counter from './components/Counter/Counter';
@@ -13,6 +13,8 @@ import SearchSection from './layouts/SearchSection/SearchSection';
 import BodySection from './layouts/BodySection/BodySection';
 import { CARDS } from './constant.js';
 import {markSelectedCards} from './utils.js';
+import cn from 'classnames';
+console.log('cn: ', cn);
 
 function App() {
 
@@ -33,7 +35,7 @@ function App() {
           </NavLink>
         </Navigation>
 
-        <Button className={'transparent'} style={{marginLeft: 'auto'}} onClick={loginButtonClickHandler}>
+        <Button isTransparent style={{marginLeft: 'auto'}} onClick={loginButtonClickHandler}>
           Войти <img src="./login.svg" alt="login" />
         </Button>
       </HeaderSection>

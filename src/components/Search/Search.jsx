@@ -1,5 +1,7 @@
+import s from './Search.module.css';
 import Button from '../Button/Button';
-import './Search.css';
+// import cn from 'classnames';
+
 function Search({icon = true, placeholder = 'поиск'}) {
 
   const searchClickHandler = (e) => {
@@ -11,8 +13,8 @@ function Search({icon = true, placeholder = 'поиск'}) {
   };
 
   return (
-    <form className="search" onSubmit={searchSubmitHandler}>
-      <div className="search__block">
+    <form className={s.search} onSubmit={searchSubmitHandler}>
+      <div className={s.search__block}>
         {icon &&
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#475069" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

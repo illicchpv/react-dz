@@ -1,8 +1,9 @@
-import './NavLink.css';
+import s from './NavLink.module.css';
+// import cn from 'classnames';
 
 function NavLink({ to, children }) {
   return (
-    <li className='nav-link'><a href={to}>{children}</a></li>
+    <li className={s.navLink}><a href={to}>{children}</a></li>
   );
 }
 
