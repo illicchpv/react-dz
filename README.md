@@ -54,3 +54,19 @@ https://app.purpleschool.ru/courses/15/sections/213/lessons/1610
     }
 
 ---
+
+6. [Стилизация](https://app.purpleschool.ru/courses/15/sections/214/lessons/1619)
+    - Изменение стилей
+    - Динамические классы
+    - CSS модули
+    - Библиотека classnames
+        - > npm i classnames
+    - Упражнение - стилизация формы
+    - Тест - Стилизация
+    - Занятие - Стилизация
+    - Домашнее задание - Стилизация
+        - в git создать ветку 2-style
+        - + lib classnames
+        - переделать всё на module
+
+---
