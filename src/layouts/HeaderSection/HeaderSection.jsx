@@ -1,7 +1,9 @@
-import './HeaderSection.css';
+import s from './HeaderSection.module.css';
+// import cn from 'classnames';
+
 function HeaderSection({ children }) {
   return (
-    <header className="header-section">{children}</header>
+    <header className={s.headerSection}>{children}</header>
   );
 }
 

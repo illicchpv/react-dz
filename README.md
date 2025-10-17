@@ -54,3 +54,52 @@ https://app.purpleschool.ru/courses/15/sections/213/lessons/1610
     }
 
 ---
+
+6. [Стилизация](https://app.purpleschool.ru/courses/15/sections/214/lessons/1619)
+    - Изменение стилей
+    - Динамические классы
+    - CSS модули
+    - Библиотека classnames
+        - > npm i classnames
+    - Упражнение - стилизация формы
+    - Тест - Стилизация
+    - Занятие - Стилизация
+    - Домашнее задание - Стилизация
+        - в git создать ветку 2-style
+        - + lib classnames
+        - переделать всё на module
+
+---
+
+7. [Другие hooks](https://app.purpleschool.ru/courses/15/sections/215/lessons/1626)
+    - Side Effects
+    - useEffect
+    - Зависимости эффекта
+    - Очистка эффекта
+    - useReducer
+    - Использование useReducer
+                                                                      👇 ф-я для установки начального состояния
+        const [state, dispatchFn] = useReducer(reduceFn, INIT_STATE, initFn) 
+                      ☝️ф-я изменения  👉            ☝️ф-я изменения по action    
+    - Упражнение - Очистка формы
+        - у меня вопрос
+    - Exhaustive-deps
+    - useRef
+    - forwardRef
+    - Создание своего hook
+    - 👉Правила hooks
+        - можно использовать только в компонентах и custom hooks
+        - нельзя вызывать во вложенных ф-ях, в блоках if 
+        - названия начинаются с use 
+    - Тест - Другие hooks
+    - Занятие - Другие hooks
+    - Домашнее задание - [задание Другие hooks](https://app.purpleschool.ru/courses/15/sections/215/lessons/1639)
+        - в той-же ветке
+        - Изменения
+          - добавляем forwardRef на кнопку и input
+          - делаем форму входа, сохраняя данные в localStorage
+            - профили [{ name: 'Вася', isLogged: true}]
+            - при выходе сбрасываем isLogged на false
+          - показываем имя в меню
+
+---

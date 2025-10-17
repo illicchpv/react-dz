@@ -1,8 +1,9 @@
-import './Counter.css';
+import s from './Counter.module.css';
+// import cn from 'classnames';
 
 function Counter({val}){
   return (
-    <div className="counter">{val}</div>
+    <div className={s.counter}>{val}</div>
   );
 }
 

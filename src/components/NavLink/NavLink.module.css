@@ -1,4 +1,4 @@
-.nav-link {
+.navLink {
   padding: 12px 16px;
 
   font-weight: 600;
@@ -8,7 +8,7 @@
   color: #a8aebf;
 }
 
-.nav-link a {
+.navLink a {
   color: inherit;
   transition: color .2s;
   display: flex;
@@ -19,6 +19,6 @@
 
 }
 
-.nav-link a:hover {
+.navLink a:hover {
   color: #fff;
 }

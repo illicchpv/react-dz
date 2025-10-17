@@ -1,4 +1,4 @@
-.body-section {
+.bodySection {
   margin-top: 84px;
 
   padding: 16px 10px;
@@ -8,7 +8,7 @@
   min-height: 80px;  
 }
 
-.body-section__content {
+.bodySection__content {
   --card-max-width: 282px;
   --card-gap: 24px;
 

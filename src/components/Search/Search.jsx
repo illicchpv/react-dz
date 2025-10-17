@@ -1,6 +1,9 @@
+import s from './Search.module.css';
 import Button from '../Button/Button';
-import './Search.css';
-function Search({icon = true, placeholder = 'поиск'}) {
+import Input from '../Input/Input';
+// import cn from 'classnames';
+
+function Search({icon = true, placeholder = 'поиск', inputRef, buttonRef}) {
 
   const searchClickHandler = (e) => {
     console.log('searchClickHandler e: ', e);
@@ -11,17 +14,10 @@ function Search({icon = true, placeholder = 'поиск'}) {
   };
 
   return (
-    <form className="search" onSubmit={searchSubmitHandler}>
-      <div className="search__block">
-        {icon &&
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#475069" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M22 22L20 20" stroke="#475069" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        }
-        <input type="search" placeholder={placeholder} />
-      </div>
-      <Button onClick={searchClickHandler} >Искать</Button>
+    <form className={s.search} onSubmit={searchSubmitHandler}>
+      <Input icon="search" ref={inputRef} type="search" placeholder={placeholder} />
+
+      <Button ref={buttonRef} onClick={searchClickHandler} >Искать</Button>
     </form>
   );
 }
