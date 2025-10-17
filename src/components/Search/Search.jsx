@@ -1,8 +1,9 @@
 import s from './Search.module.css';
 import Button from '../Button/Button';
+import Input from '../Input/Input';
 // import cn from 'classnames';
 
-function Search({icon = true, placeholder = 'поиск'}) {
+function Search({icon = true, placeholder = 'поиск', inputRef, buttonRef}) {
 
   const searchClickHandler = (e) => {
     console.log('searchClickHandler e: ', e);
@@ -21,9 +22,9 @@ function Search({icon = true, placeholder = 'поиск'}) {
             <path d="M22 22L20 20" stroke="#475069" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         }
-        <input type="search" placeholder={placeholder} />
+        <Input ref={inputRef} type="search" placeholder={placeholder} />
       </div>
-      <Button onClick={searchClickHandler} >Искать</Button>
+      <Button ref={buttonRef} onClick={searchClickHandler} >Искать</Button>
     </form>
   );
 }

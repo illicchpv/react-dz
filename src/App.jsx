@@ -11,12 +11,19 @@ import Title from './components/Title/Title';
 import HeaderSection from './layouts/HeaderSection/HeaderSection';
 import SearchSection from './layouts/SearchSection/SearchSection';
 import BodySection from './layouts/BodySection/BodySection';
-import { CARDS } from './constant.js';
+import {CARDS} from './constant.js';
 import {markSelectedCards} from './utils.js';
 import cn from 'classnames';
-console.log('cn: ', cn);
+import {useRef} from 'react';
+
+// const isDev = import.meta.env.DEV;
+const isDev = false;
+
 
 function App() {
+  const logInOutRef = useRef();
+  const searchInputRef = useRef();
+  const searchButtonRef = useRef();
 
   const loginButtonClickHandler = (e) => {
     console.log('loginButtonClickHandler e: ', e);
@@ -35,13 +42,35 @@ function App() {
           </NavLink>
         </Navigation>
 
-        <Button isTransparent style={{marginLeft: 'auto'}} onClick={loginButtonClickHandler}>
-          Войти <img src="./login.svg" alt="login" />
+        <Button isTransparent style={{marginLeft: 'auto'}}
+          onClick={loginButtonClickHandler}
+          ref={logInOutRef}
+        > Войти <img src="./login.svg" alt="login" />
         </Button>
       </HeaderSection>
 
+      {isDev &&
+        <div style={{display: 'flex', gap: '10px'}}>
+          <button
+            onClick={() => {
+              logInOutRef.current?.focus();
+            }}
+          >test logInOut</button>
+          <button
+            onClick={() => {
+              searchInputRef.current?.focus();
+            }}
+          >test searchInput</button>
+          <button
+            onClick={() => {
+              searchButtonRef.current?.focus();
+            }}
+          >test searchButton</button>
+        </div>
+      }
+
       <SearchSection>
-        <Search icon placeholder="Введите название" />
+        <Search icon placeholder="Введите название" inputRef={searchInputRef} buttonRef={searchButtonRef} />
       </SearchSection>
 
       <BodySection>

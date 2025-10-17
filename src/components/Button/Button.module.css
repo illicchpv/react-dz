@@ -37,3 +37,12 @@
 .button.transparent:hover {
   color: #fff;
 }
+
+.button:focus-visible,
+.button:focus, 
+.button.transparent:focus-visible,
+.button.transparent:focus 
+{
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
