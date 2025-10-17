@@ -1,3 +1,40 @@
+.input__block {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 384px;
+
+  border: 1px solid #323b54;
+  border-radius: 12px;
+  padding: 12px 16px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.svg {
+  flex-shrink: 0;
+  width: 124px;
+  /* aspect-ratio: 1; */
+}
+
 .Input {
   display: inline-block;
+  width: 100%;
+  min-width: 0;
+  height: 40px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14286;
+  color: #cfd4e2;
+  background: transparent;
+  border: none;
+
+  &::placeholder {
+    color: #475069;
+  }
+
+  &:hover::placeholder {
+    color: #7584ac;
+  }
 }

@@ -15,6 +15,8 @@ import {CARDS} from './constant.js';
 import {markSelectedCards} from './utils.js';
 import cn from 'classnames';
 import {useRef} from 'react';
+import LoginSection from './layouts/LoginSection/LoginSection.jsx';
+import Input from './components/Input/Input.jsx';
 
 // const isDev = import.meta.env.DEV;
 const isDev = false;
@@ -68,6 +70,11 @@ function App() {
           >test searchButton</button>
         </div>
       }
+
+      <LoginSection>
+        <Input ref={logInOutRef} type="text" placeholder="Ваше имя" />
+        <Button>Войти в профиль</Button>
+      </LoginSection>
 
       <SearchSection>
         <Search icon placeholder="Введите название" inputRef={searchInputRef} buttonRef={searchButtonRef} />
