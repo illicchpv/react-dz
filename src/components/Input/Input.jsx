@@ -2,8 +2,6 @@ import s from './Input.module.css';
 import cn from 'classnames';
 
 function Input({ref, className, icon, ...props}) {
-  console.log('props: ', props);
-        console.log('s.svg: ', s.svg);
   let iconSvg = null;
   switch (icon) {
     case 'search': {

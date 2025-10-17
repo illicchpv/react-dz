@@ -5,13 +5,23 @@
 }
 
 :root {
+  --outline-clr: #024185;
+
   background-color: #121829;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-
 }
 
 body {
   background-image: url('/public/Background.svg');
   background-repeat: repeat-y;
+}
+
+a:focus,
+a:focus-visible,
+input:focus,
+input:focus-visible {
+  outline: 2px solid var(--outline-clr);
+  outline-offset: 5px;  
+  border-radius: 5px;
 }

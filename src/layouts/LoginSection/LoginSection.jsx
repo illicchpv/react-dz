@@ -3,15 +3,14 @@ import Paragraph from '../../components/Paragraph/Paragraph';
 import Title from '../../components/Title/Title';
 // import cn from 'classnames';
 
-function LoginSection({children}) {
-  console.log('children: ', children);
+function LoginSection({children, onSubmit}) {
 
   return (
     <section className={s.loginSection}>
-      <div className={s.loginSection__content}>
+      <form className={s.loginSection__content} onSubmit={onSubmit}>
         <Title as="h1" >Вход</Title>
         {children}
-      </div>
+      </form>
     </section>
   );
 }

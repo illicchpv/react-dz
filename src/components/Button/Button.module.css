@@ -44,6 +44,6 @@
 .button.transparent:focus-visible,
 .button.transparent:focus 
 {
-  outline: 2px solid #007bff;
+  outline: 2px solid var(--outline-clr);
   outline-offset: 2px;
 }
