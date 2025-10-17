@@ -55,6 +55,7 @@ function App() {
     }
     searchInputRef.current?.focus();
   };
+
   const logoutButtonClickHandler = (e) => {
     console.log('logoutButtonClickHandler e: ', e);
     setCurrentUserName(false);
@@ -85,7 +86,6 @@ function App() {
               <ellipse cx="12" cy="17" rx="7" ry="4" stroke="#9BA5B7" strokeWidth="1.5" />
             </svg>
           </NavLink>)}
-
         </Navigation>
 
         {!currentUserName
@@ -97,8 +97,6 @@ function App() {
             onClick={logoutButtonClickHandler}
           > Выйти</Button>)
         }
-
-
       </HeaderSection>
 
       {isDev &&
@@ -121,13 +119,11 @@ function App() {
         </div>
       }
 
-
       <LoginSection onSubmit={doLoginSubmitHandler}>
         <Input ref={loginNameInputRef} type="text" placeholder="Ваше имя" required />
 
         <Button>Войти в профиль</Button>
       </LoginSection>
-
 
       <SearchSection>
         <Search icon placeholder="Введите название" inputRef={searchInputRef} buttonRef={searchButtonRef} />
@@ -136,29 +132,6 @@ function App() {
       <BodySection>
         {markSelectedCards(CARDS).map(card => <BodyCard key={card.id} card={card}></BodyCard>)}
       </BodySection>
-
-      {/* <hr />
-      <Search icon placeholder="Введите название" />
-      <Search icon={false} placeholder="Введите название фильма" /> 
-      */}
-      {/* <hr />
-      <div>
-        <Button >Искать</Button>
-      </div> 
-      */}
-      {/* <hr />
-      <div>
-        <Paragraph size="large" >Введите название фильма, сериала или мультфильма для поиска и добавления в избранное.</Paragraph>
-        <Paragraph >Введите название фильма, сериала или мультфильма для поиска и добавления в избранное.</Paragraph>
-        <Paragraph size="small" >Введите название фильма, сериала или мультфильма для поиска и добавления в избранное.</Paragraph>
-      </div> 
-      */}
-      {/* <hr />
-      <div>
-        <Title as="h1" >h1 Поиск</Title>
-        <Title as="h2" >h2 Поиск</Title>
-      </div> 
-      */}
     </>
   );
 }
