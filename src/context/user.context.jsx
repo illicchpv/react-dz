@@ -1,14 +1,14 @@
 import {createContext, useState} from 'react';
 
 export const UserContext = createContext({
-  currentUserName2: ''
+  currentUserName: ''
 });
 
 export const UserContextProvider = ({children}) => {
-  const [currentUserName2, setCurrentUserName2] = useState('');
+  const [currentUserName, setCurrentUserName] = useState('');
 
   return (
-    <UserContext.Provider value={{currentUserName2, setCurrentUserName2}}>
+    <UserContext.Provider value={{currentUserName, setCurrentUserName}}>
       {children}
     </UserContext.Provider>
   );

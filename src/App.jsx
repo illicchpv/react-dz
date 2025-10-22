@@ -14,7 +14,7 @@ import BodySection from './layouts/BodySection/BodySection';
 import {CARDS} from './constant.js';
 import {markSelectedCards} from './utils.js';
 import cn from 'classnames';
-import {useContext, useRef, useState} from 'react';
+import {useContext, useEffect, useRef, useState} from 'react';
 import LoginSection from './layouts/LoginSection/LoginSection.jsx';
 import Input from './components/Input/Input.jsx';
 import {useLocalStorage} from './hooks/use-localstorage.hook.js';
@@ -32,12 +32,11 @@ function App() {
 
   const [profiles, setProfiles] = useLocalStorage('profiles', []);
   const loggedInUserName = profiles.find(profile => profile.isLogined)?.name;
-  const [currentUserName, setCurrentUserName] = useState(loggedInUserName);
+  const {currentUserName, setCurrentUserName} = useContext(UserContext);
 
-  // const {currentUserName2, setCurrentUserName2} = useContext(UserContext);
-  // console.log('setCurrentUserName2: ', setCurrentUserName2);
-  // console.log('currentUserName2: ', currentUserName2);
-
+  useEffect(() => {
+    setCurrentUserName(loggedInUserName);
+  }, [loggedInUserName, setCurrentUserName]);
 
 
   const loginButtonClickHandler = (e) => {
@@ -50,7 +49,7 @@ function App() {
 
     const name = loginNameInputRef.current?.value;
     setCurrentUserName(name);
-    
+
     const p = profiles.find(profile => profile.name === name);
     if (p) {
       profiles.forEach(profile => profile.isLogined = false);
