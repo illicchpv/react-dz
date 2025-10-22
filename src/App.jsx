@@ -50,12 +50,14 @@ function App() {
 
     const name = loginNameInputRef.current?.value;
     setCurrentUserName(name);
-    const newProfile = {name, isLogined: true};
+    
     const p = profiles.find(profile => profile.name === name);
     if (p) {
+      profiles.forEach(profile => profile.isLogined = false);
       p.isLogined = true;
       setProfiles([...profiles]);
     } else {
+      const newProfile = {name, isLogined: true};
       setProfiles([...profiles, newProfile]);
     }
     searchInputRef.current?.focus();
