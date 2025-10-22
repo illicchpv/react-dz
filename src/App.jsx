@@ -14,10 +14,11 @@ import BodySection from './layouts/BodySection/BodySection';
 import {CARDS} from './constant.js';
 import {markSelectedCards} from './utils.js';
 import cn from 'classnames';
-import {useRef, useState} from 'react';
+import {useContext, useRef, useState} from 'react';
 import LoginSection from './layouts/LoginSection/LoginSection.jsx';
 import Input from './components/Input/Input.jsx';
 import {useLocalStorage} from './hooks/use-localstorage.hook.js';
+import {UserContext} from './context/user.context.jsx';
 
 // const isDev = import.meta.env.DEV;
 const isDev = false;
@@ -29,19 +30,23 @@ function App() {
   const searchButtonRef = useRef();
   const loginNameInputRef = useRef();
 
-  const [currentUserName, setCurrentUserName] = useState(false);
   const [profiles, setProfiles] = useLocalStorage('profiles', []);
+  const loggedInUserName = profiles.find(profile => profile.isLogined)?.name;
+  const [currentUserName, setCurrentUserName] = useState(loggedInUserName);
+
+  // const {currentUserName2, setCurrentUserName2} = useContext(UserContext);
+  // console.log('setCurrentUserName2: ', setCurrentUserName2);
+  // console.log('currentUserName2: ', currentUserName2);
+
+
 
   const loginButtonClickHandler = (e) => {
-    console.log('loginButtonClickHandler e: ', e);
     loginNameInputRef.current.value = 'Антон';
     loginNameInputRef.current?.focus();
   };
 
   const doLoginSubmitHandler = (e) => {
     e.preventDefault();
-    console.log('doLoginSubmitHandler e: ', e);
-    console.log(`login name:[${loginNameInputRef.current?.value}]`);
 
     const name = loginNameInputRef.current?.value;
     setCurrentUserName(name);
@@ -57,7 +62,6 @@ function App() {
   };
 
   const logoutButtonClickHandler = (e) => {
-    console.log('logoutButtonClickHandler e: ', e);
     setCurrentUserName(false);
     const p = profiles.find(profile => profile.name === currentUserName);
     if (p) {

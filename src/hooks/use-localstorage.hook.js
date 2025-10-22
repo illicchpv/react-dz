@@ -12,7 +12,6 @@ export function useLocalStorage(key, initialValue = null) {
   });
 
   const saveData = useCallback((newData) => {
-    console.log('newData: ', newData);
     localStorage.setItem(key, JSON.stringify(newData, null, 2));
     setData(newData);
   }, [key]);
