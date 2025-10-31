@@ -1,11 +1,12 @@
-import './Paragraph.css';
+import s from './Paragraph.module.css';
+import cn from 'classnames';
 
 function Paragraph({className='', size='normal', children }) {
   const validSizes = ['normal', 'small', 'large'];
-  size = validSizes.includes(size) ? size : 'normal';
+  size = validSizes.includes(size) ? s[size] : s['normal'];
 
   return (
-    <p className={`paragraph ${size} ${className}`}>{children}</p>
+    <p className={cn(s.paragraph, size, className)}>{children}</p>
   );
 }
 

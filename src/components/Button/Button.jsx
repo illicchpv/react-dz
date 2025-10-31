@@ -1,10 +1,13 @@
-import './Button.css';
+import s from './Button.module.css';
+import cn from 'classnames';
 
-function Button({ className, children, onClick }) {
-  const cl = (`button ${className}`).trim();
+function Button({isTransparent, children, onClick, ref}) {
 
   return (
-    <button className={cl} onClick={onClick}>{children}</button>
+    <button ref={ref}
+      className={cn(s.button, {[s.transparent]: isTransparent})}
+      onClick={onClick}
+    >{children}</button>
   );
 }
 

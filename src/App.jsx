@@ -1,4 +1,4 @@
-import './App.css';
+import s from './App.module.css';
 import Button from './components/Button/Button';
 import BodyCard from './components/BodyCard/BodyCard';
 import Counter from './components/Counter/Counter';
@@ -11,13 +11,65 @@ import Title from './components/Title/Title';
 import HeaderSection from './layouts/HeaderSection/HeaderSection';
 import SearchSection from './layouts/SearchSection/SearchSection';
 import BodySection from './layouts/BodySection/BodySection';
-import { CARDS } from './constant.js';
+import {CARDS} from './constant.js';
 import {markSelectedCards} from './utils.js';
+import cn from 'classnames';
+import {useContext, useEffect, useRef, useState} from 'react';
+import LoginSection from './layouts/LoginSection/LoginSection.jsx';
+import Input from './components/Input/Input.jsx';
+import {useLocalStorage} from './hooks/use-localstorage.hook.js';
+import {UserContext} from './context/user.context.jsx';
+
+// const isDev = import.meta.env.DEV;
+const isDev = false;
+
 
 function App() {
+  const logInOutHeaderRef = useRef();
+  const searchInputRef = useRef();
+  const searchButtonRef = useRef();
+  const loginNameInputRef = useRef();
+
+  const [profiles, setProfiles] = useLocalStorage('profiles', []);
+  const loggedInUserName = profiles.find(profile => profile.isLogined)?.name;
+  const {currentUserName, setCurrentUserName} = useContext(UserContext);
+
+  useEffect(() => {
+    setCurrentUserName(loggedInUserName);
+  }, [loggedInUserName, setCurrentUserName]);
+
 
   const loginButtonClickHandler = (e) => {
-    console.log('loginButtonClickHandler e: ', e);
+    loginNameInputRef.current.value = 'Антон';
+    loginNameInputRef.current?.focus();
+  };
+
+  const doLoginSubmitHandler = (e) => {
+    e.preventDefault();
+
+    const name = loginNameInputRef.current?.value;
+    setCurrentUserName(name);
+
+    const p = profiles.find(profile => profile.name === name);
+    if (p) {
+      profiles.forEach(profile => profile.isLogined = false);
+      p.isLogined = true;
+      setProfiles([...profiles]);
+    } else {
+      const newProfile = {name, isLogined: true};
+      setProfiles([...profiles, newProfile]);
+    }
+    searchInputRef.current?.focus();
+  };
+
+  const logoutButtonClickHandler = (e) => {
+    setCurrentUserName(false);
+    const p = profiles.find(profile => profile.name === currentUserName);
+    if (p) {
+      p.isLogined = false;
+      setProfiles([...profiles]);
+      loginNameInputRef.current.value = '';
+    }
   };
 
   return (
@@ -31,43 +83,60 @@ function App() {
             Мои фильмы
             <Counter val={2} />
           </NavLink>
+
+          {currentUserName && (<NavLink to="#!">
+            <span>{currentUserName}</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="6" r="4" stroke="#9BA5B7" strokeWidth="1.5" />
+              <ellipse cx="12" cy="17" rx="7" ry="4" stroke="#9BA5B7" strokeWidth="1.5" />
+            </svg>
+          </NavLink>)}
         </Navigation>
 
-        <Button className={'transparent'} style={{marginLeft: 'auto'}} onClick={loginButtonClickHandler}>
-          Войти <img src="./login.svg" alt="login" />
-        </Button>
+        {!currentUserName
+          ? (<Button isTransparent style={{marginLeft: 'auto'}}
+            onClick={loginButtonClickHandler}
+            ref={logInOutHeaderRef}
+          > Войти <img src="./login.svg" alt="login" /></Button>)
+          : (<Button isTransparent style={{marginLeft: 'auto'}}
+            onClick={logoutButtonClickHandler}
+          > Выйти</Button>)
+        }
       </HeaderSection>
 
+      {isDev &&
+        <div style={{display: 'flex', gap: '10px'}}>
+          <button
+            onClick={() => {
+              logInOutHeaderRef.current?.focus();
+            }}
+          >test logInOut</button>
+          <button
+            onClick={() => {
+              searchInputRef.current?.focus();
+            }}
+          >test searchInput</button>
+          <button
+            onClick={() => {
+              searchButtonRef.current?.focus();
+            }}
+          >test searchButton</button>
+        </div>
+      }
+
+      <LoginSection onSubmit={doLoginSubmitHandler}>
+        <Input ref={loginNameInputRef} type="text" placeholder="Ваше имя" required />
+
+        <Button>Войти в профиль</Button>
+      </LoginSection>
+
       <SearchSection>
-        <Search icon placeholder="Введите название" />
+        <Search icon placeholder="Введите название" inputRef={searchInputRef} buttonRef={searchButtonRef} />
       </SearchSection>
 
       <BodySection>
         {markSelectedCards(CARDS).map(card => <BodyCard key={card.id} card={card}></BodyCard>)}
       </BodySection>
-
-      {/* <hr />
-      <Search icon placeholder="Введите название" />
-      <Search icon={false} placeholder="Введите название фильма" /> 
-      */}
-      {/* <hr />
-      <div>
-        <Button >Искать</Button>
-      </div> 
-      */}
-      {/* <hr />
-      <div>
-        <Paragraph size="large" >Введите название фильма, сериала или мультфильма для поиска и добавления в избранное.</Paragraph>
-        <Paragraph >Введите название фильма, сериала или мультфильма для поиска и добавления в избранное.</Paragraph>
-        <Paragraph size="small" >Введите название фильма, сериала или мультфильма для поиска и добавления в избранное.</Paragraph>
-      </div> 
-      */}
-      {/* <hr />
-      <div>
-        <Title as="h1" >h1 Поиск</Title>
-        <Title as="h2" >h2 Поиск</Title>
-      </div> 
-      */}
     </>
   );
 }

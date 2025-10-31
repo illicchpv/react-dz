@@ -11,7 +11,7 @@
   background: rgba(32, 40, 62, 0.8);
 }
 
-.card-image-container {
+.cardImageContainer {
   position: relative;
   width: 100%;
   padding-bottom: calc(var(--card-img-hw) * 100%);
@@ -19,7 +19,7 @@
   overflow: hidden;
 }
 
-.card-image {
+.cardImage {
   position: absolute;
   top: 0;
   left: 0;
@@ -28,7 +28,7 @@
   object-fit: cover;
 }
 
-.card-rating {
+.cardRating {
   position: absolute;
   top: 8px;
   left: 8px;
@@ -49,12 +49,12 @@
   color: #ffad49;
 }
 
-.card-info{
+.cardInfo {
   margin-top: 16px;
   margin-bottom: 8px;
 }
 
-.card-name {
+.cardName {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
@@ -63,7 +63,7 @@
   margin-block: 8px 16px;
 }
 
-.card-selected-mark {
+.cardSelectedMark {
   display: flex;
   align-items: center;
   gap: 8px;
