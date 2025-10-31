@@ -39,7 +39,7 @@ function App() {
   }, [loggedInUserName, setCurrentUserName]);
 
 
-  const loginButtonClickHandler = (e) => {
+  const headerLoginButtonClickHandler = (e) => {
     loginNameInputRef.current.value = 'Антон';
     loginNameInputRef.current?.focus();
   };
@@ -59,7 +59,8 @@ function App() {
       const newProfile = {name, isLogined: true};
       setProfiles([...profiles, newProfile]);
     }
-    searchInputRef.current?.focus();
+    loginNameInputRef.current.value = '';
+    searchInputRef.current.focus();
   };
 
   const logoutButtonClickHandler = (e) => {
@@ -68,7 +69,9 @@ function App() {
     if (p) {
       p.isLogined = false;
       setProfiles([...profiles]);
-      loginNameInputRef.current.value = '';
+      if (loginNameInputRef.current) {
+        loginNameInputRef.current.value = '';
+      }
     }
   };
 
@@ -95,7 +98,7 @@ function App() {
 
         {!currentUserName
           ? (<Button isTransparent style={{marginLeft: 'auto'}}
-            onClick={loginButtonClickHandler}
+            onClick={headerLoginButtonClickHandler}
             ref={logInOutHeaderRef}
           > Войти <img src="./login.svg" alt="login" /></Button>)
           : (<Button isTransparent style={{marginLeft: 'auto'}}
@@ -124,11 +127,13 @@ function App() {
         </div>
       }
 
-      <LoginSection onSubmit={doLoginSubmitHandler}>
-        <Input ref={loginNameInputRef} type="text" placeholder="Ваше имя" required />
+      {!currentUserName &&
+        <LoginSection onSubmit={doLoginSubmitHandler}>
+          <Input ref={loginNameInputRef} type="text" placeholder="Ваше имя" required />
 
-        <Button>Войти в профиль</Button>
-      </LoginSection>
+          <Button>Войти в профиль</Button>
+        </LoginSection>
+      }
 
       <SearchSection>
         <Search icon placeholder="Введите название" inputRef={searchInputRef} buttonRef={searchButtonRef} />
