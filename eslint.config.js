@@ -2,16 +2,18 @@ import js from '@eslint/js';
 import globals from 'globals';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
+import tseslint from 'typescript-eslint';
 import {defineConfig, globalIgnores} from 'eslint/config';
 
 export default defineConfig([
   globalIgnores(['dist']),
   {
-    files: ['**/*.{js,jsx}'],
+    files: ['**/*.{js,jsx,ts,tsx}'],
     extends: [
       js.configs.recommended,
+      tseslint.configs.recommended,
       reactHooks.configs['recommended-latest'],
-      reactRefresh.configs.vite
+      reactRefresh.configs.vite,
     ],
     languageOptions: {
       ecmaVersion: 2020,
@@ -24,16 +26,20 @@ export default defineConfig([
     },
     rules: {
       'react/prop-types': 'off',
-      'no-unused-vars': 'off', //???
+      // 'react/prop-types': [0],
+      'indent': ['off', 'space'],
       //??? 'indent': ['error', 'tab'],
-
+      'comma-dangle': 'off',
+      // 'comma-dangle': ['error', 'never'],
+      
+      'no-unused-vars': 'off', //???
       'react-refresh/only-export-components': [
         'warn',
-        {allowConstantExport: true}
+        {allowConstantExport: true},
       ],
-      'semi': ['error', 'always', {'omitLastInOneLineBlock': false}],
-      'comma-dangle': ['error', 'never'],
-      quotes: ['error', 'single']
-    }
-  }
+      'semi': ['off', 'always', {'omitLastInOneLineBlock': false}],
+      // 'semi': ['error', 'always', {'omitLastInOneLineBlock': false}],
+      'quotes': ['error', 'single'],
+    },
+  },
 ]);
