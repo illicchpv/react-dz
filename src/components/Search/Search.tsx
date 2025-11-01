@@ -3,12 +3,20 @@ import Button from '../Button/Button';
 import Input from '../Input/Input';
 // import cn from 'classnames';
 
-function Search({icon = true, placeholder = 'поиск', inputRef, buttonRef}) {
+export interface ISearchProps {
+  icon?: boolean;
+  placeholder?: string;
+  inputRef?: React.Ref<HTMLInputElement>;
+  buttonRef?: React.Ref<HTMLButtonElement>;
+}
 
-  const searchClickHandler = (e) => {
-    console.log('searchClickHandler e: ', e);
+function Search({icon = true, placeholder = 'поиск', inputRef, buttonRef}: ISearchProps) {
+  console.log('icon: ', icon);
+
+  const searchClickHandler = () => {
+    console.log('searchClickHandler');
   };
-  const searchSubmitHandler = (e) => {
+  const searchSubmitHandler = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('searchSubmitHandler e: ', e);
   };

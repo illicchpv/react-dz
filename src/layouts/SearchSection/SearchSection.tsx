@@ -3,7 +3,11 @@ import Paragraph from '../../components/Paragraph/Paragraph';
 import Title from '../../components/Title/Title';
 // import cn from 'classnames';
 
-function SearchSection({children}) {
+export interface ISearchSectionProps extends React.HTMLAttributes<HTMLElement> {
+  children: React.ReactNode;
+}
+
+function SearchSection({children}: ISearchSectionProps) {
   return (
     <section className={s.searchSection}>
       <div className={s.searchSection__content}>

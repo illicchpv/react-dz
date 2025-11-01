@@ -1,7 +1,12 @@
+import type { ICard } from '../../constant';
 import s from './BodyCard.module.css';
 import cn from 'classnames';
 
-function BodyCard({card = null}) {
+export interface IBodyCard {
+  card: ICard | null;
+}
+
+function BodyCard({card = null}: IBodyCard) {
   if (!card) return null;
 
   return (

@@ -1,4 +1,17 @@
-export const CARDS = [
+export interface ICard {
+  selected?: boolean,
+  id: number,
+  img: string,
+  name: string,
+  rating: number
+};
+
+export interface IUserProfile {
+  name: string,
+  isLogined: boolean
+}
+
+export const CARDS: ICard[] = [
   {
     'id': 1,
     'img': '1.jpg',

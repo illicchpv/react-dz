@@ -1,9 +1,9 @@
 import {StrictMode} from 'react';
 import {createRoot} from 'react-dom/client';
-import App from './App.jsx';
-import {UserContextProvider} from './context/user.context.jsx';
+import App from './App';
+import { UserContextProvider } from './context/user.provider';
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>
     <UserContextProvider>
       <App />

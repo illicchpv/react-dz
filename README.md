@@ -143,3 +143,94 @@ function App() {
 }
 
 ```
+
+### 10 Домашнее задание - Переход на TypeScript
+  - Мигрируем наше приложение на TypeScript, создав новый проект или мигрировав существующий: 
+    - [обсуждения](https://github.com/vitejs/vite/discussions/6799)
+      1. install typescript, @types/react and @types/react-dom.
+      2. in packages.json, replace vite build with tsc && vite build.
+      3. configure your TS:
+      ```json 
+      tsconfig.json
+
+      {
+        "compilerOptions": {
+          "target": "ESNext",
+          "useDefineForClassFields": true,
+          "lib": ["DOM", "DOM.Iterable", "ESNext"],
+          "allowJs": false,
+          "skipLibCheck": true,
+          "esModuleInterop": false,
+          "allowSyntheticDefaultImports": true,
+          "strict": true,
+          "forceConsistentCasingInFileNames": true,
+          "module": "ESNext",
+          "moduleResolution": "Node",
+          "resolveJsonModule": true,
+          "isolatedModules": true,
+          "noEmit": true,
+          "jsx": "react-jsx"
+        },
+        "include": ["src"],
+        "references": [{ "path": "./tsconfig.node.json" }]
+      }
+
+      ```
+
+      ```json
+      tsconfig.node.json
+      {
+        "compilerOptions": {
+          "composite": true,
+          "module": "ESNext",
+          "moduleResolution": "Node",
+          "allowSyntheticDefaultImports": true
+        },
+        "include": ["vite.config.ts"]
+      }
+      ```
+          - Install dev dependencies
+          ``` npm install -D typescript @types/react @types/react-dom ```
+          - In packages.json, replace:
+          ``` "build": "vite build" => "build": "tsc && vite build" ```
+          - Rename vite.config.js and main.jsx to vite.config.ts and main.tsx
+          - Configure TypeScript by creating these two files in the root of your project: 
+          tsconfig.json
+          ```json
+            {
+              "compilerOptions": {
+                "target": "ESNext",
+                "useDefineForClassFields": true,
+                "lib": ["DOM", "DOM.Iterable", "ESNext"],
+                "allowJs": false,
+                "skipLibCheck": true,
+                "esModuleInterop": false,
+                "allowSyntheticDefaultImports": true,
+                "strict": true,
+                "forceConsistentCasingInFileNames": true,
+                "module": "ESNext",
+                "moduleResolution": "Node",
+                "resolveJsonModule": true,
+                "isolatedModules": true,
+                "noEmit": true,
+                "jsx": "react-jsx"
+              },
+              "include": ["src"],
+              "references": [{ "path": "./tsconfig.node.json" }]
+            }          
+          ```
+          tsconfig.node.json
+          ```json
+            {
+              "compilerOptions": {
+                "composite": true,
+                "module": "ESNext",
+                "moduleResolution": "Node",
+                "allowSyntheticDefaultImports": true
+              },
+              "include": ["vite.config.ts"]
+            }          
+          ```
+          - n your index.html you should change the name of your script from the old main.jsx to main.tsx like this:
+          ``` <script type="module" src="/src/main.tsx"></script> ```
+          
