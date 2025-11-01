@@ -1,7 +1,13 @@
 import s from './Input.module.css';
 import cn from 'classnames';
 
-function Input({ref, className, icon, ...props}) {
+export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+  ref?: React.Ref<HTMLInputElement>;
+  className?: string
+  icon?: 'search';
+}
+
+function Input({ ref, className, icon, ...props }: InputProps) {
   let iconSvg = null;
   switch (icon) {
     case 'search': {
