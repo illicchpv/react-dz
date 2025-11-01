@@ -1,4 +1,10 @@
-export const CARDS = [
+export interface ICard {
+  id: number,
+  img: string,
+  name: string,
+  rating: number
+}
+export const CARDS: ICard[] = [
   {
     'id': 1,
     'img': '1.jpg',
