@@ -1,9 +1,13 @@
 import s from './LoginSection.module.css';
-import Paragraph from '../../components/Paragraph/Paragraph';
 import Title from '../../components/Title/Title';
 // import cn from 'classnames';
 
-function LoginSection({children, onSubmit}) {
+export interface ILoginSectionProps {
+  children: React.ReactNode
+  onSubmit: (e: React.FormEvent<HTMLFormElement>) => void
+}
+
+function LoginSection({children, onSubmit}: ILoginSectionProps) {
 
   return (
     <section className={s.loginSection}>

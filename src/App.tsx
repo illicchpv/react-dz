@@ -23,6 +23,14 @@
 import { useRef } from 'react';
 import Button from './components/Button/Button';
 import Input from './components/Input/Input';
+import Logo from './components/Logo/Logo';
+import Paragraph from './components/Paragraph/Paragraph';
+import Navigation from './components/Navigation/Navigation';
+import NavLink from './components/NavLink/NavLink';
+import { CARDS } from './constant';
+import BodyCard from './components/BodyCard/BodyCard';
+import Search from './components/Search/Search';
+import Title from './components/Title/Title';
 
 // const isDev = import.meta.env.DEV;
 // const isDev = false;
@@ -30,14 +38,45 @@ import Input from './components/Input/Input';
 
 function App() {
   const logInOutHeaderRef = useRef<HTMLInputElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
+  const searchButtonRef = useRef<HTMLButtonElement>(null);
 
   return (
     <>
+      <div>
+        Logo: <Logo />
+      </div>
+      <div>
+        Title:
+        <Title as="h1" >App Title</Title>
+      </div>
+      <div>
+        Navigation:
+        <Navigation >
+          <NavLink to="#!">Link 1</NavLink>
+          <NavLink to="#!">Link 2</NavLink>
+          <NavLink to="#!">Link 3</NavLink>
+        </Navigation>
+      </div>
+      <div>
+        Paragraph: <Paragraph size='large' >Paragraph Paragraph</Paragraph>
+      </div>
       <div>
         Button: <Button>App</Button>
       </div>
       <div>
         Input: <Input ref={logInOutHeaderRef} type="text" placeholder="Ваше имя" required />
+      </div>
+      <div>
+        Search:
+        <Search icon placeholder="Введите название"
+          inputRef={searchInputRef}
+          buttonRef={searchButtonRef}
+        />
+      </div>
+      <div>
+        BodyCard:
+        {CARDS.slice(0, 1).map(card => <BodyCard key={card.id} card={card}></BodyCard>)}
       </div>
     </>
   );
