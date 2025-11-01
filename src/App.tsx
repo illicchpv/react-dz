@@ -20,186 +20,284 @@
 // import {useLocalStorage} from './hooks/use-localstorage.hook.js';
 // import {UserContext} from './context/user.context.jsx';
 
-import { useRef } from 'react';
+import { useContext, useRef } from 'react';
 import Button from './components/Button/Button';
 import Input from './components/Input/Input';
 import Logo from './components/Logo/Logo';
-import Paragraph from './components/Paragraph/Paragraph';
 import Navigation from './components/Navigation/Navigation';
 import NavLink from './components/NavLink/NavLink';
 import { CARDS } from './constant';
 import BodyCard from './components/BodyCard/BodyCard';
 import Search from './components/Search/Search';
-import Title from './components/Title/Title';
+import HeaderSection from './layouts/HeaderSection/HeaderSection';
+import Counter from './components/Counter/Counter';
+import { UserContext } from './context/user.context';
+import { useLocalStorage } from './hooks/use-localstorage.hook';
+import LoginSection from './layouts/LoginSection/LoginSection';
+import SearchSection from './layouts/SearchSection/SearchSection';
+import BodySection from './layouts/BodySection/BodySection';
+import { markSelectedCards } from './utils';
 
 // const isDev = import.meta.env.DEV;
 // const isDev = false;
 
 
 function App() {
-  const logInOutHeaderRef = useRef<HTMLInputElement>(null);
+  const logInOutHeaderRef = useRef<HTMLButtonElement>(null);
+  const loginNameInputRef = useRef<HTMLInputElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
   const searchButtonRef = useRef<HTMLButtonElement>(null);
+  const { currentUserName, setCurrentUserName } = useContext(UserContext);
+  // const [profiles, setProfiles] = useLocalStorage<IUserProfile[]>('profiles', []);
+  const [profiles, setProfiles] = useLocalStorage('user-profiles', []);
+
+  const headerLoginButtonClickHandler = () => {
+    if (loginNameInputRef.current) loginNameInputRef.current.value = 'Антон';
+    loginNameInputRef.current?.focus();
+  };
+
+  const logoutButtonClickHandler = () => {
+    setCurrentUserName?.('');
+    const p = profiles.find(profile => profile.name === currentUserName);
+    if (p) {
+      p.isLogined = false;
+      setProfiles([...profiles]);
+      if (loginNameInputRef.current) {
+        loginNameInputRef.current.value = '';
+      }
+    }
+  };
+
+  const doLoginSubmitHandler = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const name = loginNameInputRef.current?.value;
+    if (!name || !setCurrentUserName) return
+    setCurrentUserName(name);
+
+    const p = profiles.find(profile => profile.name === name);
+    if (p) {
+      profiles.forEach(profile => profile.isLogined = false);
+      p.isLogined = true;
+      setProfiles([...profiles]);
+    } else {
+      const newProfile = { name, isLogined: true };
+      setProfiles([...profiles, newProfile]);
+    }
+    if (loginNameInputRef.current) loginNameInputRef.current.value = '';
+    if (searchInputRef.current) searchInputRef.current.focus();
+  };
 
   return (
     <>
-      <div>
-        Logo: <Logo />
-      </div>
-      <div>
-        Title:
-        <Title as="h1" >App Title</Title>
-      </div>
-      <div>
-        Navigation:
-        <Navigation >
-          <NavLink to="#!">Link 1</NavLink>
-          <NavLink to="#!">Link 2</NavLink>
-          <NavLink to="#!">Link 3</NavLink>
+      <HeaderSection>
+        <Logo />
+
+        <Navigation>
+          <NavLink to="#!">Поиск фильмов</NavLink>
+          <NavLink to="#!">
+            Мои фильмы
+            <Counter val={2} />
+          </NavLink>
         </Navigation>
-      </div>
-      <div>
-        Paragraph: <Paragraph size='large' >Paragraph Paragraph</Paragraph>
-      </div>
-      <div>
-        Button: <Button>App</Button>
-      </div>
-      <div>
-        Input: <Input ref={logInOutHeaderRef} type="text" placeholder="Ваше имя" required />
-      </div>
-      <div>
-        Search:
-        <Search icon placeholder="Введите название"
-          inputRef={searchInputRef}
-          buttonRef={searchButtonRef}
-        />
-      </div>
-      <div>
-        BodyCard:
-        {CARDS.slice(0, 1).map(card => <BodyCard key={card.id} card={card}></BodyCard>)}
-      </div>
+
+        {currentUserName && (<NavLink to="#!">
+          <span>{currentUserName}</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="6" r="4" stroke="#9BA5B7" strokeWidth="1.5" />
+            <ellipse cx="12" cy="17" rx="7" ry="4" stroke="#9BA5B7" strokeWidth="1.5" />
+          </svg>
+        </NavLink>)}
+
+        {!currentUserName
+          ? (
+            <Button isTransparent style={{ marginLeft: 'auto' }}
+              onClick={headerLoginButtonClickHandler}
+              ref={logInOutHeaderRef}
+            > Войти <img src="./login.svg" alt="login" /></Button>
+          )
+          : (
+            <Button isTransparent style={{ marginLeft: 'auto' }}
+              onClick={logoutButtonClickHandler}
+            > Выйти</Button>
+          )
+        }
+      </HeaderSection>
+
+      {!currentUserName &&
+        <LoginSection onSubmit={doLoginSubmitHandler}>
+          <Input ref={loginNameInputRef} type="text" name="name" placeholder="Ваше имя" required />
+
+          <Button>Войти в профиль</Button>
+        </LoginSection>
+      }
+
+      <SearchSection>
+        <Search icon placeholder="Введите название" inputRef={searchInputRef} buttonRef={searchButtonRef} />
+      </SearchSection>
+
+      <BodySection>
+        {markSelectedCards(CARDS).map(card => <BodyCard key={card.id} card={card}></BodyCard>)}
+      </BodySection>
     </>
-  );
-
-  // const logInOutHeaderRef = useRef();
-  // const searchInputRef = useRef();
-  // const searchButtonRef = useRef();
-  // const loginNameInputRef = useRef();
-
-  // const [profiles, setProfiles] = useLocalStorage('profiles', []);
-  // const loggedInUserName = profiles.find(profile => profile.isLogined)?.name;
-  // const {currentUserName, setCurrentUserName} = useContext(UserContext);
-
-  // useEffect(() => {
-  //   setCurrentUserName(loggedInUserName);
-  // }, [loggedInUserName, setCurrentUserName]);
-
-
-  // const headerLoginButtonClickHandler = (e) => {
-  //   loginNameInputRef.current.value = 'Антон';
-  //   loginNameInputRef.current?.focus();
-  // };
-
-  // const doLoginSubmitHandler = (e) => {
-  //   e.preventDefault();
-
-  //   const name = loginNameInputRef.current?.value;
-  //   setCurrentUserName(name);
-
-  //   const p = profiles.find(profile => profile.name === name);
-  //   if (p) {
-  //     profiles.forEach(profile => profile.isLogined = false);
-  //     p.isLogined = true;
-  //     setProfiles([...profiles]);
-  //   } else {
-  //     const newProfile = {name, isLogined: true};
-  //     setProfiles([...profiles, newProfile]);
-  //   }
-  //   loginNameInputRef.current.value = '';
-  //   searchInputRef.current.focus();
-  // };
-
-  // const logoutButtonClickHandler = (e) => {
-  //   setCurrentUserName(false);
-  //   const p = profiles.find(profile => profile.name === currentUserName);
-  //   if (p) {
-  //     p.isLogined = false;
-  //     setProfiles([...profiles]);
-  //     if (loginNameInputRef.current) {
-  //       loginNameInputRef.current.value = '';
-  //     }
-  //   }
-  // };
-
-  // return (
-  //   <>
-  //     <HeaderSection>
-  //       <Logo />
-
-  //       <Navigation>
-  //         <NavLink to="#!">Поиск фильмов</NavLink>
-  //         <NavLink to="#!">
-  //           Мои фильмы
-  //           <Counter val={2} />
-  //         </NavLink>
-
-  //         {currentUserName && (<NavLink to="#!">
-  //           <span>{currentUserName}</span>
-  //           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  //             <circle cx="12" cy="6" r="4" stroke="#9BA5B7" strokeWidth="1.5" />
-  //             <ellipse cx="12" cy="17" rx="7" ry="4" stroke="#9BA5B7" strokeWidth="1.5" />
-  //           </svg>
-  //         </NavLink>)}
-  //       </Navigation>
-
-  //       {!currentUserName
-  //         ? (<Button isTransparent style={{marginLeft: 'auto'}}
-  //           onClick={headerLoginButtonClickHandler}
-  //           ref={logInOutHeaderRef}
-  //         > Войти <img src="./login.svg" alt="login" /></Button>)
-  //         : (<Button isTransparent style={{marginLeft: 'auto'}}
-  //           onClick={logoutButtonClickHandler}
-  //         > Выйти</Button>)
-  //       }
-  //     </HeaderSection>
-
-  //     {isDev &&
-  //       <div style={{display: 'flex', gap: '10px'}}>
-  //         <button
-  //           onClick={() => {
-  //             logInOutHeaderRef.current?.focus();
-  //           }}
-  //         >test logInOut</button>
-  //         <button
-  //           onClick={() => {
-  //             searchInputRef.current?.focus();
-  //           }}
-  //         >test searchInput</button>
-  //         <button
-  //           onClick={() => {
-  //             searchButtonRef.current?.focus();
-  //           }}
-  //         >test searchButton</button>
-  //       </div>
-  //     }
-
-  //     {!currentUserName &&
-  //       <LoginSection onSubmit={doLoginSubmitHandler}>
-  //         <Input ref={loginNameInputRef} type="text" placeholder="Ваше имя" required />
-
-  //         <Button>Войти в профиль</Button>
-  //       </LoginSection>
-  //     }
-
-  //     <SearchSection>
-  //       <Search icon placeholder="Введите название" inputRef={searchInputRef} buttonRef={searchButtonRef} />
-  //     </SearchSection>
-
-  //     <BodySection>
-  //       {markSelectedCards(CARDS).map(card => <BodyCard key={card.id} card={card}></BodyCard>)}
-  //     </BodySection>
-  //   </>
-  // );
+  )
+  /*
+    return (
+      <>
+        <div>
+          Logo: <Logo />
+        </div>
+        <div>
+          Title:
+          <Title as="h1" >App Title</Title>
+        </div>
+        <div>
+          Navigation:
+          <Navigation >
+            <NavLink to="#!">Link 1</NavLink>
+            <NavLink to="#!">Link 2</NavLink>
+            <NavLink to="#!">Link 3</NavLink>
+          </Navigation>
+        </div>
+        <div>
+          Paragraph: <Paragraph size='large' >Paragraph Paragraph</Paragraph>
+        </div>
+        <div>
+          Button: <Button>App</Button>
+        </div>
+        <div>
+          Input: <Input ref={logInOutHeaderRef} type="text" placeholder="Ваше имя" required />
+        </div>
+        <div>
+          Search:
+          <Search icon placeholder="Введите название"
+            inputRef={searchInputRef}
+            buttonRef={searchButtonRef}
+          />
+        </div>
+        <div>
+          BodyCard:
+          {CARDS.slice(0, 1).map(card => <BodyCard key={card.id} card={card}></BodyCard>)}
+        </div>
+      </>
+    );
+  
+  
+    // const [profiles, setProfiles] = useLocalStorage('profiles', []);
+    // const loggedInUserName = profiles.find(profile => profile.isLogined)?.name;
+    // const {currentUserName, setCurrentUserName} = useContext(UserContext);
+  
+    // useEffect(() => {
+    //   setCurrentUserName(loggedInUserName);
+    // }, [loggedInUserName, setCurrentUserName]);
+  
+  
+    // const headerLoginButtonClickHandler = (e) => {
+    //   loginNameInputRef.current.value = 'Антон';
+    //   loginNameInputRef.current?.focus();
+    // };
+  
+    // const doLoginSubmitHandler = (e) => {
+    //   e.preventDefault();
+  
+    //   const name = loginNameInputRef.current?.value;
+    //   setCurrentUserName(name);
+  
+    //   const p = profiles.find(profile => profile.name === name);
+    //   if (p) {
+    //     profiles.forEach(profile => profile.isLogined = false);
+    //     p.isLogined = true;
+    //     setProfiles([...profiles]);
+    //   } else {
+    //     const newProfile = {name, isLogined: true};
+    //     setProfiles([...profiles, newProfile]);
+    //   }
+    //   loginNameInputRef.current.value = '';
+    //   searchInputRef.current.focus();
+    // };
+  
+    // const logoutButtonClickHandler = (e) => {
+    //   setCurrentUserName(false);
+    //   const p = profiles.find(profile => profile.name === currentUserName);
+    //   if (p) {
+    //     p.isLogined = false;
+    //     setProfiles([...profiles]);
+    //     if (loginNameInputRef.current) {
+    //       loginNameInputRef.current.value = '';
+    //     }
+    //   }
+    // };
+  
+    // return (
+    //   <>
+    //     <HeaderSection>
+    //       <Logo />
+  
+    //       <Navigation>
+    //         <NavLink to="#!">Поиск фильмов</NavLink>
+    //         <NavLink to="#!">
+    //           Мои фильмы
+    //           <Counter val={2} />
+    //         </NavLink>
+  
+    //         {currentUserName && (<NavLink to="#!">
+    //           <span>{currentUserName}</span>
+    //           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    //             <circle cx="12" cy="6" r="4" stroke="#9BA5B7" strokeWidth="1.5" />
+    //             <ellipse cx="12" cy="17" rx="7" ry="4" stroke="#9BA5B7" strokeWidth="1.5" />
+    //           </svg>
+    //         </NavLink>)}
+    //       </Navigation>
+  
+    //       {!currentUserName
+    //         ? (<Button isTransparent style={{marginLeft: 'auto'}}
+    //           onClick={headerLoginButtonClickHandler}
+    //           ref={logInOutHeaderRef}
+    //         > Войти <img src="./login.svg" alt="login" /></Button>)
+    //         : (<Button isTransparent style={{marginLeft: 'auto'}}
+    //           onClick={logoutButtonClickHandler}
+    //         > Выйти</Button>)
+    //       }
+    //     </HeaderSection>
+  
+    //     {isDev &&
+    //       <div style={{display: 'flex', gap: '10px'}}>
+    //         <button
+    //           onClick={() => {
+    //             logInOutHeaderRef.current?.focus();
+    //           }}
+    //         >test logInOut</button>
+    //         <button
+    //           onClick={() => {
+    //             searchInputRef.current?.focus();
+    //           }}
+    //         >test searchInput</button>
+    //         <button
+    //           onClick={() => {
+    //             searchButtonRef.current?.focus();
+    //           }}
+    //         >test searchButton</button>
+    //       </div>
+    //     }
+  
+    //     {!currentUserName &&
+    //       <LoginSection onSubmit={doLoginSubmitHandler}>
+    //         <Input ref={loginNameInputRef} type="text" placeholder="Ваше имя" required />
+  
+    //         <Button>Войти в профиль</Button>
+    //       </LoginSection>
+    //     }
+  
+    //     <SearchSection>
+    //       <Search icon placeholder="Введите название" inputRef={searchInputRef} buttonRef={searchButtonRef} />
+    //     </SearchSection>
+  
+    //     <BodySection>
+    //       {markSelectedCards(CARDS).map(card => <BodyCard key={card.id} card={card}></BodyCard>)}
+    //     </BodySection>
+    //   </>
+    // );
+    */
 }
 
 export default App;
