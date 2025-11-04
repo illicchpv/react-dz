@@ -4,17 +4,17 @@ import Button from './components/Button/Button';
 import Input from './components/Input/Input';
 import Logo from './components/Logo/Logo';
 import Navigation from './components/Navigation/Navigation';
-import NavLink from './components/NavLink/NavLink';
+import NavLink from './components/NavigationLink/NavigationLink';
 import { CARDS } from './constant';
 import BodyCard from './components/BodyCard/BodyCard';
 import Search from './components/Search/Search';
-import HeaderSection from './layouts/HeaderSection/HeaderSection';
+import HeaderSection from './sections/HeaderSection/HeaderSection';
 import Counter from './components/Counter/Counter';
 import { UserContext } from './context/user.context';
 import { useLocalStorage } from './hooks/use-localstorage.hook';
-import LoginSection from './layouts/LoginSection/LoginSection';
-import SearchSection from './layouts/SearchSection/SearchSection';
-import BodySection from './layouts/BodySection/BodySection';
+import LoginSection from './sections/LoginSection/LoginSection';
+import SearchSection from './sections/SearchSection/SearchSection';
+import BodySection from './sections/BodySection/BodySection';
 import { markSelectedCards } from './utils';
 
 function App() {
@@ -29,6 +29,7 @@ function App() {
     if (loginNameInputRef.current) loginNameInputRef.current.value = 'Антон';
     loginNameInputRef.current?.focus();
   };
+
 
   const logoutButtonClickHandler = () => {
     setCurrentUserName?.('');
