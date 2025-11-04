@@ -22,3 +22,7 @@
 .navLink a:hover {
   color: #fff;
 }
+
+.navLink .active {
+  color: var(--active-link-clr); 
+}

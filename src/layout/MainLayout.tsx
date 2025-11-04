@@ -1,4 +1,4 @@
-import { Outlet, useNavigate } from 'react-router-dom';
+import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import styles from './MainLayout.module.css';
 import cn from 'classnames';
 import HeaderSection from '../sections/HeaderSection/HeaderSection';
@@ -16,6 +16,7 @@ function MainLayout() {
   const { currentUserName, setCurrentUserName } = useContext(UserContext);
   const [profiles, setProfiles] = useLocalStorage('user-profiles', []);
   const navigate = useNavigate();
+  const isLoginActive = useLocation().pathname.toLocaleLowerCase() === '/login';
 
   const logoutButtonClickHandler = () => {
     setCurrentUserName?.('');
@@ -50,7 +51,8 @@ function MainLayout() {
 
         {!currentUserName
           ? (
-            <Button isTransparent style={{ marginLeft: 'auto' }}
+            <Button
+              isActive={isLoginActive} isTransparent style={{ marginLeft: 'auto' }}
               onClick={() => navigate('/login')}
             > Войти <img src="./login.svg" alt="login" /></Button>
           )

@@ -10,6 +10,7 @@
 
 :root {
   --outline-clr: #024185;
+  --active-link-clr: #d0d697;
 
   background-color: #121829;
   font-family: "Poppins", sans-serif;

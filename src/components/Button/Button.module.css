@@ -47,3 +47,7 @@
   outline: 2px solid var(--outline-clr);
   outline-offset: 2px;
 }
+
+.button.active {
+  color: var(--active-link-clr); 
+}
