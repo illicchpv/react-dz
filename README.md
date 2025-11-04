@@ -234,4 +234,5 @@ function App() {
           - n your index.html you should change the name of your script from the old main.jsx to main.tsx like this:
           ``` <script type="module" src="/src/main.tsx"></script> ```
           
-начало -- Домашнее задание - React Router
+### начало -- Домашнее задание - React Router
+  ```npm i react-router-dom@6.15.0```
