@@ -1,13 +1,16 @@
-import { StrictMode } from 'react';
+import { lazy, StrictMode, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
 import { UserContextProvider } from './context/user.provider';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import MainLayout from './layout/MainLayout';
-import MainPage from './pages/MainPage/MainPage';
+// import MainPage from './pages/MainPage/MainPage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import MoviePage from './pages/MoviePage/MoviePage';
 import FavoritesPage from './pages/FavoritesPage/FavoritesPage';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
+import LoadingPage from './pages/LoadingPage/LoadingPage.tsx';
+
+const MainPageLazy = lazy(() => import('./pages/MainPage/MainPage.tsx'));
 
 const router = createBrowserRouter([
   {
@@ -16,7 +19,9 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <MainPage />
+        element: <Suspense fallback={<LoadingPage />}>
+          <MainPageLazy />
+        </Suspense>
       },
       {
         path: '/login',
@@ -24,7 +29,25 @@ const router = createBrowserRouter([
       },
       {
         path: '/movie/:id',
-        element: <MoviePage />
+        element: <MoviePage />,
+        // errorElement: <>Ошибка получения MoviePage</>,
+        // loader: async ({ params }) => {
+        //   return defer({
+        //     data: axios.get(`${PREFIX}/products/${params.id}`).then(data => {
+        //       return data
+        //     })
+        //   });
+        /*
+    const { data } = await axios.get<{ description: ICardResp[] }>(`${API_URL}?q=${searchWords}`);
+    const cardsRes = convertToCards(data.description);
+
+        return defer({
+          data: axios.get(`${PREFIX}/products/${params.id}`).then(data => {
+            return data
+          })
+        });
+
+        */
       },
       {
         path: '/favorites',
