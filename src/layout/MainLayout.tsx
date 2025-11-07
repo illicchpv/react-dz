@@ -44,7 +44,7 @@ function MainLayout() {
           </NavigationLink>}
 
           {!currentUserName && <NavigationLink to="/login">
-            Войти <img src="./login.svg" alt="login" />
+            Войти <img src="/login.svg" alt="login" />
           </NavigationLink>}
 
           {!!currentUserName && <NavigationLink to="/" onClick={logoutButtonClickHandler}>

@@ -14,7 +14,12 @@ function BodyCard({ card = null }: IBodyCard) {
     <div className={s.card}>
       <Link to={`/movie/${card.id}`}>
         <div className={s.cardImageContainer}>
-          <img className={s.cardImage} src={`${card.img}`} alt={`постер ${card.name}`} />
+          <img className={s.cardImage} src={`${card.img}`} alt={`постер ${card.name}`}
+            onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+              const target = e.target as HTMLImageElement;
+              target.src = '/card-img/404.jpg';
+            }}
+          />
 
           <div className={s.cardRating}>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

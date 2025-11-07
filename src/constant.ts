@@ -17,6 +17,17 @@ export interface ICardResp {
   '#YEAR': number,
 };
 
+export interface IMovie {
+  imdbId: string,
+  main: {
+    id: string,
+    titleText: {
+      text: string
+    }
+  },
+  short: { datePublished: string },
+}
+
 export interface IUserProfile {
   name: string,
   isLogined: boolean
