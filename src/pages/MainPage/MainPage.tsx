@@ -27,7 +27,6 @@ function MainPage() {
     try {
       const { data } = await axios.get<{ description: ICardResp[] }>(`${API_URL}?q=${searchWords}`);
       const cardsRes = convertToCards(data.description);
-      console.log('cards: ', cardsRes);
       setCards(cardsRes || []);
       if (data.description?.length > 0) {
         localStorage.setItem('lastSearch', searchWords || '');

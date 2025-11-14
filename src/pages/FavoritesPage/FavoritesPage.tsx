@@ -8,7 +8,6 @@ import { getSelectedCards, markSelectedCards } from '../../utils';
 
 function FavoritesPage() {
   const selectedCards = getSelectedCards(CARDS);
-  console.log('selectedCards: ', selectedCards);
 
   return (
     <>

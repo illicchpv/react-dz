@@ -25,6 +25,7 @@ function LoginPage() {
     const name = loginNameInputRef.current?.value;
     if (!name || !setCurrentUserName) return
     setCurrentUserName(name);
+    localStorage.setItem('jwtLike', name);
 
     const p = profiles.find(profile => profile.name === name);
     if (p) {

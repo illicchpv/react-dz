@@ -13,19 +13,19 @@ function MainLayout() {
   const loginNameInputRef = useRef<HTMLInputElement>(null);
   const { currentUserName, setCurrentUserName } = useContext(UserContext);
   const [profiles, setProfiles] = useLocalStorage('user-profiles', []);
+
   const navigate = useNavigate();
 
   const logoutButtonClickHandler = () => {
     setCurrentUserName?.('');
-    const p = profiles.find(profile => profile.name === currentUserName);
-    if (p) {
-      p.isLogined = false;
-      setProfiles([...profiles]);
-      if (loginNameInputRef.current) {
-        loginNameInputRef.current.value = '';
-      }
-      navigate('/')
+
+    profiles.forEach(profile => profile.isLogined = false);
+    setProfiles([...profiles]);
+    if (loginNameInputRef.current) {
+      loginNameInputRef.current.value = '';
     }
+    localStorage.setItem('jwtLike', '');
+    navigate('/')
   };
 
   return (
@@ -38,7 +38,7 @@ function MainLayout() {
 
           <NavigationLink to="/favorites">Мои фильмы <Counter val={2} /></NavigationLink>
 
-          {currentUserName && <NavigationLink to="#!">
+          {currentUserName && <NavigationLink to="#!" isUseActive={false}>
             <span>{currentUserName}</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle cx="12" cy="6" r="4" stroke="#9BA5B7" strokeWidth="1.5" /> <ellipse cx="12" cy="17" rx="7" ry="4" stroke="#9BA5B7" strokeWidth="1.5" /> </svg>
           </NavigationLink>}
@@ -47,7 +47,7 @@ function MainLayout() {
             Войти <img src="/login.svg" alt="login" />
           </NavigationLink>}
 
-          {!!currentUserName && <NavigationLink to="/" onClick={logoutButtonClickHandler}>
+          {!!currentUserName && <NavigationLink to="/" isUseActive={false} onClick={logoutButtonClickHandler}>
             Выйти
           </NavigationLink>}
         </Navigation>

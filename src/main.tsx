@@ -11,11 +11,12 @@ import ErrorPage from './pages/ErrorPage/ErrorPage';
 import LoadingPage from './pages/LoadingPage/LoadingPage.tsx';
 import axios from 'axios';
 import { API_URL } from './constant.ts';
+import { RequireAuth } from './components/RequireAuth/RequireAuth.tsx';
 
-function RouterError({title='Что-то пошло не так'}: {title?: string}) {
+function RouterError({ title = 'Что-то пошло не так' }: { title?: string }) {
   const error = useRouteError();
   console.error(error);
-  
+
   return (
     <div style={{ padding: '2em', color: 'tomato', textAlign: 'center' }}>
       <h1>{title}</h1>
@@ -29,7 +30,7 @@ const MainPageLazy = lazy(() => import('./pages/MainPage/MainPage.tsx'));
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <MainLayout />,
+    element: <RequireAuth><MainLayout /></RequireAuth>,
     children: [
       {
         path: '/',
@@ -62,13 +63,13 @@ const router = createBrowserRouter([
       {
         path: '/favorites',
         element: <FavoritesPage />
-      },
-      {
-        path: '*',
-        element: <ErrorPage />
       }
     ]
   },
+  {
+    path: '*',
+    element: <ErrorPage />
+  }
 ])
 
 createRoot(document.getElementById('root') as HTMLElement).render(
