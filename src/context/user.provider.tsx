@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { UserContext, type IUserContext } from './user.context';
-import type { IUserProfile } from '../constant';
+import { getLoginedUserFromLocalStorage } from '../utils';
 
 interface UserContextProviderProps {
   children: React.ReactNode;
@@ -8,15 +8,7 @@ interface UserContextProviderProps {
 
 export const UserContextProvider = ({ children }: UserContextProviderProps) => {
   const [currentUserName, setCurrentUserName] = useState<string>(() => {
-    const profiles: string | null = localStorage.getItem('user-profiles');
-    if (!profiles) return '';
-    try {
-      const profilesArr: IUserProfile[] = JSON.parse(profiles);
-      const profile = profilesArr.find(profile => profile.isLogined);
-      return profile?.name || '';
-    } catch {
-      return ''
-    }
+    return getLoginedUserFromLocalStorage()
   });
 
   const setUserName = (name: string) => {

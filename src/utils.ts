@@ -1,4 +1,4 @@
-import type { ICard, ICardResp } from './constant';
+import type { ICard, ICardResp, IUserProfile } from './constant';
 
 const selectedCard = ['2', '5'];
 
@@ -20,4 +20,16 @@ export function convertToCards(respCards: ICardResp[]): ICard[] | undefined {
     return v;
   });
   return rez
+}
+
+export function getLoginedUserFromLocalStorage(): string {
+    const profiles: string | null = localStorage.getItem('user-profiles');
+    if (!profiles) return '';
+    try {
+      const profilesArr: IUserProfile[] = JSON.parse(profiles);
+      const profile = profilesArr.find(profile => profile.isLogined);
+      return profile?.name || '';
+    } catch {
+      return ''
+    }
 }

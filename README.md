@@ -288,3 +288,16 @@ function App() {
   - Хранение в localstorage
   - Хранение в localstorage
   - Домашнее задание - Авторизация
+
+#### Ментор Алекс
+```
+ Что можно улучшить:
+
+  - + В компоненте RequireAuth (src/components/RequireAuth/RequireAuth.tsx:8) 
+  присутствует console.log, который будет выводиться при каждом рендере - лучше убрать для production
+  - ??? Логика в RequireAuth (src/components/RequireAuth/RequireAuth.tsx:11-13) проверяет location.pathname !== REDIRECT_PATH перед редиректом, но это избыточно - можно упростить, всегда редиректя неавторизованных на /login
+  - Переменная jwtLike в localStorage (src/pages/LoginPage/LoginPage.tsx:28) содержит просто имя пользователя, а не JWT токен - название может вводить в заблуждение при дальнейшей разработке
+
+```
+  надо написать функцию проверяющую по localStorage есть ли вошедший пользователь
+  
