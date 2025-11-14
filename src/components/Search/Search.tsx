@@ -8,24 +8,17 @@ export interface ISearchProps {
   placeholder?: string;
   inputRef?: React.Ref<HTMLInputElement>;
   buttonRef?: React.Ref<HTMLButtonElement>;
+  searchSubmitHandler?: (e: React.FormEvent) => void
 }
 
-function Search({icon = true, placeholder = 'поиск', inputRef, buttonRef}: ISearchProps) {
-  console.log('icon: ', icon);
-
-  const searchClickHandler = () => {
-    console.log('searchClickHandler');
-  };
-  const searchSubmitHandler = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('searchSubmitHandler e: ', e);
-  };
+function Search({ icon = true, placeholder = 'поиск', inputRef, buttonRef, searchSubmitHandler }: ISearchProps) {
+  // console.log('icon: ', icon);
 
   return (
     <form className={s.search} onSubmit={searchSubmitHandler}>
-      <Input icon="search" ref={inputRef} type="search" placeholder={placeholder} />
+      <Input icon={icon ? 'search' : undefined} ref={inputRef} type="search" placeholder={placeholder} />
 
-      <Button ref={buttonRef} onClick={searchClickHandler} >Искать</Button>
+      <Button ref={buttonRef}>Искать</Button>
     </form>
   );
 }
