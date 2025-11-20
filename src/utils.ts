@@ -1,16 +1,15 @@
 import type { ICard, ICardResp, IUserProfile } from './constant';
 
-const selectedCard = ['2', '5'];
-
-export function markSelectedCards(cards: ICard[]) {
-
+export function markSelectedCards(cards: ICard[], selectedCards: ICard[] = []) {
   return cards.map(card => {
-    return selectedCard.includes(card.id) ? { ...card, selected: true } : card;
+    if(selectedCards.find(sel => sel.id === card.id)) return { ...card, selected: true };
+     return card;
   });
 }
-
-export function getSelectedCards(cards: ICard[]) {
-  return cards.filter(card => selectedCard.includes(card.id));
+export function markCards(cards: ICard[]) {
+  return cards.map(card => {
+    return { ...card, selected: true };
+  });
 }
 
 export function convertToCards(respCards: ICardResp[]): ICard[] | undefined {

@@ -1,4 +1,5 @@
 export const API_URL = 'https://search.imdbot.workers.dev/';
+export const SELECTED_CARDS_KEY = 'selectedCards';
 
 export interface ICard {
   selected?: boolean,
@@ -7,6 +8,8 @@ export interface ICard {
   name: string,
   rating: number,
   year?: number
+
+  userName?: string
 };
 
 export interface ICardResp {
