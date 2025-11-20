@@ -4,7 +4,7 @@ import cn from 'classnames';
 export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   ref?: React.Ref<HTMLInputElement>;
   className?: string
-  icon?: 'search';
+  icon?: 'search' | undefined;
 }
 
 function Input({ ref, className, icon, ...props }: InputProps) {

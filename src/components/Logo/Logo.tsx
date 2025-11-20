@@ -6,7 +6,7 @@ function Logo() {
 
   return (
     <NavLink className={s.logo} to="/">
-      <img width={40} height={40} src="./logo.svg" alt="logo" />
+      <img width={40} height={40} src="/logo.svg" alt="logo" />
     </NavLink>
   );
 }
