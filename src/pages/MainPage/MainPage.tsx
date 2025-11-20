@@ -1,5 +1,5 @@
 import styles from './MainPage.module.css';
-import { useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import BodyCard from '../../components/BodyCard/BodyCard';
 import Search from '../../components/Search/Search';
 import { API_URL, type ICard, type ICardResp } from '../../constant';
@@ -8,6 +8,9 @@ import SearchSection from '../../sections/SearchSection/SearchSection';
 import { convertToCards, markSelectedCards } from '../../utils';
 import Title from '../../components/Title/Title';
 import axios, { AxiosError } from 'axios';
+import { useSelector } from 'react-redux';
+import type { AppRootState } from '../../store/store';
+import { UserContext } from '../../context/user.context';
 
 function MainPage() {
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -15,6 +18,9 @@ function MainPage() {
   const [cards, setCards] = useState<ICard[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | undefined>();
+
+  const { currentUserName} = useContext(UserContext);
+  const selectedCards = useSelector((state: AppRootState) => state.selected.selectedCards).filter(card => card.userName === currentUserName);
 
   const getCards = async () => {
     // console.log('searchInputRef.current?.value: ', searchInputRef.current?.value);
@@ -30,7 +36,6 @@ function MainPage() {
       setCards(cardsRes || []);
       if (data.description?.length > 0) {
         localStorage.setItem('lastSearch', searchWords || '');
-        console.log(`Find:[${searchWords}] found length: `, data.description?.length);
       }
     } catch (e) {
       const msg = e instanceof AxiosError ? e.message : 'get products Unknown error'
@@ -65,7 +70,7 @@ function MainPage() {
 
   let pageContent: React.ReactNode | null = <Title as="h2">Фильмов не найдено</Title>
   if (count > 0) {
-    pageContent = <>{markSelectedCards(cards).map(card => <BodyCard key={card.id} card={card}></BodyCard>)}</>;
+    pageContent = <>{markSelectedCards(cards, selectedCards).map(card => <BodyCard key={card.id} card={card}></BodyCard>)}</>;
   }
   if (error) pageContent = null
 
@@ -84,7 +89,6 @@ function MainPage() {
       <BodySection title={pageContentTitle}>
         {!!error && <Title className={styles.error} as="h2">Error: {error}</Title>}
         {isLoading && <Title as="h2">Loading...</Title>}
-        {/* {!isLoading && <>{markSelectedCards(cards).map(card => <BodyCard key={card.id} card={card}></BodyCard>)}</>} */}
         {!isLoading && <>{pageContent}</>}
       </BodySection>
     </>

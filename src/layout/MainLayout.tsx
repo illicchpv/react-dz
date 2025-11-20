@@ -8,11 +8,15 @@ import { useContext, useRef } from 'react';
 import { UserContext } from '../context/user.context';
 import { useLocalStorage } from '../hooks/use-localstorage.hook';
 import NavigationLink from '../components/NavigationLink/NavigationLink';
+import { useSelector } from 'react-redux';
+import type { AppRootState } from '../store/store';
 
 function MainLayout() {
   const loginNameInputRef = useRef<HTMLInputElement>(null);
   const { currentUserName, setCurrentUserName } = useContext(UserContext);
   const [profiles, setProfiles] = useLocalStorage('user-profiles', []);
+
+  const selectedCount = useSelector((state: AppRootState) => state.selected.selectedCards).filter(card => card.userName === currentUserName)?.length || 0;  
 
   const navigate = useNavigate();
 
@@ -36,7 +40,7 @@ function MainLayout() {
         <Navigation>
           <NavigationLink to="/">Поиск фильмов</NavigationLink>
 
-          <NavigationLink to="/favorites">Мои фильмы <Counter val={2} /></NavigationLink>
+          <NavigationLink to="/favorites">Мои фильмы <Counter val={selectedCount} /></NavigationLink>
 
           {currentUserName && <NavigationLink to="#!" isUseActive={false}>
             <span>{currentUserName}</span>

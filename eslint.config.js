@@ -39,7 +39,7 @@ export default defineConfig([
       ],
       'semi': ['off', 'always', {'omitLastInOneLineBlock': false}],
       // 'semi': ['error', 'always', {'omitLastInOneLineBlock': false}],
-      'quotes': ['error', 'single'],
+      'quotes': ['warn', 'single'],
     },
   },
 ]);

@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client';
 import { UserContextProvider } from './context/user.provider';
 import { createBrowserRouter, defer, RouterProvider, useRouteError } from 'react-router-dom';
 import MainLayout from './layout/MainLayout';
-// import MainPage from './pages/MainPage/MainPage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import MoviePage from './pages/MoviePage/MoviePage';
 import FavoritesPage from './pages/FavoritesPage/FavoritesPage';
@@ -12,6 +11,8 @@ import LoadingPage from './pages/LoadingPage/LoadingPage.tsx';
 import axios from 'axios';
 import { API_URL } from './constant.ts';
 import { RequireAuth } from './components/RequireAuth/RequireAuth.tsx';
+import { Provider } from 'react-redux';
+import { store } from './store/store.ts';
 
 function RouterError({ title = 'Что-то пошло не так' }: { title?: string }) {
   const error = useRouteError();
@@ -76,7 +77,9 @@ createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>
     <UserContextProvider>
       {/* <App /> */}
-      <RouterProvider router={router} />
+      <Provider store={store}>
+        <RouterProvider router={router} />
+      </Provider>
     </UserContextProvider>
   </StrictMode>
 );

@@ -2,12 +2,16 @@ import styles from './FavoritesPage.module.css';
 import cn from 'classnames';
 import BodyCard from '../../components/BodyCard/BodyCard';
 import Title from '../../components/Title/Title';
-import { CARDS } from '../../constant';
 import BodySection from '../../sections/BodySection/BodySection';
-import { getSelectedCards, markSelectedCards } from '../../utils';
+import { markCards } from '../../utils';
+import { useContext } from 'react';
+import { UserContext } from '../../context/user.context';
+import { useSelector } from 'react-redux';
+import type { AppRootState } from '../../store/store';
 
 function FavoritesPage() {
-  const selectedCards = getSelectedCards(CARDS);
+  const { currentUserName } = useContext(UserContext);
+  const selectedCards = useSelector((state: AppRootState) => state.selected.selectedCards).filter(card => card.userName === currentUserName);
 
   return (
     <>
@@ -16,7 +20,7 @@ function FavoritesPage() {
       </div>
 
       <BodySection className={cn(styles.bodySpec)}>
-        {markSelectedCards(selectedCards).map(card => <BodyCard key={card.id} card={card}></BodyCard>)}
+        {markCards(selectedCards).map(card => <BodyCard key={card.id} card={card}></BodyCard>)}
       </BodySection>
     </>
   );
