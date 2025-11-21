@@ -339,6 +339,8 @@ function App() {
 
  ##### Что можно улучшить:
 
-- В src/store/selected.slice.ts:24 присутствует console.log - рекомендуется удалить для production
-- Можно добавить типизацию для action.payload вместо использования any в reducer (src/store/selected.slice.ts:18)
+- + В src/store/selected.slice.ts:24 присутствует console.log - рекомендуется удалить для production
+- + Можно добавить типизацию для action.payload вместо использования any в reducer (src/store/selected.slice.ts:18)
 - Логика фильтрации по userName дублируется - можно создать selector для переиспользования
+  тут надо переводить хранение currentUserName из контекста в Redux
+  

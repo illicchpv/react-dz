@@ -1,7 +1,7 @@
-import { configureStore } from "@reduxjs/toolkit";
-import { selectedCardsSlice } from "./selected.slice";
-import { saveState } from "./storage";
-import { SELECTED_CARDS_KEY } from "../constant";
+import { configureStore } from '@reduxjs/toolkit';
+import { selectedCardsSlice } from './selected.slice';
+import { saveState } from './storage';
+import { SELECTED_CARDS_KEY } from '../constant';
 
 export const store = configureStore({ // централизованное хранилище
   reducer: {
