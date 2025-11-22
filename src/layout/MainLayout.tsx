@@ -16,7 +16,7 @@ function MainLayout() {
   const { currentUserName, setCurrentUserName } = useContext(UserContext);
   const [profiles, setProfiles] = useLocalStorage('user-profiles', []);
 
-  const selectedCount = useSelector((state: AppRootState) => state.selected.selectedCards).filter(card => card.userName === currentUserName)?.length || 0;  
+  const selectedCount = useSelector((state: AppRootState) => state.selected.selectedCards).filter(card => card.userName === currentUserName)?.length || 0;
 
   const navigate = useNavigate();
 
@@ -28,7 +28,6 @@ function MainLayout() {
     if (loginNameInputRef.current) {
       loginNameInputRef.current.value = '';
     }
-    localStorage.setItem('jwtLike', '');
     navigate('/')
   };
 
@@ -57,7 +56,7 @@ function MainLayout() {
         </Navigation>
       </HeaderSection>
 
-      <Outlet />
+      <Outlet context={{ profiles, setProfiles }} />
     </>
   );
 }

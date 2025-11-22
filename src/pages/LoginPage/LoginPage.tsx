@@ -3,13 +3,16 @@ import Button from '../../components/Button/Button';
 import Input from '../../components/Input/Input';
 import LoginSection from '../../sections/LoginSection/LoginSection';
 import { UserContext } from '../../context/user.context';
-import { useLocalStorage } from '../../hooks/use-localstorage.hook';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useOutletContext } from 'react-router-dom';
+import type { IUserProfile } from '../../constant';
 
 function LoginPage() {
   const loginNameInputRef = useRef<HTMLInputElement>(null);
   const { setCurrentUserName } = useContext(UserContext);
-  const [profiles, setProfiles] = useLocalStorage('user-profiles', []);
+  const { profiles, setProfiles } = useOutletContext<{
+    profiles: IUserProfile[];
+    setProfiles: (profiles: IUserProfile[]) => void;
+  }>();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -25,7 +28,6 @@ function LoginPage() {
     const name = loginNameInputRef.current?.value;
     if (!name || !setCurrentUserName) return
     setCurrentUserName(name);
-    localStorage.setItem('jwtLike', name);
 
     const p = profiles.find(profile => profile.name === name);
     if (p) {
@@ -33,8 +35,8 @@ function LoginPage() {
       p.isLogined = true;
       setProfiles([...profiles]);
     } else {
-      const newProfile = { name, isLogined: true };
-      setProfiles([...profiles, newProfile]);
+      const newProfiles = [...profiles, { name, isLogined: true }];
+      setProfiles(newProfiles);
     }
     navigate('/');
   };
