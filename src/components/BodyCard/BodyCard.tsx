@@ -2,11 +2,10 @@ import { Link } from 'react-router-dom';
 import type { ICard } from '../../constant';
 import s from './BodyCard.module.css';
 import cn from 'classnames';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import type { AppDispatch } from '../../store/store';
-import { useContext } from 'react';
-import { UserContext } from '../../context/user.context';
 import { selectedCardsActions } from '../../store/selected.slice';
+import { currentSelectedProfile } from '../../store/profiles.slice';
 
 export interface IBodyCard {
   card: ICard | null;
@@ -14,7 +13,7 @@ export interface IBodyCard {
 
 function BodyCard({ card = null }: IBodyCard) {
   const dispatch = useDispatch<AppDispatch>();
-  const { currentUserName } = useContext(UserContext);
+  const currentUserName = useSelector(currentSelectedProfile)?.name;
   if (!card) return null;
 
   const add = (e: React.MouseEvent) => {

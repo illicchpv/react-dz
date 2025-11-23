@@ -1,5 +1,5 @@
 import styles from './MainPage.module.css';
-import { useContext, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import BodyCard from '../../components/BodyCard/BodyCard';
 import Search from '../../components/Search/Search';
 import { API_URL, type ICard, type ICardResp } from '../../constant';
@@ -10,7 +10,7 @@ import Title from '../../components/Title/Title';
 import axios, { AxiosError } from 'axios';
 import { useSelector } from 'react-redux';
 import type { AppRootState } from '../../store/store';
-import { UserContext } from '../../context/user.context';
+import { currentSelectedProfile } from '../../store/profiles.slice';
 
 function MainPage() {
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -19,7 +19,7 @@ function MainPage() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | undefined>();
 
-  const { currentUserName} = useContext(UserContext);
+  const currentUserName = useSelector(currentSelectedProfile)?.name;
   const selectedCards = useSelector((state: AppRootState) => state.selected.selectedCards).filter(card => card.userName === currentUserName);
 
   const getCards = async () => {

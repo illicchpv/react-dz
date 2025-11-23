@@ -21,7 +21,6 @@ export const selectedCardsSlice = createSlice({
       } else {
         state.selectedCards = state.selectedCards.filter(card => card.id !== action.payload.id || card.userName !== action.payload.userName);
       }
-      // console.log('state.selectedCards: ', state.selectedCards.map(card => { return { ...card } }));
     },
   }
 })
