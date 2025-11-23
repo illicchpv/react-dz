@@ -5,16 +5,14 @@ import { Await, useLoaderData } from 'react-router-dom';
 import { type ICard, type IMovie } from '../../constant';
 import Title from '../../components/Title/Title';
 import SelectButton from '../../components/SelectButton/SelectButton';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { currentSelectedProfile } from '../../store/profiles.slice';
-import { selectedCardsActions, selectedCardsForCurrentUser } from '../../store/selected.slice';
-import type { AppDispatch } from '../../store/store';
+import { selectedCardsForCurrentUser } from '../../store/selected.slice';
 import { decodeDuration } from '../../utils';
 
 function MoviePage() {
   // const id = useParams().id;
   const data = useLoaderData() as { data: IMovie };
-  const dispatch = useDispatch<AppDispatch>();
   const currentUserName = useSelector(currentSelectedProfile)?.name;
   const selectedCards = useSelector(selectedCardsForCurrentUser);
   // const show = async () => { 
@@ -22,11 +20,6 @@ function MoviePage() {
   //   console.log('movie: ', movie);
   // };
   // show();
-  // debugger
-
-  const add = (card: ICard) => {
-    dispatch(selectedCardsActions.add({ ...card, userName: currentUserName }));
-  };
 
   const cardFromMovie = (m: IMovie): ICard => ({
     id: m.imdbId,
@@ -77,7 +70,7 @@ function MoviePage() {
                         {Movie.short.aggregateRating?.ratingValue}
                       </div>
 
-                      <SelectButton card={card} add={() => add(card)}></SelectButton>
+                      <SelectButton card={card}></SelectButton>
                     </div>
 
                     <div className={styles.infoSubBlock}>
@@ -102,24 +95,23 @@ function MoviePage() {
                   </div>
                 </div>
 
-{!!Movie.short.review && (<>
-                <div className={styles.reviewSmallTitle}>
-                  Отзывы
-                </div>
-
-                <div className={styles.rowBlock}>
-                  <div className={styles.reviewTitleBlock}>
-                    <div className={styles.reviewTitle}>{Movie.short.review.name}</div>
-                    <div className={styles.reviewDate}>{Movie.short.review.dateCreated}</div>
+                {!!Movie.short.review && (<>
+                  <div className={styles.reviewSmallTitle}>
+                    Отзывы
                   </div>
 
-                  <p>{Movie.short.review.reviewBody}</p>
-                </div>
-</>)}
+                  <div className={styles.rowBlock}>
+                    <div className={styles.reviewTitleBlock}>
+                      <div className={styles.reviewTitle}>{Movie.short.review.name}</div>
+                      <div className={styles.reviewDate}>{Movie.short.review.dateCreated}</div>
+                    </div>
+
+                    <p>{Movie.short.review.reviewBody}</p>
+                  </div>
+                </>)}
               </div>
             )
-          }
-          }
+          }}
         </Await>
       </Suspense>
     </>

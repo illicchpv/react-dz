@@ -1,14 +1,26 @@
+import { useDispatch, useSelector } from 'react-redux';
 import type { ICard } from '../../constant';
 import s from './SelectButton.module.css';
 import cn from 'classnames';
+import type { AppDispatch } from '../../store/store';
+import { selectedCardsActions } from '../../store/selected.slice';
+import { currentSelectedProfile } from '../../store/profiles.slice';
 
 export interface ISelectButton extends React.HTMLAttributes<HTMLDivElement> {
   card: ICard | null;
-  add: (e: React.MouseEvent) => void
 }
-function SelectButton({ card, add }: ISelectButton) {
+function SelectButton({ card }: ISelectButton) {
+  const dispatch = useDispatch<AppDispatch>();
+  const currentUserName = useSelector(currentSelectedProfile)?.name;
+  if(!card || !currentUserName) return null
 
-  if(!card) return null;
+  const add = (e: React.MouseEvent) => {
+    e.preventDefault();
+    dispatch(selectedCardsActions.add({ ...card, userName: currentUserName }));
+  };
+
+
+  if (!card) return null;
 
   return (
     <div className={cn(s.cardSelectedMark, { [s.selected]: card.selected })}>
