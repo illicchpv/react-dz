@@ -1,0 +1,4994 @@
+{
+	"short": {
+		"@context": "https://schema.org",
+		"@type": "Movie",
+		"url": "https://www.imdb.com/title/tt4154796/",
+		"name": "Avengers: Endgame",
+		"image": "https://m.media-amazon.com/images/M/MV5BMTcyNjBhZTAtNjJkNS00OTYzLWExYzItNTMwYjg4ZTBiY2E4XkEyXkFqcGc@._V1_.jpg",
+		"description": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos&apos; actions and restore balance to the universe.",
+		"review": {
+			"@type": "Review",
+			"itemReviewed": {
+				"@type": "Movie",
+				"url": "https://www.imdb.com/title/tt4154796/"
+			},
+			"author": {
+				"@type": "Person",
+				"name": "dhiraj-yahoo"
+			},
+			"dateCreated": "2019-05-08",
+			"inLanguage": "English",
+			"name": "Perfect ending",
+			"reviewBody": "After watching Infinity war, I was looking forward to much more this time, still a perfect ending.",
+			"reviewRating": {
+				"@type": "Rating",
+				"worstRating": 1,
+				"bestRating": 10,
+				"ratingValue": 10
+			}
+		},
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingCount": 1404314,
+			"bestRating": 10,
+			"worstRating": 1,
+			"ratingValue": 8.4
+		},
+		"contentRating": "12",
+		"genre": [
+			"Action",
+			"Adventure",
+			"Sci-Fi"
+		],
+		"datePublished": "2019-04-24",
+		"keywords": "time travel,superhero,super villain,cosmic,marvel cinematic universe",
+		"trailer": {
+			"@type": "VideoObject",
+			"name": "&quot;Policy&quot; Trailer",
+			"embedUrl": "https://www.imdb.com/video/vi2163260441/",
+			"thumbnail": {
+				"@type": "ImageObject",
+				"contentUrl": "https://m.media-amazon.com/images/M/MV5BOThlNjdhZmQtNzlkOS00M2VjLWI0ZjUtZDExZDI1MjRhZGFkXkEyXkFqcGdeQW1yb3NzZXI@._V1_.jpg"
+			},
+			"thumbnailUrl": "https://m.media-amazon.com/images/M/MV5BOThlNjdhZmQtNzlkOS00M2VjLWI0ZjUtZDExZDI1MjRhZGFkXkEyXkFqcGdeQW1yb3NzZXI@._V1_.jpg",
+			"url": "https://www.imdb.com/video/vi2163260441/",
+			"description": "Every hero, every story, every moment has led us here.",
+			"duration": "PT1M6S",
+			"uploadDate": "2019-04-27T08:45:03.005Z"
+		},
+		"creator": [
+			{
+				"@type": "Organization",
+				"url": "https://www.imdb.com/company/co0051941/"
+			}
+		],
+		"duration": "PT3H1M"
+	},
+	"imdbId": "tt4154796",
+	"top": {
+		"id": "tt4154796",
+		"productionStatus": {
+			"currentProductionStage": {
+				"id": "released",
+				"text": "Released",
+				"__typename": "ProductionStage"
+			},
+			"productionStatusHistory": [
+				{
+					"status": {
+						"id": "treatment_outline",
+						"text": "Treatment Outline",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				},
+				{
+					"status": {
+						"id": "script",
+						"text": "Script",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				},
+				{
+					"status": {
+						"id": "pre_production",
+						"text": "Pre-production",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				},
+				{
+					"status": {
+						"id": "pre_production",
+						"text": "Pre-production",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				},
+				{
+					"status": {
+						"id": "filming",
+						"text": "Filming",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				},
+				{
+					"status": {
+						"id": "post_production",
+						"text": "Post-production",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				},
+				{
+					"status": {
+						"id": "filming",
+						"text": "Filming",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				},
+				{
+					"status": {
+						"id": "post_production",
+						"text": "Post-production",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				},
+				{
+					"status": {
+						"id": "completed",
+						"text": "Completed",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				},
+				{
+					"status": {
+						"id": "released",
+						"text": "Released",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				}
+			],
+			"restriction": null,
+			"__typename": "ProductionStatusDetails"
+		},
+		"externalLinks": {
+			"total": 623,
+			"__typename": "ExternalLinkConnection"
+		},
+		"metacritic": {
+			"metascore": {
+				"score": 78,
+				"__typename": "Metascore"
+			},
+			"__typename": "Metacritic"
+		},
+		"keywords": {
+			"total": 815,
+			"edges": [
+				{
+					"node": {
+						"text": "time travel",
+						"__typename": "TitleKeyword"
+					},
+					"__typename": "TitleKeywordEdge"
+				},
+				{
+					"node": {
+						"text": "superhero",
+						"__typename": "TitleKeyword"
+					},
+					"__typename": "TitleKeywordEdge"
+				},
+				{
+					"node": {
+						"text": "super villain",
+						"__typename": "TitleKeyword"
+					},
+					"__typename": "TitleKeywordEdge"
+				},
+				{
+					"node": {
+						"text": "cosmic",
+						"__typename": "TitleKeyword"
+					},
+					"__typename": "TitleKeywordEdge"
+				},
+				{
+					"node": {
+						"text": "marvel cinematic universe",
+						"__typename": "TitleKeyword"
+					},
+					"__typename": "TitleKeywordEdge"
+				}
+			],
+			"__typename": "TitleKeywordConnection"
+		},
+		"credits": {
+			"total": 4597,
+			"__typename": "CreditConnection"
+		},
+		"engagementStatistics": {
+			"watchlistStatistics": {
+				"displayableCount": {
+					"text": "Added by 944K users",
+					"__typename": "LocalizedDisplayableCount"
+				},
+				"__typename": "WatchlistStatistics"
+			},
+			"__typename": "EngagementStatistics"
+		},
+		"titleText": {
+			"text": "Avengers: Endgame",
+			"__typename": "TitleText"
+		},
+		"titleType": {
+			"displayableProperty": {
+				"value": {
+					"plainText": "",
+					"__typename": "Markdown"
+				},
+				"__typename": "DisplayableTitleTypeProperty"
+			},
+			"text": "Movie",
+			"id": "movie",
+			"isSeries": false,
+			"isEpisode": false,
+			"categories": [
+				{
+					"value": "movie",
+					"__typename": "TitleTypeCategory"
+				}
+			],
+			"canHaveEpisodes": false,
+			"__typename": "TitleType"
+		},
+		"originalTitleText": {
+			"text": "Avengers: Endgame",
+			"__typename": "TitleText"
+		},
+		"certificate": {
+			"rating": "12",
+			"__typename": "Certificate"
+		},
+		"releaseYear": {
+			"year": 2019,
+			"endYear": null,
+			"__typename": "YearRange"
+		},
+		"releaseDate": {
+			"day": 24,
+			"month": 4,
+			"year": 2019,
+			"country": {
+				"text": "Netherlands",
+				"__typename": "LocalizedDisplayableCountry"
+			},
+			"__typename": "ReleaseDate"
+		},
+		"runtime": {
+			"seconds": 10860,
+			"displayableProperty": {
+				"value": {
+					"plainText": "3h 1m",
+					"__typename": "Markdown"
+				},
+				"__typename": "DisplayableTitleRuntimeProperty"
+			},
+			"__typename": "Runtime"
+		},
+		"canRate": {
+			"isRatable": true,
+			"__typename": "CanRate"
+		},
+		"ratingsSummary": {
+			"aggregateRating": 8.4,
+			"voteCount": 1404314,
+			"__typename": "RatingsSummary"
+		},
+		"meterRanking": {
+			"currentRank": 338,
+			"rankChange": {
+				"changeDirection": "DOWN",
+				"difference": 23,
+				"__typename": "MeterRankChange"
+			},
+			"__typename": "TitleMeterRanking"
+		},
+		"series": null,
+		"isAdult": false,
+		"genres": {
+			"genres": [
+				{
+					"text": "Action",
+					"id": "Action",
+					"__typename": "Genre"
+				},
+				{
+					"text": "Adventure",
+					"id": "Adventure",
+					"__typename": "Genre"
+				},
+				{
+					"text": "Sci-Fi",
+					"id": "Sci-Fi",
+					"__typename": "Genre"
+				}
+			],
+			"__typename": "Genres"
+		},
+		"interests": {
+			"edges": [
+				{
+					"node": {
+						"id": "in0000002",
+						"primaryText": {
+							"text": "Action Epic",
+							"__typename": "InterestText"
+						},
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				},
+				{
+					"node": {
+						"id": "in0000015",
+						"primaryText": {
+							"text": "Adventure Epic",
+							"__typename": "InterestText"
+						},
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				},
+				{
+					"node": {
+						"id": "in0000077",
+						"primaryText": {
+							"text": "Epic",
+							"__typename": "InterestText"
+						},
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				},
+				{
+					"node": {
+						"id": "in0000163",
+						"primaryText": {
+							"text": "Sci-Fi Epic",
+							"__typename": "InterestText"
+						},
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				},
+				{
+					"node": {
+						"id": "in0000164",
+						"primaryText": {
+							"text": "Space Sci-Fi",
+							"__typename": "InterestText"
+						},
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				},
+				{
+					"node": {
+						"id": "in0000008",
+						"primaryText": {
+							"text": "Superhero",
+							"__typename": "InterestText"
+						},
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				},
+				{
+					"node": {
+						"id": "in0000166",
+						"primaryText": {
+							"text": "Time Travel",
+							"__typename": "InterestText"
+						},
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				},
+				{
+					"node": {
+						"id": "in0000090",
+						"primaryText": {
+							"text": "Tragedy",
+							"__typename": "InterestText"
+						},
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				},
+				{
+					"node": {
+						"id": "in0000001",
+						"primaryText": {
+							"text": "Action",
+							"__typename": "InterestText"
+						},
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				},
+				{
+					"node": {
+						"id": "in0000012",
+						"primaryText": {
+							"text": "Adventure",
+							"__typename": "InterestText"
+						},
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				}
+			],
+			"__typename": "InterestConnection"
+		},
+		"plot": {
+			"plotText": {
+				"plainText": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+				"__typename": "Markdown"
+			},
+			"language": {
+				"id": "en-US",
+				"__typename": "DisplayableLanguage"
+			},
+			"__typename": "Plot"
+		},
+		"plotContributionLink": {
+			"url": "https://contribute.imdb.com/updates?update=tt4154796:outlines.add.1.locale~en-US",
+			"__typename": "ContributionLink"
+		},
+		"primaryImage": {
+			"id": "rm3031571201",
+			"width": 588,
+			"height": 821,
+			"url": "https://m.media-amazon.com/images/M/MV5BMTcyNjBhZTAtNjJkNS00OTYzLWExYzItNTMwYjg4ZTBiY2E4XkEyXkFqcGc@._V1_.jpg",
+			"caption": {
+				"plainText": "Don Cheadle, Robert Downey Jr., Josh Brolin, Bradley Cooper, Chris Evans, Sean Gunn, Scarlett Johansson, Brie Larson, Jeremy Renner, Paul Rudd, Mark Ruffalo, Chris Hemsworth, Danai Gurira, and Karen Gillan in Avengers: Endgame (2019)",
+				"__typename": "Markdown"
+			},
+			"__typename": "Image"
+		},
+		"images": {
+			"total": 1279,
+			"edges": [
+				{
+					"node": {
+						"id": "rm1543608065",
+						"__typename": "Image"
+					},
+					"__typename": "ImageEdge"
+				}
+			],
+			"__typename": "ImageConnection"
+		},
+		"videos": {
+			"total": 141,
+			"__typename": "TitleRelatedVideosConnection"
+		},
+		"primaryVideos": {
+			"edges": [
+				{
+					"node": {
+						"id": "vi2163260441",
+						"createdDate": "2019-04-27T08:45:03.005Z",
+						"isMature": false,
+						"runtime": {
+							"value": 66,
+							"__typename": "VideoRuntime"
+						},
+						"name": {
+							"value": "\"Policy\" Trailer",
+							"language": "en",
+							"__typename": "LocalizedString"
+						},
+						"description": {
+							"value": "Every hero, every story, every moment has led us here.",
+							"language": "en",
+							"__typename": "LocalizedString"
+						},
+						"timedTextTracks": [],
+						"recommendedTimedTextTrack": null,
+						"thumbnail": {
+							"url": "https://m.media-amazon.com/images/M/MV5BOThlNjdhZmQtNzlkOS00M2VjLWI0ZjUtZDExZDI1MjRhZGFkXkEyXkFqcGdeQW1yb3NzZXI@._V1_.jpg",
+							"height": 1080,
+							"width": 1920,
+							"__typename": "Thumbnail"
+						},
+						"primaryTitle": {
+							"id": "tt4154796",
+							"titleText": {
+								"text": "Avengers: Endgame",
+								"__typename": "TitleText"
+							},
+							"originalTitleText": {
+								"text": "Avengers: Endgame",
+								"__typename": "TitleText"
+							},
+							"releaseYear": {
+								"year": 2019,
+								"__typename": "YearRange"
+							},
+							"__typename": "Title"
+						},
+						"playbackURLs": [
+							{
+								"displayName": {
+									"value": "1080p",
+									"language": "en-US",
+									"__typename": "LocalizedString"
+								},
+								"videoMimeType": "MP4",
+								"videoDefinition": "DEF_1080p",
+								"url": "https://imdb-video.media-imdb.com/vi2163260441/1434659529640-260ouz-1556354704370.mp4?Expires=1763974348&Signature=RpIIOti5hCAgGDpqWUOBJe1JLLwWF00l-tYobDctc7G7mHFroih0Ix-nXozyWOr7-uBgBaWhH2IWHGEGdSoyG3QAnZUGwU15Rw5TpYHRxJ8GwonKYP9LAtoxJXGDcSoYpv~rs6mpkaPzefPKVSkKu8ADQfi~pxf54daoayZmOy0K6dkYAkIM0kjdUs0TzJjJ8g1mfGVnqcEplGQ5NnftEl0t4ffFZTU-xNv05yT2cYNXBCkHZQhyTLUh8SKkz~8vDkg2Gsjr7IOm2oKjl3fUuY6STzlw-c~AeyIsC7C18o4r2XWSQ78uXVN4YmpP3UtRBrA8lAPneFSi8pVyWb9fCg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+								"metricDimensions": [
+									{
+										"name": "encoder",
+										"value": "ETS",
+										"__typename": "MetricDimension"
+									}
+								],
+								"__typename": "PlaybackURL"
+							},
+							{
+								"displayName": {
+									"value": "SD",
+									"language": "en-US",
+									"__typename": "LocalizedString"
+								},
+								"videoMimeType": "MP4",
+								"videoDefinition": "DEF_SD",
+								"url": "https://imdb-video.media-imdb.com/vi2163260441/1434659454657-dx9ykf-1556354704370.mp4?Expires=1763974348&Signature=HwPrdskw-e-e80ZBLhKxSUEpHEO0sWcBNSNY-xz7DVuASpwP2T7Ou5cNj-eqkYrJm4jYkbr9WVlU5fJoxcZ5DbU54mBjS-oiPLuP57J64bQZqYry6dj5YslBdocEMzIYwIVtZ5BmUnrZNj3Z20167dgVOWKtP5MaxAdOpVJaokaW20tuF8-ZaEcvbHe9ZirQsRTDaO5uVcgXKknDmMgfJpyUKJ5gEPjpVQrpc3bprL~3gjxgRc4lTwvm5U7b2H3L7httjDcuFCxvPcW5qT4J7wIrLFUk01Z5Vf3vp0QM~68OC1pTyjJnP8DVpD3svsVmZhONIemgW7us4VpPwSVqbA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+								"metricDimensions": [
+									{
+										"name": "encoder",
+										"value": "ETS",
+										"__typename": "MetricDimension"
+									}
+								],
+								"__typename": "PlaybackURL"
+							},
+							{
+								"displayName": {
+									"value": "AUTO",
+									"language": "en-US",
+									"__typename": "LocalizedString"
+								},
+								"videoMimeType": "M3U8",
+								"videoDefinition": "DEF_AUTO",
+								"url": "https://imdb-video.media-imdb.com/vi2163260441/hls-1556354704370-master.m3u8?Expires=1763974348&Signature=sznRlKk-HzyGu9EbaztYidV7MNLqFQXhsibHwKF~sW7XsIBn7~9NRimBJgCWw~Z06ymj3tI01GEBGgseHnwuSs8a~9eg2VIekIr0yO9DaplsmPq7y0N~kc7AU90pCyo6cJIi1u-Dti3VkblE48jhcsL6VLKddTuq9ljYBfYisEebcFr6icHItKFiOfhhFS6ckIRJFwozx0da776oEMpKCiW2wrsRsABPB3D4vkIeAaIX6Ky1en~gghrA6tnGRHwOPnc56YighZuDbjtNe9TkvSj4gKqrQRZN0sgMpheBCxhidYd4aLUhsuG6IVZUpS0W4OrstyIO-jGxWq6ZwLJpKQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+								"metricDimensions": [
+									{
+										"name": "encoder",
+										"value": "ETS",
+										"__typename": "MetricDimension"
+									}
+								],
+								"__typename": "PlaybackURL"
+							},
+							{
+								"displayName": {
+									"value": "720p",
+									"language": "en-US",
+									"__typename": "LocalizedString"
+								},
+								"videoMimeType": "MP4",
+								"videoDefinition": "DEF_720p",
+								"url": "https://imdb-video.media-imdb.com/vi2163260441/1434659379400-8cjq25-1556354704370.mp4?Expires=1763974348&Signature=FlmGxhVj6csMHazFe1OdDY9SlHJ4q~CoIgCjaDE-6VrvjNL~THlxpVTbjeNbH6pR2evj2ar0ctSkwZrdQe1XpffzqRAlbe~AQCE-~A2H2972HC23oDs8X-XLSRD97jKysOIeY0xhroVSvMVk6TLrikqnrTux7~x2gsBrG1QTn09TNwBYlIJHZ2aCMAZUWBdMyUrIrTvz0BXr-Tn03ab6Pbs2UUKwBc2T7efTojncbZOFFbn1Mp4ixwTsEzWnosa9idvepa74ocSCRedLk9uhLWu2OkM7C2pgzf5LjeYqAhT17j3FMCCMrD9GZPT2Cwc~KbmvQsRhB9IXD8J-opA5Tg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+								"metricDimensions": [
+									{
+										"name": "encoder",
+										"value": "ETS",
+										"__typename": "MetricDimension"
+									}
+								],
+								"__typename": "PlaybackURL"
+							},
+							{
+								"displayName": {
+									"value": "480p",
+									"language": "en-US",
+									"__typename": "LocalizedString"
+								},
+								"videoMimeType": "MP4",
+								"videoDefinition": "DEF_480p",
+								"url": "https://imdb-video.media-imdb.com/vi2163260441/1434659607842-pgv4ql-1556354704370.mp4?Expires=1763974348&Signature=QxKjP8NRGWkAUwaZpLmxTtLTdi0TJhae~nfBinXvd4zk5yrR5Xin3rjkWvyFGDiIUxjUIHdWLJb1pIEx30gadaJN3f6-de4Z46wxvKXDX0EU3PU-7sd4porAPTe4fp7EsKP9vBNG~gCTqHRfuMNjEenHWL1e-ugd8vPOv5snC322pHyKnCXhWizI50rbOsMX9DW54G6zeZ-Emmxl~Qm-qvwKDnNzxo-CMaTaCosN0C9TOqtneHHvVx4EwCGgCeloVib0mlFgs9hcFUW7ZXRMhiLBYuNkeWMM99afVn0GKN1eyyxIr-v7Ohe0Vw0QTkFNbJ2UUhNxVGCDn0z37bJJ-A__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+								"metricDimensions": [
+									{
+										"name": "encoder",
+										"value": "ETS",
+										"__typename": "MetricDimension"
+									}
+								],
+								"__typename": "PlaybackURL"
+							}
+						],
+						"contentType": {
+							"id": "amzn1.imdb.video.contenttype.trailer",
+							"displayName": {
+								"value": "Trailer",
+								"__typename": "LocalizedString"
+							},
+							"__typename": "VideoContentType"
+						},
+						"previewURLs": [
+							{
+								"displayName": {
+									"value": "AUTO",
+									"language": "en-US",
+									"__typename": "LocalizedString"
+								},
+								"videoMimeType": "M3U8",
+								"videoDefinition": "DEF_AUTO",
+								"url": "https://imdb-video.media-imdb.com/vi2163260441/hls-preview-369603e8-b5e3-437a-bdc6-9b96beadafd7.m3u8?Expires=1763974348&Signature=Tvt7BLLsZYHY5GzUIYdsGEL2BpoUx5JoXY39dJfm6aT-Q7vVn6CiuEbP06ElLevFDx~B6DclS4vAagYRYaOGg-CpwBlewaaM~afojFlgU9TZz-L5bwBPeA3xMHzi9ajyY6tcAGk2qR9z6DyXASG970HQMBHicXjR66fmeylfNVHri~tIZVeCia0cgtLiXeD1P9KVmh66wm7pk11Txthb8dr4ZG3KAF4HU9YtEVRP~kMQITmgI1Zzaix-PMRwQUhqoEgDk1bOfl809RQo72rqHY-QW5m3Z~eEYNGQg2gpOUt9HAN6QpoBkZp9X8G3~v7~Y1bJ5hkDz8ZWjNRzcHb7dw__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+								"__typename": "PlaybackURL"
+							}
+						],
+						"__typename": "Video"
+					},
+					"__typename": "VideoEdge"
+				},
+				{
+					"node": {
+						"id": "vi3250240537",
+						"createdDate": "2019-04-18T23:17:44.683Z",
+						"isMature": false,
+						"runtime": {
+							"value": 61,
+							"__typename": "VideoRuntime"
+						},
+						"name": {
+							"value": "Avengers Endgame",
+							"language": "en",
+							"__typename": "LocalizedString"
+						},
+						"description": {
+							"value": "Canadian Trailer",
+							"language": "en",
+							"__typename": "LocalizedString"
+						},
+						"timedTextTracks": [],
+						"recommendedTimedTextTrack": null,
+						"thumbnail": {
+							"url": "https://m.media-amazon.com/images/M/MV5BMWY0ZWUxZGMtYjhlYS00OTdlLTgwZjctNTU0N2E5ZTYyYjk4XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg",
+							"height": 360,
+							"width": 640,
+							"__typename": "Thumbnail"
+						},
+						"primaryTitle": {
+							"id": "tt4154796",
+							"titleText": {
+								"text": "Avengers: Endgame",
+								"__typename": "TitleText"
+							},
+							"originalTitleText": {
+								"text": "Avengers: Endgame",
+								"__typename": "TitleText"
+							},
+							"releaseYear": {
+								"year": 2019,
+								"__typename": "YearRange"
+							},
+							"__typename": "Title"
+						},
+						"playbackURLs": [
+							{
+								"displayName": {
+									"value": "AUTO",
+									"language": "en-US",
+									"__typename": "LocalizedString"
+								},
+								"videoMimeType": "M3U8",
+								"videoDefinition": "DEF_AUTO",
+								"url": "https://imdb-video.media-imdb.com/vi3250240537/hls-1555629465444-master.m3u8?Expires=1763974348&Signature=JnKSbvoeOp3qy4rRzVfZOFtPV2GboHVznyCd2F6LWyXgtAAGNVWCKGP48x1FP-tMbMd4OOq8UNlnrPTCnxXzdWz~S77QDUwS3dpxEEgSOImwj3E9wB~OJ-wQnn8S2mEBoesUuklPTOJgOKx42dXqafnCBzddTthlHZept4zbbwuVc6i8sQyA8-QT43cdnhlcSqnSLdBJ7XPGpsoCeGyYcxJk3PSKpwDOpj2sF8EziHFZsaIxZb7qoqCnMma6WDFYb~Ly3fz236Dl2OAgyinC1Wer3~hQYXLV7dAQgGXy0qe9zUi8hANPOzadj-468aTpRPWciDdUSzpB6Y43z8yJcg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+								"metricDimensions": [
+									{
+										"name": "encoder",
+										"value": "ETS",
+										"__typename": "MetricDimension"
+									}
+								],
+								"__typename": "PlaybackURL"
+							},
+							{
+								"displayName": {
+									"value": "SD",
+									"language": "en-US",
+									"__typename": "LocalizedString"
+								},
+								"videoMimeType": "MP4",
+								"videoDefinition": "DEF_SD",
+								"url": "https://imdb-video.media-imdb.com/vi3250240537/1434659454657-dx9ykf-1555629465444.mp4?Expires=1763974348&Signature=d1Kpkg4LY4JuJRVOn0zO9-HLDePZ06hMHykUGNUZADa0f3ZC0t7e079gis8PTTNRI41t5jLk6U03QxleWG-2VQ-zEnDP2dVl55PSa~xIjIDlrK4~h8CNz9l5sarE8HOt0aMBJ~hTCaPLxKFku-MvyrhV8n6NCLRq8XWv8wfaZ7FcgI3IhXtNlOY3rBfEuHD47fMDTtx4kj75Ow2BwVc9XG01TZoHlhJBDmQt~uofTqZckX6svjPeXFJ4E7vWDMEYoO11JVp-c3oEXB35U8np2uxdqi7NaJTOKQ5AFqGaGTIJfQpk~UqWrmJXalhqcz4leCEcTh0QN~wW2fGzNHr2pQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+								"metricDimensions": [
+									{
+										"name": "encoder",
+										"value": "ETS",
+										"__typename": "MetricDimension"
+									}
+								],
+								"__typename": "PlaybackURL"
+							},
+							{
+								"displayName": {
+									"value": "480p",
+									"language": "en-US",
+									"__typename": "LocalizedString"
+								},
+								"videoMimeType": "MP4",
+								"videoDefinition": "DEF_480p",
+								"url": "https://imdb-video.media-imdb.com/vi3250240537/1434659607842-pgv4ql-1555629465444.mp4?Expires=1763974348&Signature=CL3IIARED7aiKYpWXYa5zMzWue1kgb6frOhmNo7BweHhTUD2A21728YWYCzjVA9tESlLMeL99iLVMF5Cl-HXhZLwGpNvD3Rgiz0SceceydvTQfhzGbISMaUlbEPN0hp7XKqCzaTyBngUgsOKxA1uTY3Z4pbPKUQ5c68PteN1BxlEoDPUH5cUP8Ru2YVp952CiWonhSbeO5Xyb1jy8kWvOeZkPS4A2PaerqHfyLLfCKVq~QSP11Qd5g9sfPrMMMxXq4aO39Mz0xeJmf10ZOi76jXUjvkrwqD-TuxQZ0Hgxtf3oxYvRq7wr7~kFOMycSZzGdRIPH9b4v4yqKOYBpddlQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+								"metricDimensions": [
+									{
+										"name": "encoder",
+										"value": "ETS",
+										"__typename": "MetricDimension"
+									}
+								],
+								"__typename": "PlaybackURL"
+							}
+						],
+						"contentType": {
+							"id": "amzn1.imdb.video.contenttype.trailer",
+							"displayName": {
+								"value": "Trailer",
+								"__typename": "LocalizedString"
+							},
+							"__typename": "VideoContentType"
+						},
+						"previewURLs": [
+							{
+								"displayName": {
+									"value": "AUTO",
+									"language": "en-US",
+									"__typename": "LocalizedString"
+								},
+								"videoMimeType": "M3U8",
+								"videoDefinition": "DEF_AUTO",
+								"url": "https://imdb-video.media-imdb.com/vi3250240537/hls-preview-ac912e78-3866-4099-af52-105966997d87.m3u8?Expires=1763974348&Signature=Y7NHBn7aE0aLTbf-v~rUtwqQK9oToY5hMyv9hV18z0ij37w975Don0HXvnSv3XiFtEUTeW1jzGmyM~Jo0OWqPUGUUI08vcRnAK9kbqw8bvVdRmf2L3POCXPCF1s77xBm5by9hu0Vcs4NiTzTN7eq-wYaTHhi0xzqfOps-h2eoNvuGrnNiirhuq5m5PSAbDDv5NKiYSjMILJ-QmyHkPC~S3GntG5Pyjt5H3~T~4misskgjBGqv6ci9AuW4sm3Zj5LcJ74MzT66Brj7UuIt-FRHtvKfnrseTn4eVLmuDqedy73NldSjlHHmWOaY9G5kYUWSUxtbbmZOuvIkglmXPNWkg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA",
+								"__typename": "PlaybackURL"
+							}
+						],
+						"__typename": "Video"
+					},
+					"__typename": "VideoEdge"
+				}
+			],
+			"__typename": "VideoConnection"
+		},
+		"principalCreditsV2": [
+			{
+				"totalCredits": 2,
+				"grouping": {
+					"text": "Directors",
+					"groupingId": "amzn1.imdb.concept.name_credit_category.ace5cb4c-8708-4238-9542-04641e7c8171",
+					"__typename": "CreditGrouping"
+				},
+				"credits": [
+					{
+						"name": {
+							"nameText": {
+								"text": "Anthony Russo",
+								"__typename": "NameText"
+							},
+							"id": "nm0751577",
+							"__typename": "Name"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"nameText": {
+								"text": "Joe Russo",
+								"__typename": "NameText"
+							},
+							"id": "nm0751648",
+							"__typename": "Name"
+						},
+						"__typename": "CreditV2"
+					}
+				],
+				"__typename": "PrincipalCreditsForGrouping"
+			},
+			{
+				"totalCredits": 12,
+				"grouping": {
+					"text": "Writers",
+					"groupingId": "amzn1.imdb.concept.name_credit_category.c84ecaff-add5-4f2e-81db-102a41881fe3",
+					"__typename": "CreditGrouping"
+				},
+				"credits": [
+					{
+						"name": {
+							"nameText": {
+								"text": "Christopher Markus",
+								"__typename": "NameText"
+							},
+							"id": "nm1321655",
+							"__typename": "Name"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"nameText": {
+								"text": "Stephen McFeely",
+								"__typename": "NameText"
+							},
+							"id": "nm1321656",
+							"__typename": "Name"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"nameText": {
+								"text": "Stan Lee",
+								"__typename": "NameText"
+							},
+							"id": "nm0498278",
+							"__typename": "Name"
+						},
+						"__typename": "CreditV2"
+					}
+				],
+				"__typename": "PrincipalCreditsForGrouping"
+			},
+			{
+				"totalCredits": 168,
+				"grouping": {
+					"text": "Stars",
+					"groupingId": "amzn1.imdb.concept.name_credit_group.7510356e-fde9-438e-b3ad-0099ba6bc8ce",
+					"__typename": "CreditGrouping"
+				},
+				"credits": [
+					{
+						"name": {
+							"nameText": {
+								"text": "Robert Downey Jr.",
+								"__typename": "NameText"
+							},
+							"id": "nm0000375",
+							"__typename": "Name"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"nameText": {
+								"text": "Chris Evans",
+								"__typename": "NameText"
+							},
+							"id": "nm0262635",
+							"__typename": "Name"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"nameText": {
+								"text": "Mark Ruffalo",
+								"__typename": "NameText"
+							},
+							"id": "nm0749263",
+							"__typename": "Name"
+						},
+						"__typename": "CreditV2"
+					}
+				],
+				"__typename": "PrincipalCreditsForGrouping"
+			}
+		],
+		"reviews": {
+			"total": 9661,
+			"__typename": "ReviewsConnection"
+		},
+		"criticReviewsTotal": {
+			"total": 488,
+			"__typename": "ExternalLinkConnection"
+		},
+		"triviaTotal": {
+			"total": 391,
+			"__typename": "TriviaConnection"
+		},
+		"subNavCredits": {
+			"total": 4597,
+			"__typename": "CreditConnection"
+		},
+		"subNavReviews": {
+			"total": 9661,
+			"__typename": "ReviewsConnection"
+		},
+		"subNavTrivia": {
+			"total": 391,
+			"__typename": "TriviaConnection"
+		},
+		"subNavFaqs": {
+			"total": 36,
+			"__typename": "FaqConnection"
+		},
+		"subNavTopQuestions": {
+			"total": 18,
+			"__typename": "AlexaQuestionConnection"
+		},
+		"titleGenres": {
+			"genres": [
+				{
+					"genre": {
+						"text": "Action",
+						"__typename": "GenreItem"
+					},
+					"__typename": "TitleGenre"
+				},
+				{
+					"genre": {
+						"text": "Adventure",
+						"__typename": "GenreItem"
+					},
+					"__typename": "TitleGenre"
+				},
+				{
+					"genre": {
+						"text": "Sci-Fi",
+						"__typename": "GenreItem"
+					},
+					"__typename": "TitleGenre"
+				}
+			],
+			"__typename": "TitleGenres"
+		},
+		"meta": {
+			"canonicalId": "tt4154796",
+			"publicationStatus": "PUBLISHED",
+			"__typename": "TitleMeta"
+		},
+		"castPageTitle": {
+			"edges": [
+				{
+					"node": {
+						"name": {
+							"id": "nm0000375",
+							"nameText": {
+								"text": "Robert Downey Jr.",
+								"__typename": "NameText"
+							},
+							"__typename": "Name"
+						},
+						"__typename": "Cast"
+					},
+					"__typename": "CreditEdge"
+				},
+				{
+					"node": {
+						"name": {
+							"id": "nm0262635",
+							"nameText": {
+								"text": "Chris Evans",
+								"__typename": "NameText"
+							},
+							"__typename": "Name"
+						},
+						"__typename": "Cast"
+					},
+					"__typename": "CreditEdge"
+				},
+				{
+					"node": {
+						"name": {
+							"id": "nm0749263",
+							"nameText": {
+								"text": "Mark Ruffalo",
+								"__typename": "NameText"
+							},
+							"__typename": "Name"
+						},
+						"__typename": "Cast"
+					},
+					"__typename": "CreditEdge"
+				},
+				{
+					"node": {
+						"name": {
+							"id": "nm1165110",
+							"nameText": {
+								"text": "Chris Hemsworth",
+								"__typename": "NameText"
+							},
+							"__typename": "Name"
+						},
+						"__typename": "Cast"
+					},
+					"__typename": "CreditEdge"
+				}
+			],
+			"__typename": "CreditConnection"
+		},
+		"creatorsPageTitle": [],
+		"directorsPageTitle": [
+			{
+				"credits": [
+					{
+						"name": {
+							"id": "nm0751577",
+							"nameText": {
+								"text": "Anthony Russo",
+								"__typename": "NameText"
+							},
+							"__typename": "Name"
+						},
+						"__typename": "Crew"
+					},
+					{
+						"name": {
+							"id": "nm0751648",
+							"nameText": {
+								"text": "Joe Russo",
+								"__typename": "NameText"
+							},
+							"__typename": "Name"
+						},
+						"__typename": "Crew"
+					}
+				],
+				"__typename": "PrincipalCreditsForCategory"
+			}
+		],
+		"countriesOfOrigin": {
+			"countries": [
+				{
+					"id": "US",
+					"__typename": "CountryOfOrigin"
+				}
+			],
+			"__typename": "CountriesOfOrigin"
+		},
+		"production": {
+			"edges": [
+				{
+					"node": {
+						"company": {
+							"id": "co0051941",
+							"companyText": {
+								"text": "Marvel Studios",
+								"__typename": "CompanyText"
+							},
+							"__typename": "Company"
+						},
+						"__typename": "CompanyCredit"
+					},
+					"__typename": "CompanyCreditEdge"
+				}
+			],
+			"__typename": "CompanyCreditConnection"
+		},
+		"featuredReviews": {
+			"edges": [
+				{
+					"node": {
+						"author": {
+							"nickName": "dhiraj-yahoo",
+							"__typename": "UserProfile"
+						},
+						"summary": {
+							"originalText": "Perfect ending",
+							"__typename": "ReviewSummary"
+						},
+						"text": {
+							"originalText": {
+								"plainText": "After watching Infinity war, I was looking forward to much more this time, still a perfect ending.",
+								"__typename": "Markdown"
+							},
+							"__typename": "ReviewText"
+						},
+						"authorRating": 10,
+						"submissionDate": "2019-05-08",
+						"__typename": "Review"
+					},
+					"__typename": "ReviewEdge"
+				}
+			],
+			"__typename": "ReviewsConnection"
+		},
+		"castV2": [
+			{
+				"credits": [
+					{
+						"name": {
+							"id": "nm0000375",
+							"nameText": {
+								"text": "Robert Downey Jr.",
+								"__typename": "NameText"
+							},
+							"__typename": "Name"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm0262635",
+							"nameText": {
+								"text": "Chris Evans",
+								"__typename": "NameText"
+							},
+							"__typename": "Name"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm0749263",
+							"nameText": {
+								"text": "Mark Ruffalo",
+								"__typename": "NameText"
+							},
+							"__typename": "Name"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm1165110",
+							"nameText": {
+								"text": "Chris Hemsworth",
+								"__typename": "NameText"
+							},
+							"__typename": "Name"
+						},
+						"__typename": "CreditV2"
+					}
+				],
+				"__typename": "PrincipalCreditsForGrouping"
+			}
+		],
+		"crewV2": [
+			{
+				"grouping": {
+					"groupingId": "amzn1.imdb.concept.name_credit_category.ace5cb4c-8708-4238-9542-04641e7c8171",
+					"__typename": "CreditGrouping"
+				},
+				"credits": [
+					{
+						"name": {
+							"id": "nm0751577",
+							"nameText": {
+								"text": "Anthony Russo",
+								"__typename": "NameText"
+							},
+							"__typename": "Name"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm0751648",
+							"nameText": {
+								"text": "Joe Russo",
+								"__typename": "NameText"
+							},
+							"__typename": "Name"
+						},
+						"__typename": "CreditV2"
+					}
+				],
+				"__typename": "PrincipalCreditsForGrouping"
+			}
+		],
+		"__typename": "Title"
+	},
+	"main": {
+		"id": "tt4154796",
+		"wins": {
+			"total": 70,
+			"__typename": "AwardNominationConnection"
+		},
+		"nominationsExcludeWins": {
+			"total": 132,
+			"__typename": "AwardNominationConnection"
+		},
+		"prestigiousAwardSummary": {
+			"nominations": 1,
+			"wins": 0,
+			"award": {
+				"text": "Oscar",
+				"id": "aw0000016",
+				"event": {
+					"id": "ev0000003",
+					"__typename": "AwardsEvent"
+				},
+				"__typename": "AwardDetails"
+			},
+			"__typename": "PrestigiousAwardSummary"
+		},
+		"ratingsSummary": {
+			"topRanking": {
+				"id": "topRated:tt4154796:en_US",
+				"text": {
+					"value": "Top Rated",
+					"__typename": "LocalizedString"
+				},
+				"rank": 74,
+				"__typename": "TopRanking"
+			},
+			"__typename": "RatingsSummary",
+			"aggregateRating": 8.4,
+			"voteCount": 1404314,
+			"notificationText": null
+		},
+		"episodes": null,
+		"videos": {
+			"total": 141,
+			"__typename": "TitleRelatedVideosConnection"
+		},
+		"videoStrip": {
+			"edges": [
+				{
+					"node": {
+						"id": "vi2163260441",
+						"contentType": {
+							"displayName": {
+								"value": "Trailer",
+								"__typename": "LocalizedString"
+							},
+							"__typename": "VideoContentType"
+						},
+						"name": {
+							"value": "\"Policy\" Trailer",
+							"__typename": "LocalizedString"
+						},
+						"runtime": {
+							"value": 66,
+							"__typename": "VideoRuntime"
+						},
+						"thumbnail": {
+							"height": 1080,
+							"url": "https://m.media-amazon.com/images/M/MV5BOThlNjdhZmQtNzlkOS00M2VjLWI0ZjUtZDExZDI1MjRhZGFkXkEyXkFqcGdeQW1yb3NzZXI@._V1_.jpg",
+							"width": 1920,
+							"__typename": "Thumbnail"
+						},
+						"__typename": "Video"
+					},
+					"__typename": "VideoEdge"
+				},
+				{
+					"node": {
+						"id": "vi3250240537",
+						"contentType": {
+							"displayName": {
+								"value": "Trailer",
+								"__typename": "LocalizedString"
+							},
+							"__typename": "VideoContentType"
+						},
+						"name": {
+							"value": "Avengers Endgame",
+							"__typename": "LocalizedString"
+						},
+						"runtime": {
+							"value": 61,
+							"__typename": "VideoRuntime"
+						},
+						"thumbnail": {
+							"height": 360,
+							"url": "https://m.media-amazon.com/images/M/MV5BMWY0ZWUxZGMtYjhlYS00OTdlLTgwZjctNTU0N2E5ZTYyYjk4XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg",
+							"width": 640,
+							"__typename": "Thumbnail"
+						},
+						"__typename": "Video"
+					},
+					"__typename": "VideoEdge"
+				},
+				{
+					"node": {
+						"id": "vi347323417",
+						"contentType": {
+							"displayName": {
+								"value": "Trailer",
+								"__typename": "LocalizedString"
+							},
+							"__typename": "VideoContentType"
+						},
+						"name": {
+							"value": "\"Awesome\" TV Spot",
+							"__typename": "LocalizedString"
+						},
+						"runtime": {
+							"value": 31,
+							"__typename": "VideoRuntime"
+						},
+						"thumbnail": {
+							"height": 800,
+							"url": "https://m.media-amazon.com/images/M/MV5BNzRmMTNiMDEtZjY1OS00YjdlLWJjODEtN2JiN2MyNTk0ODUyXkEyXkFqcGdeQW1yb3NzZXI@._V1_.jpg",
+							"width": 1920,
+							"__typename": "Thumbnail"
+						},
+						"__typename": "Video"
+					},
+					"__typename": "VideoEdge"
+				},
+				{
+					"node": {
+						"id": "vi3411066137",
+						"contentType": {
+							"displayName": {
+								"value": "Trailer",
+								"__typename": "LocalizedString"
+							},
+							"__typename": "VideoContentType"
+						},
+						"name": {
+							"value": "\"To the End\" Trailer",
+							"__typename": "LocalizedString"
+						},
+						"runtime": {
+							"value": 150,
+							"__typename": "VideoRuntime"
+						},
+						"thumbnail": {
+							"height": 798,
+							"url": "https://m.media-amazon.com/images/M/MV5BZWJkYjg1OWEtMGZlZS00MjdjLWE5Y2UtYmI3ZTZiNGJjYWRiXkEyXkFqcGdeQW1yb3NzZXI@._V1_.jpg",
+							"width": 1920,
+							"__typename": "Thumbnail"
+						},
+						"__typename": "Video"
+					},
+					"__typename": "VideoEdge"
+				},
+				{
+					"node": {
+						"id": "vi1901116697",
+						"contentType": {
+							"displayName": {
+								"value": "Trailer",
+								"__typename": "LocalizedString"
+							},
+							"__typename": "VideoContentType"
+						},
+						"name": {
+							"value": "\"No Mistakes, Kids\" TV Spot",
+							"__typename": "LocalizedString"
+						},
+						"runtime": {
+							"value": 16,
+							"__typename": "VideoRuntime"
+						},
+						"thumbnail": {
+							"height": 798,
+							"url": "https://m.media-amazon.com/images/M/MV5BM2VjMjE0MWQtMTQ2NC00Mzk2LWE2MTctNjVlNGM0MzU3N2QwXkEyXkFqcGdeQW1yb3NzZXI@._V1_.jpg",
+							"width": 1920,
+							"__typename": "Thumbnail"
+						},
+						"__typename": "Video"
+					},
+					"__typename": "VideoEdge"
+				},
+				{
+					"node": {
+						"id": "vi786742553",
+						"contentType": {
+							"displayName": {
+								"value": "Trailer",
+								"__typename": "LocalizedString"
+							},
+							"__typename": "VideoContentType"
+						},
+						"name": {
+							"value": "Special Look",
+							"__typename": "LocalizedString"
+						},
+						"runtime": {
+							"value": 61,
+							"__typename": "VideoRuntime"
+						},
+						"thumbnail": {
+							"height": 798,
+							"url": "https://m.media-amazon.com/images/M/MV5BMjA3ZWJkNzktNDc3ZS00NjQ3LWFmNTAtNWQwOWE5NzM0ZmVmXkEyXkFqcGdeQW1yb3NzZXI@._V1_.jpg",
+							"width": 1920,
+							"__typename": "Thumbnail"
+						},
+						"__typename": "Video"
+					},
+					"__typename": "VideoEdge"
+				},
+				{
+					"node": {
+						"id": "vi1840364825",
+						"contentType": {
+							"displayName": {
+								"value": "Trailer",
+								"__typename": "LocalizedString"
+							},
+							"__typename": "VideoContentType"
+						},
+						"name": {
+							"value": "Official Trailer",
+							"__typename": "LocalizedString"
+						},
+						"runtime": {
+							"value": 147,
+							"__typename": "VideoRuntime"
+						},
+						"thumbnail": {
+							"height": 575,
+							"url": "https://m.media-amazon.com/images/M/MV5BNjVkMzA2ZmEtZTk2NS00MTliLWEzYjEtYTkxMDZjNDVjZWM2XkEyXkFqcGdeQW1yb3NzZXI@._V1_.jpg",
+							"width": 1107,
+							"__typename": "Thumbnail"
+						},
+						"__typename": "Video"
+					},
+					"__typename": "VideoEdge"
+				},
+				{
+					"node": {
+						"id": "vi3703880217",
+						"contentType": {
+							"displayName": {
+								"value": "Trailer",
+								"__typename": "LocalizedString"
+							},
+							"__typename": "VideoContentType"
+						},
+						"name": {
+							"value": "Official Trailer",
+							"__typename": "LocalizedString"
+						},
+						"runtime": {
+							"value": 146,
+							"__typename": "VideoRuntime"
+						},
+						"thumbnail": {
+							"height": 798,
+							"url": "https://m.media-amazon.com/images/M/MV5BOTk4MWQ2NWItNzRlZC00OTQyLWIzMjUtYTYzZDUyNjU0YTgwXkEyXkFqcGdeQXRzdGFzaWVr._V1_.jpg",
+							"width": 1434,
+							"__typename": "Thumbnail"
+						},
+						"__typename": "Video"
+					},
+					"__typename": "VideoEdge"
+				},
+				{
+					"node": {
+						"id": "vi3976513049",
+						"contentType": {
+							"displayName": {
+								"value": "Clip",
+								"__typename": "LocalizedString"
+							},
+							"__typename": "VideoContentType"
+						},
+						"name": {
+							"value": "How Is It Possible for a Former Iron Man to Play Doctor Doom?",
+							"__typename": "LocalizedString"
+						},
+						"runtime": {
+							"value": 298,
+							"__typename": "VideoRuntime"
+						},
+						"thumbnail": {
+							"height": 1080,
+							"url": "https://m.media-amazon.com/images/M/MV5BMmU2ZmU0ZjQtNmM2ZC00MzQ1LTgzZTItOTlmZDAwNDI2ODkzXkEyXkFqcGdeQWFsZWxvZw@@._V1_.jpg",
+							"width": 1920,
+							"__typename": "Thumbnail"
+						},
+						"__typename": "Video"
+					},
+					"__typename": "VideoEdge"
+				},
+				{
+					"node": {
+						"id": "vi2504114713",
+						"contentType": {
+							"displayName": {
+								"value": "Clip",
+								"__typename": "LocalizedString"
+							},
+							"__typename": "VideoContentType"
+						},
+						"name": {
+							"value": "Evangeline Lilly Lobbies for More Wasp Screen Time in Future Avengers Films",
+							"__typename": "LocalizedString"
+						},
+						"runtime": {
+							"value": 111,
+							"__typename": "VideoRuntime"
+						},
+						"thumbnail": {
+							"height": 1080,
+							"url": "https://m.media-amazon.com/images/M/MV5BOGQ5YzRiMmQtMWY2Yi00Njg0LWE3OTYtMjZlNTI4MTdhN2M2XkEyXkFqcGdeQWZlZGVyaWdh._V1_.jpg",
+							"width": 1920,
+							"__typename": "Thumbnail"
+						},
+						"__typename": "Video"
+					},
+					"__typename": "VideoEdge"
+				},
+				{
+					"node": {
+						"id": "vi2232337177",
+						"contentType": {
+							"displayName": {
+								"value": "Clip",
+								"__typename": "LocalizedString"
+							},
+							"__typename": "VideoContentType"
+						},
+						"name": {
+							"value": "The 6 Most Romantic Moments in the Marvel Cinematic Universe",
+							"__typename": "LocalizedString"
+						},
+						"runtime": {
+							"value": 108,
+							"__typename": "VideoRuntime"
+						},
+						"thumbnail": {
+							"height": 1080,
+							"url": "https://m.media-amazon.com/images/M/MV5BZTFiN2Y4NzEtNDBiNC00MGRiLWFjODAtMzFiYTY2NmE5YmZhXkEyXkFqcGdeQWplZmZscA@@._V1_.jpg",
+							"width": 1920,
+							"__typename": "Thumbnail"
+						},
+						"__typename": "Video"
+					},
+					"__typename": "VideoEdge"
+				},
+				{
+					"node": {
+						"id": "vi688177177",
+						"contentType": {
+							"displayName": {
+								"value": "Clip",
+								"__typename": "LocalizedString"
+							},
+							"__typename": "VideoContentType"
+						},
+						"name": {
+							"value": "Karen Gillan on Why She's 'Legitimately Scottish'",
+							"__typename": "LocalizedString"
+						},
+						"runtime": {
+							"value": 247,
+							"__typename": "VideoRuntime"
+						},
+						"thumbnail": {
+							"height": 1080,
+							"url": "https://m.media-amazon.com/images/M/MV5BY2Y4ODE4MTQtM2ZlYy00OGUxLWFjMGQtMDY0OWE5NWQ1MWQzXkEyXkFqcGdeQWxpenpp._V1_.jpg",
+							"width": 1920,
+							"__typename": "Thumbnail"
+						},
+						"__typename": "Video"
+					},
+					"__typename": "VideoEdge"
+				}
+			],
+			"__typename": "VideoConnection"
+		},
+		"titleMainImages": {
+			"total": 1279,
+			"edges": [
+				{
+					"node": {
+						"id": "rm1543608065",
+						"url": "https://m.media-amazon.com/images/M/MV5BZTNiNDMyNjQtMjU4Yy00OTBkLWJmMTMtMzY0ZjE0OGI4MWMzXkEyXkFqcGc@._V1_.jpg",
+						"caption": {
+							"plainText": "Linda Cardellini, Jeremy Renner, Ava Russo, Ben Sakamoto, and Cade Woodward in Avengers: Endgame (2019)",
+							"__typename": "Markdown"
+						},
+						"height": 1080,
+						"width": 2048,
+						"__typename": "Image"
+					},
+					"__typename": "ImageEdge"
+				},
+				{
+					"node": {
+						"id": "rm2337380865",
+						"url": "https://m.media-amazon.com/images/M/MV5BOWJiMTRlNjAtMjYyMS00YTI3LWE4NmUtMzkxYmNjY2JiODhkXkEyXkFqcGc@._V1_.jpg",
+						"caption": {
+							"plainText": "Gwyneth Paltrow, Brie Larson, Elizabeth Olsen, Zoe Saldaña, Evangeline Lilly, Danai Gurira, Tessa Thompson, Karen Gillan, Pom Klementieff, and Letitia Wright in Avengers: Endgame (2019)",
+							"__typename": "Markdown"
+						},
+						"height": 1080,
+						"width": 2048,
+						"__typename": "Image"
+					},
+					"__typename": "ImageEdge"
+				},
+				{
+					"node": {
+						"id": "rm2320603649",
+						"url": "https://m.media-amazon.com/images/M/MV5BNmU0NTcwNGEtYmI4YS00Mzc1LTljMzEtOWI5ZDM1YmZmNzcxXkEyXkFqcGc@._V1_.jpg",
+						"caption": {
+							"plainText": "Robert Downey Jr. in Avengers: Endgame (2019)",
+							"__typename": "Markdown"
+						},
+						"height": 1080,
+						"width": 2048,
+						"__typename": "Image"
+					},
+					"__typename": "ImageEdge"
+				},
+				{
+					"node": {
+						"id": "rm2303826433",
+						"url": "https://m.media-amazon.com/images/M/MV5BMWIyZDljYWMtZGZkNS00YWE0LTkxOWYtM2I1NzJhYmRjMDM3XkEyXkFqcGc@._V1_.jpg",
+						"caption": {
+							"plainText": "Don Cheadle, Robert Downey Jr., Gwyneth Paltrow, Vin Diesel, Taika Waititi, Bradley Cooper, Chris Evans, Sean Gunn, Elizabeth Olsen, Chris Pratt, Paul Rudd, Mark Ruffalo, Benedict Wong, Terry Notary, Maurice P. Kerry, Anthony Mackie, Chris Hemsworth, Dave Bautista, Benedict Cumberbatch, Evangeline Lilly, Chadwick Boseman, Sebastian Stan, Danai Gurira, Tessa Thompson, Pom Klementieff, Letitia Wright, Tom Holland, Eric Word, Floyd Anthony Johns Jr., Marie Mouroum, Winston Duke, Kris Taylor, Alexa Medina, Roe Dunkley, and Eric Wallace in Avengers: Endgame (2019)",
+							"__typename": "Markdown"
+						},
+						"height": 1080,
+						"width": 2048,
+						"__typename": "Image"
+					},
+					"__typename": "ImageEdge"
+				},
+				{
+					"node": {
+						"id": "rm2287049217",
+						"url": "https://m.media-amazon.com/images/M/MV5BMTZiZDZhNTUtMTQ1Zi00YTI4LThkMDUtYmY1MWI1OGI4YmJiXkEyXkFqcGc@._V1_.jpg",
+						"caption": {
+							"plainText": "Josh Brolin in Avengers: Endgame (2019)",
+							"__typename": "Markdown"
+						},
+						"height": 1080,
+						"width": 2048,
+						"__typename": "Image"
+					},
+					"__typename": "ImageEdge"
+				},
+				{
+					"node": {
+						"id": "rm2538707457",
+						"url": "https://m.media-amazon.com/images/M/MV5BMGU1YmYxYWMtMDYyNy00Zjk1LThlOTItOTllMTk3MGU5ZjEzXkEyXkFqcGc@._V1_.jpg",
+						"caption": {
+							"plainText": "Gwyneth Paltrow, Brie Larson, Elizabeth Olsen, Tessa Thompson, Pom Klementieff, and Letitia Wright in Avengers: Endgame (2019)",
+							"__typename": "Markdown"
+						},
+						"height": 1080,
+						"width": 2048,
+						"__typename": "Image"
+					},
+					"__typename": "ImageEdge"
+				},
+				{
+					"node": {
+						"id": "rm2404489729",
+						"url": "https://m.media-amazon.com/images/M/MV5BODE5YWQ1NTgtMjA5ZS00OGNjLWFmNTctZjM4YmYzNjBjNWVkXkEyXkFqcGc@._V1_.jpg",
+						"caption": {
+							"plainText": "Robert Downey Jr., Josh Brolin, Chris Evans, and Chris Hemsworth in Avengers: Endgame (2019)",
+							"__typename": "Markdown"
+						},
+						"height": 1080,
+						"width": 2047,
+						"__typename": "Image"
+					},
+					"__typename": "ImageEdge"
+				},
+				{
+					"node": {
+						"id": "rm2387712513",
+						"url": "https://m.media-amazon.com/images/M/MV5BZTA3NWZmYTktNThiZi00YzE4LWIwMjQtMjRiMDMxOGZmZjQwXkEyXkFqcGc@._V1_.jpg",
+						"caption": {
+							"plainText": "Robert Downey Jr. in Avengers: Endgame (2019)",
+							"__typename": "Markdown"
+						},
+						"height": 1080,
+						"width": 2048,
+						"__typename": "Image"
+					},
+					"__typename": "ImageEdge"
+				},
+				{
+					"node": {
+						"id": "rm2370935297",
+						"url": "https://m.media-amazon.com/images/M/MV5BN2RmOWVlNjAtZmI3YS00OTkxLWE2MGItYWQ1MTUyYmU0YTU3XkEyXkFqcGc@._V1_.jpg",
+						"caption": {
+							"plainText": "Don Cheadle, Robert Downey Jr., Bradley Cooper, Chris Evans, Sean Gunn, Mark Ruffalo, Chris Hemsworth, and Chadwick Boseman in Avengers: Endgame (2019)",
+							"__typename": "Markdown"
+						},
+						"height": 1080,
+						"width": 2048,
+						"__typename": "Image"
+					},
+					"__typename": "ImageEdge"
+				}
+			],
+			"__typename": "ImageConnection"
+		},
+		"productionStatus": {
+			"currentProductionStage": {
+				"id": "released",
+				"text": "Released",
+				"__typename": "ProductionStage"
+			},
+			"productionStatusHistory": [
+				{
+					"status": {
+						"id": "treatment_outline",
+						"text": "Treatment Outline",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				},
+				{
+					"status": {
+						"id": "script",
+						"text": "Script",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				},
+				{
+					"status": {
+						"id": "pre_production",
+						"text": "Pre-production",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				},
+				{
+					"status": {
+						"id": "pre_production",
+						"text": "Pre-production",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				},
+				{
+					"status": {
+						"id": "filming",
+						"text": "Filming",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				},
+				{
+					"status": {
+						"id": "post_production",
+						"text": "Post-production",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				},
+				{
+					"status": {
+						"id": "filming",
+						"text": "Filming",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				},
+				{
+					"status": {
+						"id": "post_production",
+						"text": "Post-production",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				},
+				{
+					"status": {
+						"id": "completed",
+						"text": "Completed",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				},
+				{
+					"status": {
+						"id": "released",
+						"text": "Released",
+						"__typename": "ProductionStatus"
+					},
+					"__typename": "ProductionStatusHistory"
+				}
+			],
+			"restriction": null,
+			"__typename": "ProductionStatusDetails"
+		},
+		"primaryImage": {
+			"id": "rm3031571201",
+			"__typename": "Image",
+			"url": "https://m.media-amazon.com/images/M/MV5BMTcyNjBhZTAtNjJkNS00OTYzLWExYzItNTMwYjg4ZTBiY2E4XkEyXkFqcGc@._V1_.jpg",
+			"width": 588,
+			"height": 821,
+			"caption": {
+				"plainText": "Don Cheadle, Robert Downey Jr., Josh Brolin, Bradley Cooper, Chris Evans, Sean Gunn, Scarlett Johansson, Brie Larson, Jeremy Renner, Paul Rudd, Mark Ruffalo, Chris Hemsworth, Danai Gurira, and Karen Gillan in Avengers: Endgame (2019)",
+				"__typename": "Markdown"
+			}
+		},
+		"inIframeAddLink": {
+			"url": "https://contribute.imdb.com/image/tt4154796/add?bus=imdb&return_url=https%3A%2F%2Fwww.imdb.com%2Fclose_me&site=web",
+			"__typename": "ContributionLink"
+		},
+		"notInIframeAddLink": {
+			"url": "https://contribute.imdb.com/image/tt4154796/add?bus=imdb&return_url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt4154796%2F&site=mobile",
+			"__typename": "ContributionLink"
+		},
+		"titleType": {
+			"id": "movie",
+			"canHaveEpisodes": false,
+			"__typename": "TitleType"
+		},
+		"castV2": [
+			{
+				"grouping": {
+					"groupingId": "amzn1.imdb.concept.name_credit_group.7caf7d16-5db9-4f4f-8864-d4c6e711c686",
+					"text": "Top Cast",
+					"__typename": "CreditGrouping"
+				},
+				"totalCredits": 168,
+				"credits": [
+					{
+						"name": {
+							"id": "nm0000375",
+							"nameText": {
+								"text": "Robert Downey Jr.",
+								"__typename": "NameText"
+							},
+							"primaryImage": {
+								"url": "https://m.media-amazon.com/images/M/MV5BNzg1MTUyNDYxOF5BMl5BanBnXkFtZTgwNTQ4MTE2MjE@._V1_.jpg",
+								"width": 1361,
+								"height": 2048,
+								"__typename": "Image"
+							},
+							"__typename": "Name"
+						},
+						"creditedRoles": {
+							"edges": [
+								{
+									"node": {
+										"category": {
+											"categoryId": "amzn1.imdb.concept.name_credit_category.a9ab2a8b-9153-4edb-a27a-7c2346830d77",
+											"text": "Actor",
+											"__typename": "CreditCategory"
+										},
+										"attributes": null,
+										"characters": {
+											"edges": [
+												{
+													"node": {
+														"name": "Tony Stark",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												},
+												{
+													"node": {
+														"name": "Iron Man",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												}
+											],
+											"__typename": "CharacterConnection"
+										},
+										"__typename": "CreditedRole"
+									},
+									"__typename": "CreditedRoleEdge"
+								}
+							],
+							"__typename": "CreditedRoleConnection"
+						},
+						"episodeCredits": {
+							"total": 0,
+							"yearRange": null,
+							"__typename": "EpisodeCreditConnection"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm0262635",
+							"nameText": {
+								"text": "Chris Evans",
+								"__typename": "NameText"
+							},
+							"primaryImage": {
+								"url": "https://m.media-amazon.com/images/M/MV5BNzQ0YWM1ODEtZDFkYy00MGJhLTkwZDUtMzVkZjljODU3ZTRmXkEyXkFqcGc@._V1_.jpg",
+								"width": 4000,
+								"height": 6000,
+								"__typename": "Image"
+							},
+							"__typename": "Name"
+						},
+						"creditedRoles": {
+							"edges": [
+								{
+									"node": {
+										"category": {
+											"categoryId": "amzn1.imdb.concept.name_credit_category.a9ab2a8b-9153-4edb-a27a-7c2346830d77",
+											"text": "Actor",
+											"__typename": "CreditCategory"
+										},
+										"attributes": null,
+										"characters": {
+											"edges": [
+												{
+													"node": {
+														"name": "Steve Rogers",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												},
+												{
+													"node": {
+														"name": "Captain America",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												}
+											],
+											"__typename": "CharacterConnection"
+										},
+										"__typename": "CreditedRole"
+									},
+									"__typename": "CreditedRoleEdge"
+								}
+							],
+							"__typename": "CreditedRoleConnection"
+						},
+						"episodeCredits": {
+							"total": 0,
+							"yearRange": null,
+							"__typename": "EpisodeCreditConnection"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm0749263",
+							"nameText": {
+								"text": "Mark Ruffalo",
+								"__typename": "NameText"
+							},
+							"primaryImage": {
+								"url": "https://m.media-amazon.com/images/M/MV5BM2JiYzA0ZGItNmFhYy00MjIyLWEwN2QtMzRmNDUyNjNiZjBiXkEyXkFqcGc@._V1_.jpg",
+								"width": 4912,
+								"height": 7360,
+								"__typename": "Image"
+							},
+							"__typename": "Name"
+						},
+						"creditedRoles": {
+							"edges": [
+								{
+									"node": {
+										"category": {
+											"categoryId": "amzn1.imdb.concept.name_credit_category.a9ab2a8b-9153-4edb-a27a-7c2346830d77",
+											"text": "Actor",
+											"__typename": "CreditCategory"
+										},
+										"attributes": null,
+										"characters": {
+											"edges": [
+												{
+													"node": {
+														"name": "Bruce Banner",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												},
+												{
+													"node": {
+														"name": "Hulk",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												}
+											],
+											"__typename": "CharacterConnection"
+										},
+										"__typename": "CreditedRole"
+									},
+									"__typename": "CreditedRoleEdge"
+								}
+							],
+							"__typename": "CreditedRoleConnection"
+						},
+						"episodeCredits": {
+							"total": 0,
+							"yearRange": null,
+							"__typename": "EpisodeCreditConnection"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm1165110",
+							"nameText": {
+								"text": "Chris Hemsworth",
+								"__typename": "NameText"
+							},
+							"primaryImage": {
+								"url": "https://m.media-amazon.com/images/M/MV5BOTU2MTI0NTIyNV5BMl5BanBnXkFtZTcwMTA4Nzc3OA@@._V1_.jpg",
+								"width": 384,
+								"height": 576,
+								"__typename": "Image"
+							},
+							"__typename": "Name"
+						},
+						"creditedRoles": {
+							"edges": [
+								{
+									"node": {
+										"category": {
+											"categoryId": "amzn1.imdb.concept.name_credit_category.a9ab2a8b-9153-4edb-a27a-7c2346830d77",
+											"text": "Actor",
+											"__typename": "CreditCategory"
+										},
+										"attributes": null,
+										"characters": {
+											"edges": [
+												{
+													"node": {
+														"name": "Thor",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												}
+											],
+											"__typename": "CharacterConnection"
+										},
+										"__typename": "CreditedRole"
+									},
+									"__typename": "CreditedRoleEdge"
+								}
+							],
+							"__typename": "CreditedRoleConnection"
+						},
+						"episodeCredits": {
+							"total": 0,
+							"yearRange": null,
+							"__typename": "EpisodeCreditConnection"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm0424060",
+							"nameText": {
+								"text": "Scarlett Johansson",
+								"__typename": "NameText"
+							},
+							"primaryImage": {
+								"url": "https://m.media-amazon.com/images/M/MV5BMTM3OTUwMDYwNl5BMl5BanBnXkFtZTcwNTUyNzc3Nw@@._V1_.jpg",
+								"width": 1689,
+								"height": 2048,
+								"__typename": "Image"
+							},
+							"__typename": "Name"
+						},
+						"creditedRoles": {
+							"edges": [
+								{
+									"node": {
+										"category": {
+											"categoryId": "amzn1.imdb.concept.name_credit_category.7f6d81aa-23aa-4503-844d-38201eb08761",
+											"text": "Actress",
+											"__typename": "CreditCategory"
+										},
+										"attributes": null,
+										"characters": {
+											"edges": [
+												{
+													"node": {
+														"name": "Natasha Romanoff",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												},
+												{
+													"node": {
+														"name": "Black Widow",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												}
+											],
+											"__typename": "CharacterConnection"
+										},
+										"__typename": "CreditedRole"
+									},
+									"__typename": "CreditedRoleEdge"
+								}
+							],
+							"__typename": "CreditedRoleConnection"
+						},
+						"episodeCredits": {
+							"total": 0,
+							"yearRange": null,
+							"__typename": "EpisodeCreditConnection"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm0719637",
+							"nameText": {
+								"text": "Jeremy Renner",
+								"__typename": "NameText"
+							},
+							"primaryImage": {
+								"url": "https://m.media-amazon.com/images/M/MV5BOTk2NDc2ODgzMF5BMl5BanBnXkFtZTcwMTMzOTQ4Nw@@._V1_.jpg",
+								"width": 363,
+								"height": 600,
+								"__typename": "Image"
+							},
+							"__typename": "Name"
+						},
+						"creditedRoles": {
+							"edges": [
+								{
+									"node": {
+										"category": {
+											"categoryId": "amzn1.imdb.concept.name_credit_category.a9ab2a8b-9153-4edb-a27a-7c2346830d77",
+											"text": "Actor",
+											"__typename": "CreditCategory"
+										},
+										"attributes": null,
+										"characters": {
+											"edges": [
+												{
+													"node": {
+														"name": "Clint Barton",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												},
+												{
+													"node": {
+														"name": "Hawkeye",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												}
+											],
+											"__typename": "CharacterConnection"
+										},
+										"__typename": "CreditedRole"
+									},
+									"__typename": "CreditedRoleEdge"
+								}
+							],
+							"__typename": "CreditedRoleConnection"
+						},
+						"episodeCredits": {
+							"total": 0,
+							"yearRange": null,
+							"__typename": "EpisodeCreditConnection"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm0000332",
+							"nameText": {
+								"text": "Don Cheadle",
+								"__typename": "NameText"
+							},
+							"primaryImage": {
+								"url": "https://m.media-amazon.com/images/M/MV5BNDMxNDM3MzY5N15BMl5BanBnXkFtZTcwMjkzOTY4MQ@@._V1_.jpg",
+								"width": 313,
+								"height": 400,
+								"__typename": "Image"
+							},
+							"__typename": "Name"
+						},
+						"creditedRoles": {
+							"edges": [
+								{
+									"node": {
+										"category": {
+											"categoryId": "amzn1.imdb.concept.name_credit_category.a9ab2a8b-9153-4edb-a27a-7c2346830d77",
+											"text": "Actor",
+											"__typename": "CreditCategory"
+										},
+										"attributes": null,
+										"characters": {
+											"edges": [
+												{
+													"node": {
+														"name": "James Rhodes",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												},
+												{
+													"node": {
+														"name": "War Machine",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												}
+											],
+											"__typename": "CharacterConnection"
+										},
+										"__typename": "CreditedRole"
+									},
+									"__typename": "CreditedRoleEdge"
+								}
+							],
+							"__typename": "CreditedRoleConnection"
+						},
+						"episodeCredits": {
+							"total": 0,
+							"yearRange": null,
+							"__typename": "EpisodeCreditConnection"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm0748620",
+							"nameText": {
+								"text": "Paul Rudd",
+								"__typename": "NameText"
+							},
+							"primaryImage": {
+								"url": "https://m.media-amazon.com/images/M/MV5BMTY4NTEwNDg1MV5BMl5BanBnXkFtZTgwODMwMDA0ODE@._V1_.jpg",
+								"width": 1638,
+								"height": 2048,
+								"__typename": "Image"
+							},
+							"__typename": "Name"
+						},
+						"creditedRoles": {
+							"edges": [
+								{
+									"node": {
+										"category": {
+											"categoryId": "amzn1.imdb.concept.name_credit_category.a9ab2a8b-9153-4edb-a27a-7c2346830d77",
+											"text": "Actor",
+											"__typename": "CreditCategory"
+										},
+										"attributes": null,
+										"characters": {
+											"edges": [
+												{
+													"node": {
+														"name": "Scott Lang",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												},
+												{
+													"node": {
+														"name": "Ant-Man",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												}
+											],
+											"__typename": "CharacterConnection"
+										},
+										"__typename": "CreditedRole"
+									},
+									"__typename": "CreditedRoleEdge"
+								}
+							],
+							"__typename": "CreditedRoleConnection"
+						},
+						"episodeCredits": {
+							"total": 0,
+							"yearRange": null,
+							"__typename": "EpisodeCreditConnection"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm1212722",
+							"nameText": {
+								"text": "Benedict Cumberbatch",
+								"__typename": "NameText"
+							},
+							"primaryImage": {
+								"url": "https://m.media-amazon.com/images/M/MV5BMjE0MDkzMDQwOF5BMl5BanBnXkFtZTgwOTE1Mjg1MzE@._V1_.jpg",
+								"width": 1414,
+								"height": 2048,
+								"__typename": "Image"
+							},
+							"__typename": "Name"
+						},
+						"creditedRoles": {
+							"edges": [
+								{
+									"node": {
+										"category": {
+											"categoryId": "amzn1.imdb.concept.name_credit_category.a9ab2a8b-9153-4edb-a27a-7c2346830d77",
+											"text": "Actor",
+											"__typename": "CreditCategory"
+										},
+										"attributes": null,
+										"characters": {
+											"edges": [
+												{
+													"node": {
+														"name": "Doctor Strange",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												}
+											],
+											"__typename": "CharacterConnection"
+										},
+										"__typename": "CreditedRole"
+									},
+									"__typename": "CreditedRoleEdge"
+								}
+							],
+							"__typename": "CreditedRoleConnection"
+						},
+						"episodeCredits": {
+							"total": 0,
+							"yearRange": null,
+							"__typename": "EpisodeCreditConnection"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm1569276",
+							"nameText": {
+								"text": "Chadwick Boseman",
+								"__typename": "NameText"
+							},
+							"primaryImage": {
+								"url": "https://m.media-amazon.com/images/M/MV5BMTk2OTY5MzcwMV5BMl5BanBnXkFtZTgwODM4MDI5MjI@._V1_.jpg",
+								"width": 750,
+								"height": 1125,
+								"__typename": "Image"
+							},
+							"__typename": "Name"
+						},
+						"creditedRoles": {
+							"edges": [
+								{
+									"node": {
+										"category": {
+											"categoryId": "amzn1.imdb.concept.name_credit_category.a9ab2a8b-9153-4edb-a27a-7c2346830d77",
+											"text": "Actor",
+											"__typename": "CreditCategory"
+										},
+										"attributes": null,
+										"characters": {
+											"edges": [
+												{
+													"node": {
+														"name": "T'Challa",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												},
+												{
+													"node": {
+														"name": "Black Panther",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												}
+											],
+											"__typename": "CharacterConnection"
+										},
+										"__typename": "CreditedRole"
+									},
+									"__typename": "CreditedRoleEdge"
+								}
+							],
+							"__typename": "CreditedRoleConnection"
+						},
+						"episodeCredits": {
+							"total": 0,
+							"yearRange": null,
+							"__typename": "EpisodeCreditConnection"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm0488953",
+							"nameText": {
+								"text": "Brie Larson",
+								"__typename": "NameText"
+							},
+							"primaryImage": {
+								"url": "https://m.media-amazon.com/images/M/MV5BNzU4ODNiYzAtYWNmNy00NzQ2LWJiYTMtYzk0YjU2ODRlZGZmXkEyXkFqcGc@._V1_.jpg",
+								"width": 1080,
+								"height": 1080,
+								"__typename": "Image"
+							},
+							"__typename": "Name"
+						},
+						"creditedRoles": {
+							"edges": [
+								{
+									"node": {
+										"category": {
+											"categoryId": "amzn1.imdb.concept.name_credit_category.7f6d81aa-23aa-4503-844d-38201eb08761",
+											"text": "Actress",
+											"__typename": "CreditCategory"
+										},
+										"attributes": null,
+										"characters": {
+											"edges": [
+												{
+													"node": {
+														"name": "Carol Danvers",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												},
+												{
+													"node": {
+														"name": "Captain Marvel",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												}
+											],
+											"__typename": "CharacterConnection"
+										},
+										"__typename": "CreditedRole"
+									},
+									"__typename": "CreditedRoleEdge"
+								}
+							],
+							"__typename": "CreditedRoleConnection"
+						},
+						"episodeCredits": {
+							"total": 0,
+							"yearRange": null,
+							"__typename": "EpisodeCreditConnection"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm4043618",
+							"nameText": {
+								"text": "Tom Holland",
+								"__typename": "NameText"
+							},
+							"primaryImage": {
+								"url": "https://m.media-amazon.com/images/M/MV5BYzU3NWRhMjgtNmNmMS00YjQ1LWIyYzgtYzdkYjRjNWEzM2E3XkEyXkFqcGc@._V1_.jpg",
+								"width": 3648,
+								"height": 5472,
+								"__typename": "Image"
+							},
+							"__typename": "Name"
+						},
+						"creditedRoles": {
+							"edges": [
+								{
+									"node": {
+										"category": {
+											"categoryId": "amzn1.imdb.concept.name_credit_category.a9ab2a8b-9153-4edb-a27a-7c2346830d77",
+											"text": "Actor",
+											"__typename": "CreditCategory"
+										},
+										"attributes": null,
+										"characters": {
+											"edges": [
+												{
+													"node": {
+														"name": "Peter Parker",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												},
+												{
+													"node": {
+														"name": "Spider-Man",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												}
+											],
+											"__typename": "CharacterConnection"
+										},
+										"__typename": "CreditedRole"
+									},
+									"__typename": "CreditedRoleEdge"
+								}
+							],
+							"__typename": "CreditedRoleConnection"
+						},
+						"episodeCredits": {
+							"total": 0,
+							"yearRange": null,
+							"__typename": "EpisodeCreditConnection"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm2394794",
+							"nameText": {
+								"text": "Karen Gillan",
+								"__typename": "NameText"
+							},
+							"primaryImage": {
+								"url": "https://m.media-amazon.com/images/M/MV5BMTQwMDQ0NDk1OV5BMl5BanBnXkFtZTcwNDcxOTExNg@@._V1_.jpg",
+								"width": 1411,
+								"height": 2048,
+								"__typename": "Image"
+							},
+							"__typename": "Name"
+						},
+						"creditedRoles": {
+							"edges": [
+								{
+									"node": {
+										"category": {
+											"categoryId": "amzn1.imdb.concept.name_credit_category.7f6d81aa-23aa-4503-844d-38201eb08761",
+											"text": "Actress",
+											"__typename": "CreditCategory"
+										},
+										"attributes": null,
+										"characters": {
+											"edges": [
+												{
+													"node": {
+														"name": "Nebula",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												}
+											],
+											"__typename": "CharacterConnection"
+										},
+										"__typename": "CreditedRole"
+									},
+									"__typename": "CreditedRoleEdge"
+								}
+							],
+							"__typename": "CreditedRoleConnection"
+						},
+						"episodeCredits": {
+							"total": 0,
+							"yearRange": null,
+							"__typename": "EpisodeCreditConnection"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm0757855",
+							"nameText": {
+								"text": "Zoe Saldaña",
+								"__typename": "NameText"
+							},
+							"primaryImage": {
+								"url": "https://m.media-amazon.com/images/M/MV5BMDFkMWQ5ZDItNGUzNS00YzI4LWIyOTctMDk0Mjc3MGQyZTYxXkEyXkFqcGc@._V1_.jpg",
+								"width": 2244,
+								"height": 2519,
+								"__typename": "Image"
+							},
+							"__typename": "Name"
+						},
+						"creditedRoles": {
+							"edges": [
+								{
+									"node": {
+										"category": {
+											"categoryId": "amzn1.imdb.concept.name_credit_category.7f6d81aa-23aa-4503-844d-38201eb08761",
+											"text": "Actress",
+											"__typename": "CreditCategory"
+										},
+										"attributes": [
+											{
+												"text": "as Zoe Saldana",
+												"__typename": "CreditedAsCreditAttribute"
+											}
+										],
+										"characters": {
+											"edges": [
+												{
+													"node": {
+														"name": "Gamora",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												}
+											],
+											"__typename": "CharacterConnection"
+										},
+										"__typename": "CreditedRole"
+									},
+									"__typename": "CreditedRoleEdge"
+								}
+							],
+							"__typename": "CreditedRoleConnection"
+						},
+						"episodeCredits": {
+							"total": 0,
+							"yearRange": null,
+							"__typename": "EpisodeCreditConnection"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm1431940",
+							"nameText": {
+								"text": "Evangeline Lilly",
+								"__typename": "NameText"
+							},
+							"primaryImage": {
+								"url": "https://m.media-amazon.com/images/M/MV5BMTc2MDMzODU0OV5BMl5BanBnXkFtZTgwODIwOTAxMzI@._V1_.jpg",
+								"width": 1779,
+								"height": 2048,
+								"__typename": "Image"
+							},
+							"__typename": "Name"
+						},
+						"creditedRoles": {
+							"edges": [
+								{
+									"node": {
+										"category": {
+											"categoryId": "amzn1.imdb.concept.name_credit_category.7f6d81aa-23aa-4503-844d-38201eb08761",
+											"text": "Actress",
+											"__typename": "CreditCategory"
+										},
+										"attributes": null,
+										"characters": {
+											"edges": [
+												{
+													"node": {
+														"name": "Hope Van Dyne",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												},
+												{
+													"node": {
+														"name": "Wasp",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												}
+											],
+											"__typename": "CharacterConnection"
+										},
+										"__typename": "CreditedRole"
+									},
+									"__typename": "CreditedRoleEdge"
+								}
+							],
+							"__typename": "CreditedRoleConnection"
+						},
+						"episodeCredits": {
+							"total": 0,
+							"yearRange": null,
+							"__typename": "EpisodeCreditConnection"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm1935086",
+							"nameText": {
+								"text": "Tessa Thompson",
+								"__typename": "NameText"
+							},
+							"primaryImage": {
+								"url": "https://m.media-amazon.com/images/M/MV5BMjMyNTA2MzM4OF5BMl5BanBnXkFtZTgwNzk2ODA1NzM@._V1_.jpg",
+								"width": 1365,
+								"height": 2048,
+								"__typename": "Image"
+							},
+							"__typename": "Name"
+						},
+						"creditedRoles": {
+							"edges": [
+								{
+									"node": {
+										"category": {
+											"categoryId": "amzn1.imdb.concept.name_credit_category.7f6d81aa-23aa-4503-844d-38201eb08761",
+											"text": "Actress",
+											"__typename": "CreditCategory"
+										},
+										"attributes": null,
+										"characters": {
+											"edges": [
+												{
+													"node": {
+														"name": "Valkyrie",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												}
+											],
+											"__typename": "CharacterConnection"
+										},
+										"__typename": "CreditedRole"
+									},
+									"__typename": "CreditedRoleEdge"
+								}
+							],
+							"__typename": "CreditedRoleConnection"
+						},
+						"episodeCredits": {
+							"total": 0,
+							"yearRange": null,
+							"__typename": "EpisodeCreditConnection"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm0000623",
+							"nameText": {
+								"text": "Rene Russo",
+								"__typename": "NameText"
+							},
+							"primaryImage": {
+								"url": "https://m.media-amazon.com/images/M/MV5BMjIyMzc1Njk5N15BMl5BanBnXkFtZTgwMjk2MDkyNzM@._V1_.jpg",
+								"width": 1365,
+								"height": 2048,
+								"__typename": "Image"
+							},
+							"__typename": "Name"
+						},
+						"creditedRoles": {
+							"edges": [
+								{
+									"node": {
+										"category": {
+											"categoryId": "amzn1.imdb.concept.name_credit_category.7f6d81aa-23aa-4503-844d-38201eb08761",
+											"text": "Actress",
+											"__typename": "CreditCategory"
+										},
+										"attributes": null,
+										"characters": {
+											"edges": [
+												{
+													"node": {
+														"name": "Frigga",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												}
+											],
+											"__typename": "CharacterConnection"
+										},
+										"__typename": "CreditedRole"
+									},
+									"__typename": "CreditedRoleEdge"
+								}
+							],
+							"__typename": "CreditedRoleConnection"
+						},
+						"episodeCredits": {
+							"total": 0,
+							"yearRange": null,
+							"__typename": "EpisodeCreditConnection"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm0647634",
+							"nameText": {
+								"text": "Elizabeth Olsen",
+								"__typename": "NameText"
+							},
+							"primaryImage": {
+								"url": "https://m.media-amazon.com/images/M/MV5BMjEzMjA0ODk1OF5BMl5BanBnXkFtZTcwMTA4ODM3OQ@@._V1_.jpg",
+								"width": 640,
+								"height": 899,
+								"__typename": "Image"
+							},
+							"__typename": "Name"
+						},
+						"creditedRoles": {
+							"edges": [
+								{
+									"node": {
+										"category": {
+											"categoryId": "amzn1.imdb.concept.name_credit_category.7f6d81aa-23aa-4503-844d-38201eb08761",
+											"text": "Actress",
+											"__typename": "CreditCategory"
+										},
+										"attributes": null,
+										"characters": {
+											"edges": [
+												{
+													"node": {
+														"name": "Wanda Maximoff",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												},
+												{
+													"node": {
+														"name": "Scarlet Witch",
+														"__typename": "Character"
+													},
+													"__typename": "CharacterEdge"
+												}
+											],
+											"__typename": "CharacterConnection"
+										},
+										"__typename": "CreditedRole"
+									},
+									"__typename": "CreditedRoleEdge"
+								}
+							],
+							"__typename": "CreditedRoleConnection"
+						},
+						"episodeCredits": {
+							"total": 0,
+							"yearRange": null,
+							"__typename": "EpisodeCreditConnection"
+						},
+						"__typename": "CreditV2"
+					}
+				],
+				"__typename": "PrincipalCreditsForGrouping"
+			}
+		],
+		"crewV2": [
+			{
+				"totalCredits": 2,
+				"grouping": {
+					"groupingId": "amzn1.imdb.concept.name_credit_category.ace5cb4c-8708-4238-9542-04641e7c8171",
+					"text": "Directors",
+					"__typename": "CreditGrouping"
+				},
+				"credits": [
+					{
+						"name": {
+							"id": "nm0751577",
+							"nameText": {
+								"text": "Anthony Russo",
+								"__typename": "NameText"
+							},
+							"__typename": "Name"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm0751648",
+							"nameText": {
+								"text": "Joe Russo",
+								"__typename": "NameText"
+							},
+							"__typename": "Name"
+						},
+						"__typename": "CreditV2"
+					}
+				],
+				"__typename": "PrincipalCreditsForGrouping"
+			},
+			{
+				"totalCredits": 12,
+				"grouping": {
+					"groupingId": "amzn1.imdb.concept.name_credit_category.c84ecaff-add5-4f2e-81db-102a41881fe3",
+					"text": "Writers",
+					"__typename": "CreditGrouping"
+				},
+				"credits": [
+					{
+						"name": {
+							"id": "nm1321655",
+							"nameText": {
+								"text": "Christopher Markus",
+								"__typename": "NameText"
+							},
+							"__typename": "Name"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm1321656",
+							"nameText": {
+								"text": "Stephen McFeely",
+								"__typename": "NameText"
+							},
+							"__typename": "Name"
+						},
+						"__typename": "CreditV2"
+					},
+					{
+						"name": {
+							"id": "nm0498278",
+							"nameText": {
+								"text": "Stan Lee",
+								"__typename": "NameText"
+							},
+							"__typename": "Name"
+						},
+						"__typename": "CreditV2"
+					}
+				],
+				"__typename": "PrincipalCreditsForGrouping"
+			}
+		],
+		"titleText": {
+			"text": "Avengers: Endgame",
+			"__typename": "TitleText"
+		},
+		"originalTitleText": {
+			"text": "Avengers: Endgame",
+			"__typename": "TitleText"
+		},
+		"canRate": {
+			"isRatable": true,
+			"__typename": "CanRate"
+		},
+		"reviews": {
+			"total": 9661,
+			"__typename": "ReviewsConnection"
+		},
+		"aggregateRatingsBreakdown": {
+			"histogram": {
+				"histogramValues": [
+					{
+						"rating": 1,
+						"voteCount": 36474,
+						"__typename": "HistogramValues"
+					},
+					{
+						"rating": 2,
+						"voteCount": 6968,
+						"__typename": "HistogramValues"
+					},
+					{
+						"rating": 3,
+						"voteCount": 8797,
+						"__typename": "HistogramValues"
+					},
+					{
+						"rating": 4,
+						"voteCount": 13294,
+						"__typename": "HistogramValues"
+					},
+					{
+						"rating": 5,
+						"voteCount": 29400,
+						"__typename": "HistogramValues"
+					},
+					{
+						"rating": 6,
+						"voteCount": 66419,
+						"__typename": "HistogramValues"
+					},
+					{
+						"rating": 7,
+						"voteCount": 159372,
+						"__typename": "HistogramValues"
+					},
+					{
+						"rating": 8,
+						"voteCount": 297114,
+						"__typename": "HistogramValues"
+					},
+					{
+						"rating": 9,
+						"voteCount": 318325,
+						"__typename": "HistogramValues"
+					},
+					{
+						"rating": 10,
+						"voteCount": 468151,
+						"__typename": "HistogramValues"
+					}
+				],
+				"__typename": "Histogram"
+			},
+			"__typename": "AggregateRatingsBreakdown"
+		},
+		"featuredReviews": {
+			"edges": [
+				{
+					"node": {
+						"id": "rw4805751",
+						"author": {
+							"userId": "ur99947506",
+							"username": {
+								"text": "ritchiep-56574",
+								"__typename": "UserProfileUsername"
+							},
+							"__typename": "UserProfile"
+						},
+						"summary": {
+							"originalText": "They had no right to do that",
+							"__typename": "ReviewSummary"
+						},
+						"text": {
+							"originalText": {
+								"plaidHtml": "First review from me. This film deserves it. A superhero film, marvel or not, does not have the right to send me on the emotional rollercoaster that End Game did. It has no right to do what it did, paying tribute to 10 years of films whilst changing the rules as to what a superhero film should be.<br/><br/>I laughed, lots.\nI cried, lots.\nI cheered (quietly and internally of course), lots\nI even punched the air in a &quot;go on!&quot; during one scene<br/><br/>I can honestly say, no film has ever moved me like that. Hours later, my heart was still pounding, the adrenaline still flowing from this epic piece of film making.<br/><br/>Made by fans, for fans. Are there flaws? Yes. If you over think the story of course there is. But it works. It flows. It fits.<br/><br/>Go with it. Enjoy the ride.<br/><br/>Soak up every second, it doesn&#39;t feel like 3 hours, it feels like a flow of story reaching a conclusion that will shock and move you.<br/><br/>I have nothing else to say.<br/><br/>10/10. Well done Russo brothers. Well done!<br/><br/>Fans! Assemble!",
+								"__typename": "Markdown"
+							},
+							"__typename": "ReviewText"
+						},
+						"title": {
+							"id": "tt4154796",
+							"__typename": "Title"
+						},
+						"authorRating": 10,
+						"__typename": "Review"
+					},
+					"__typename": "ReviewEdge"
+				},
+				{
+					"node": {
+						"id": "rw5485015",
+						"author": {
+							"userId": "ur87850731",
+							"username": {
+								"text": "0U",
+								"__typename": "UserProfileUsername"
+							},
+							"__typename": "UserProfile"
+						},
+						"summary": {
+							"originalText": "Endgame",
+							"__typename": "ReviewSummary"
+						},
+						"text": {
+							"originalText": {
+								"plaidHtml": "There isn&#39;t too much in the way of suspense or surprises when it comes to the story, but there are some shocking moments and funny lines in this epic finale. Again, like many of the best Marvel films, the holes and flaws are covered up with humor and fan service, making everything okay. That being said, I did prefer Infinity War to this film, which really misses the leads of the other Marvel franchises that were &quot;snapped&quot; out. Overall, however, there are only a few ways you can wrap up the main story of the MCU, and this was a solid direction.",
+								"__typename": "Markdown"
+							},
+							"__typename": "ReviewText"
+						},
+						"title": {
+							"id": "tt4154796",
+							"__typename": "Title"
+						},
+						"authorRating": 8,
+						"__typename": "Review"
+					},
+					"__typename": "ReviewEdge"
+				},
+				{
+					"node": {
+						"id": "rw4802892",
+						"author": {
+							"userId": "ur48829349",
+							"username": {
+								"text": "ahmetkozan",
+								"__typename": "UserProfileUsername"
+							},
+							"__typename": "UserProfile"
+						},
+						"summary": {
+							"originalText": "The End of an Era!",
+							"__typename": "ReviewSummary"
+						},
+						"text": {
+							"originalText": {
+								"plaidHtml": "After Avengers Infinity War, we waited for the Avengers Endgame. We wondered how the story would go on, how our heroes would turn back, what would be the end of Thanos. Many theories related to this have been put forward. Avengers Endgame was undoubtedly the most anticipated film of recent years. Normally, the higher the expectation, the higher the probability of disappointment. But this is not the case for Endgame. Whatever you&#39;re expecting, you find much more in the film. This means that the biggest concern about the film has disappeared.<br/><br/>On the other hand, another comparison comes up. Is Endgame more successful than Infinity War? We can comfortably say it Avengers Infinity War is just the beginning of the story. Endgame was the finale of the story. So we shouldn&#39;t think of these two films as two separate stories. There is only one story divided into two parts.<br/><br/>Avengers Endgame is, above all, a great homage to the ten-year history of the Marvel Cinematic Universe. The story highlights the original Avengers team. Iron Man, Captain America, Thor, Hulk, Black Widow and Hawkeye are at the center of events. No character comes in front of them. Of course there are many characters that play an important role in the story outside the original Avengers team. Everyone&#39;s concern was that Captain Marvel, who was included in the Marvel world, overshadowed other heroes. We can say that this certainly did not happen. What is important in this struggle is not how strong you are, but how good you are. This comes to the fore in all areas. It gives good message about being a hero and a family.<br/><br/>Of course, Avengers Endgame has some critical aspects. For example, is the three-hour period necessary in terms of the story? It can be discussed. The head of the story moves much slower than the rest. It also drags the heroes into an emotional predicament. Then the tempo is rising and the heavy scenes we are watching are getting more meaningful. The last 45 minutes of the movie is fully action packed. But the last 45 minutes goes so fast that you don&#39;t even realize it. Action and battle scenes are really successful. There is not even a slight distress about visual effects. There are also slight logic errors in the film, but in general the story is so successful that these details become meaningless and insignificant after a certain point.<br/><br/>Lastly, Avengers Endgame doesn&#39;t have a movie end scene. Because after the film&#39;s final, there is no need for another scene. The Marvel legend Stan Lee appears with a small stage. But this is the last surprise scene in the Marvel Cinematic Universe. Moreover, there is no clue about Marvel&#39;s future. This makes us wonder more about Spider-Man: Far from Home. 10/10",
+								"__typename": "Markdown"
+							},
+							"__typename": "ReviewText"
+						},
+						"title": {
+							"id": "tt4154796",
+							"__typename": "Title"
+						},
+						"authorRating": 10,
+						"__typename": "Review"
+					},
+					"__typename": "ReviewEdge"
+				},
+				{
+					"node": {
+						"id": "rw4799099",
+						"author": {
+							"userId": "ur0087328",
+							"username": {
+								"text": "vert2712",
+								"__typename": "UserProfileUsername"
+							},
+							"__typename": "UserProfile"
+						},
+						"summary": {
+							"originalText": "The zenith of the MCU franchise.",
+							"__typename": "ReviewSummary"
+						},
+						"text": {
+							"originalText": {
+								"plaidHtml": "I feel like I&#39;m wasting my time writing down my thoughts about Avengers: Endgame, because nothing I (or any critic) could say about it would ever dissuade a prospective viewer from seeing it. But after having had the chance to watch it at a preview screening, I can&#39;t help but say a few spoiler-free words.<br/><br/>I&#39;m not your average fanboy -- most long-running franchises have bored me at this point, and I couldn&#39;t care less about the newest Star Wars episode or whether there will be another film set in the Harry Potter universe.<br/><br/>But Marvel films have been consistently watchable, with many solid entries and a few great ones (Winter Soldier, Ragnarok, the first Guardians of the Galaxy among others). And after Infinity War ended with a cliffhanger, I was looking forward to the conclusion. Boy, was I not disappointed!<br/><br/>Very few highly-anticipated movies live up to the hype, but Avengers: Endgame is one of them. It&#39;s the perfect follow up to Infinity War, and the absolute zenith of the Marvel franchise. It&#39;s hard to see how they&#39;ll be able to top this one.<br/><br/>It&#39;s surprisingly inventive (even when you know where the story is headed, the plot takes a few tangents getting there), emotionally engaging (a few people were crying in the theater) and surprisingly funny (this is probably the most I&#39;ve laughed in a Marvel film since Thor: Ragnarok). Visually speaking, it&#39;s a true spectacle (topping Infinity War in the &#39;epic battle&#39; stakes), and even though it&#39;s three hours long, it doesn&#39;t feel bloated. The only times I glanced at my watch was because I was hoping there would be more time before the end.<br/><br/>Yes, it&#39;s a superhero movie, but an immensely entertaining one (especially for fans who have seen all the pictures that came before it: there are tons of references and inside jokes to reward the faithful).<br/><br/>If &quot;Return of the King&quot; managed to win Best picture at the 2003 Oscars Avengers: Endgame deserves at least a nomination. It&#39;s as good (and in many ways better) a conclusion to a fantasy/genre series as the Peter Jackson film,.<br/><br/>Go see it.",
+								"__typename": "Markdown"
+							},
+							"__typename": "ReviewText"
+						},
+						"title": {
+							"id": "tt4154796",
+							"__typename": "Title"
+						},
+						"authorRating": 9,
+						"__typename": "Review"
+					},
+					"__typename": "ReviewEdge"
+				},
+				{
+					"node": {
+						"id": "rw7380468",
+						"author": {
+							"userId": "ur137782590",
+							"username": {
+								"text": "miniminnie-23063",
+								"__typename": "UserProfileUsername"
+							},
+							"__typename": "UserProfile"
+						},
+						"summary": {
+							"originalText": "Epic movie",
+							"__typename": "ReviewSummary"
+						},
+						"text": {
+							"originalText": {
+								"plaidHtml": "As always avengers didn&#39;t disappoint even with a few loops or inconsistencies. Hope marvel does more movies about some characters from avengers.",
+								"__typename": "Markdown"
+							},
+							"__typename": "ReviewText"
+						},
+						"title": {
+							"id": "tt4154796",
+							"__typename": "Title"
+						},
+						"authorRating": 10,
+						"__typename": "Review"
+					},
+					"__typename": "ReviewEdge"
+				}
+			],
+			"__typename": "ReviewsConnection"
+		},
+		"reviewSummary": {
+			"overall": {
+				"medium": {
+					"value": {
+						"plaidHtml": "Reviewers say &#39;Avengers: Endgame&#39; is lauded for its epic conclusion, thrilling action, and emotional depth, successfully wrapping up over a decade of storytelling. Strong character arcs and impressive visuals are highlighted, though some criticize its lengthy runtime and convoluted time travel plot. Character underutilization and reliance on fan service are noted downsides. Despite these issues, many find it a satisfying and resonant finale to the Infinity Saga.",
+						"__typename": "Markdown"
+					},
+					"__typename": "LocalizedMarkdown"
+				},
+				"__typename": "TitleReviewSentimentSection"
+			},
+			"themes": [
+				{
+					"themeId": "action-sequences",
+					"label": {
+						"value": "Action sequences",
+						"__typename": "LocalizedString"
+					},
+					"sentiment": "POSITIVE",
+					"__typename": "TitleReviewTheme"
+				},
+				{
+					"themeId": "character-development",
+					"label": {
+						"value": "Character development",
+						"__typename": "LocalizedString"
+					},
+					"sentiment": "POSITIVE",
+					"__typename": "TitleReviewTheme"
+				},
+				{
+					"themeId": "emotional-weight",
+					"label": {
+						"value": "Emotional weight",
+						"__typename": "LocalizedString"
+					},
+					"sentiment": "POSITIVE",
+					"__typename": "TitleReviewTheme"
+				},
+				{
+					"themeId": "nostalgic",
+					"label": {
+						"value": "Nostalgic",
+						"__typename": "LocalizedString"
+					},
+					"sentiment": "POSITIVE",
+					"__typename": "TitleReviewTheme"
+				},
+				{
+					"themeId": "satisfying-ending",
+					"label": {
+						"value": "Satisfying ending",
+						"__typename": "LocalizedString"
+					},
+					"sentiment": "POSITIVE",
+					"__typename": "TitleReviewTheme"
+				},
+				{
+					"themeId": "pacing",
+					"label": {
+						"value": "Pacing",
+						"__typename": "LocalizedString"
+					},
+					"sentiment": "NEGATIVE",
+					"__typename": "TitleReviewTheme"
+				},
+				{
+					"themeId": "thin-story",
+					"label": {
+						"value": "Thin story",
+						"__typename": "LocalizedString"
+					},
+					"sentiment": "NEGATIVE",
+					"__typename": "TitleReviewTheme"
+				},
+				{
+					"themeId": "uneven-quality",
+					"label": {
+						"value": "Uneven quality",
+						"__typename": "LocalizedString"
+					},
+					"sentiment": "NEGATIVE",
+					"__typename": "TitleReviewTheme"
+				}
+			],
+			"__typename": "TitleReviewSummary"
+		},
+		"isAdult": false,
+		"moreLikeThisTitles": {
+			"edges": [
+				{
+					"node": {
+						"id": "tt4154756",
+						"titleText": {
+							"text": "Avengers: Infinity War",
+							"__typename": "TitleText"
+						},
+						"titleType": {
+							"id": "movie",
+							"text": "Movie",
+							"canHaveEpisodes": false,
+							"displayableProperty": {
+								"value": {
+									"plainText": "",
+									"__typename": "Markdown"
+								},
+								"__typename": "DisplayableTitleTypeProperty"
+							},
+							"__typename": "TitleType"
+						},
+						"originalTitleText": {
+							"text": "Avengers: Infinity War",
+							"__typename": "TitleText"
+						},
+						"primaryImage": {
+							"id": "rm4044245504",
+							"width": 1382,
+							"height": 2048,
+							"url": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_.jpg",
+							"caption": {
+								"plainText": "Kenneth Branagh, Samuel L. Jackson, Don Cheadle, Robert Downey Jr., William Hurt, Gwyneth Paltrow, Josh Brolin, Benicio Del Toro, Vin Diesel, Alan Silvestri, Paul Bettany, Kerry Condon, Bradley Cooper, Keith Splinter Davis, Peter Dinklage, Idris Elba, Chris Evans, Kevin Feige, Jeffrey Ford, Keith Giffen, Sean Gunn, Scarlett Johansson, Ameenah Kaplan, Florence Kasumba, Jack Kirby, Stan Lee, Tim McAdams, Elizabeth Olsen, Chris Pratt, Mark Ruffalo, Anthony Russo, Joe Russo, Zoe Saldaña, Matthew Schmidt, Joe Simon, Benedict Wong, Charles Wood, Trent Opaloch, Terry Notary, Tom Hiddleston, Anthony Mackie, Robert Pralgo, Cobie Smulders, Chris Hemsworth, Dave Bautista, Benedict Cumberbatch, Monique Ganderton, Larry Lieber, Christopher Markus, Stephen McFeely, Don Heck, Carlos Guity, Chadwick Boseman, Aaron Lazar, Sebastian Stan, Danai Gurira, Steve Englehart, Jeremy Sample, Precious Jenkins, Karen Gillan, Dominique Elijah Smith, Tom Vaughan-Lawlor, Tiffany Espensen, Steven Essani, Ross Marquand, Bill Mantlo, Matthew Zuk, Pom Klementieff, Steve Gan, Blair Jasin, Femi Olagoke, Ethan Dizon, Michael Pierino Miller, Taraja Ramsess, Jénel Stevens, Michael Anthony Rogers, Gee Alexander, Janeshia Adams-Ginyard, Letitia Wright, James Sterling, Tom Holland, Jim Starlin, Isabella Amara, Ryan Robertson, Kevin D Wilson, Daniel Graham, Joseph Singletary, Michael James Shaw, David Dman Escobar, Solomon Glave, Kevin Montgomery, Rabon Hutcherson, Carrie Coon, Gayles Martavius, Kirk A. Jenkins, Tanya Wheelock, Andrew S. McMillan, Marcus Lewis, Donny Carrington, Gary Peebles, Floyd Anthony Johns Jr., Tye Claybrook Jr., Khalil' La'Marr Pickett, Marie Mouroum, Jazzy Ellis, Marija Juliette Abney, Phedra Syndelle, Winston Duke, Antjuan Rhames, Jefferson Lewis, Jared Moser, Zola Williams, Dawit Gulilat, Denisha Gillespie, Harrison Osterfield, James Siderits, Brandon M. Shaw, Hamid-Reza Benjamin Thompson, Chris Moore, Ariana Greenblatt, Annie Pisapia, Matthew Christensen, Simeon Freeman, Branden Arnold, Michael David Yuhl, Daniela Gaskie, Jamel D. Chambers, John Gettier, Sergio Briones, Nathaniel Perry, Jacob Batalon, Matthew Excel Simmons, Lucie Carroll, Bobby James, Bobby Hoskins, Jacob Evans, Olaniyan Thurmon, Edward Parker, Cecil M. Henry, Cory Dunson, Bruce Anthony Shepperson, Perla Middleton, Laurel O Wagner, Jachin Myers, Elgin Lee, Demetri Landell, Tony Dupar, Shawn South, Mallory Kidwell, Devin Koehler, Chase Ledgerwood, Jomahl Gildersleve, Frank David Monroe, Granger Summerset II, Austin Rospert, Lady Cardinal, Luke Maher, Laura Miller, Joe Maitland, Dylan Gajai, and Robert Tinsley in Avengers: Infinity War (2018)",
+								"__typename": "Markdown"
+							},
+							"__typename": "Image"
+						},
+						"releaseYear": {
+							"year": 2018,
+							"endYear": null,
+							"__typename": "YearRange"
+						},
+						"ratingsSummary": {
+							"aggregateRating": 8.4,
+							"voteCount": 1333560,
+							"__typename": "RatingsSummary"
+						},
+						"runtime": {
+							"seconds": 8940,
+							"__typename": "Runtime"
+						},
+						"certificate": {
+							"rating": "12",
+							"__typename": "Certificate"
+						},
+						"canRate": {
+							"isRatable": true,
+							"__typename": "CanRate"
+						},
+						"titleGenres": {
+							"genres": [
+								{
+									"genre": {
+										"text": "Action",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Adventure",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Sci-Fi",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								}
+							],
+							"__typename": "TitleGenres"
+						},
+						"__typename": "Title"
+					},
+					"__typename": "MoreLikeThisEdge"
+				},
+				{
+					"node": {
+						"id": "tt10872600",
+						"titleText": {
+							"text": "Spider-Man: No Way Home",
+							"__typename": "TitleText"
+						},
+						"titleType": {
+							"id": "movie",
+							"text": "Movie",
+							"canHaveEpisodes": false,
+							"displayableProperty": {
+								"value": {
+									"plainText": "",
+									"__typename": "Markdown"
+								},
+								"__typename": "DisplayableTitleTypeProperty"
+							},
+							"__typename": "TitleType"
+						},
+						"originalTitleText": {
+							"text": "Spider-Man: No Way Home",
+							"__typename": "TitleText"
+						},
+						"primaryImage": {
+							"id": "rm2798542593",
+							"width": 1400,
+							"height": 2100,
+							"url": "https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_.jpg",
+							"caption": {
+								"plainText": "Willem Dafoe, Alfred Molina, Thomas Haden Church, Jamie Foxx, Rhys Ifans, Benedict Cumberbatch, Zendaya, and Tom Holland in Spider-Man: No Way Home (2021)",
+								"__typename": "Markdown"
+							},
+							"__typename": "Image"
+						},
+						"releaseYear": {
+							"year": 2021,
+							"endYear": null,
+							"__typename": "YearRange"
+						},
+						"ratingsSummary": {
+							"aggregateRating": 8.2,
+							"voteCount": 987716,
+							"__typename": "RatingsSummary"
+						},
+						"runtime": {
+							"seconds": 8880,
+							"__typename": "Runtime"
+						},
+						"certificate": {
+							"rating": "12",
+							"__typename": "Certificate"
+						},
+						"canRate": {
+							"isRatable": true,
+							"__typename": "CanRate"
+						},
+						"titleGenres": {
+							"genres": [
+								{
+									"genre": {
+										"text": "Action",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Adventure",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Fantasy",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								}
+							],
+							"__typename": "TitleGenres"
+						},
+						"__typename": "Title"
+					},
+					"__typename": "MoreLikeThisEdge"
+				},
+				{
+					"node": {
+						"id": "tt0848228",
+						"titleText": {
+							"text": "The Avengers",
+							"__typename": "TitleText"
+						},
+						"titleType": {
+							"id": "movie",
+							"text": "Movie",
+							"canHaveEpisodes": false,
+							"displayableProperty": {
+								"value": {
+									"plainText": "",
+									"__typename": "Markdown"
+								},
+								"__typename": "DisplayableTitleTypeProperty"
+							},
+							"__typename": "TitleType"
+						},
+						"originalTitleText": {
+							"text": "The Avengers",
+							"__typename": "TitleText"
+						},
+						"primaryImage": {
+							"id": "rm3955117056",
+							"width": 800,
+							"height": 1184,
+							"url": "https://m.media-amazon.com/images/M/MV5BNGE0YTVjNzUtNzJjOS00NGNlLTgxMzctZTY4YTE1Y2Y1ZTU4XkEyXkFqcGc@._V1_.jpg",
+							"caption": {
+								"plainText": "Samuel L. Jackson, Robert Downey Jr., Lou Ferrigno, Chris Evans, Scarlett Johansson, Jeremy Renner, Mark Ruffalo, and Chris Hemsworth in The Avengers (2012)",
+								"__typename": "Markdown"
+							},
+							"__typename": "Image"
+						},
+						"releaseYear": {
+							"year": 2012,
+							"endYear": null,
+							"__typename": "YearRange"
+						},
+						"ratingsSummary": {
+							"aggregateRating": 8,
+							"voteCount": 1534191,
+							"__typename": "RatingsSummary"
+						},
+						"runtime": {
+							"seconds": 8580,
+							"__typename": "Runtime"
+						},
+						"certificate": {
+							"rating": "12",
+							"__typename": "Certificate"
+						},
+						"canRate": {
+							"isRatable": true,
+							"__typename": "CanRate"
+						},
+						"titleGenres": {
+							"genres": [
+								{
+									"genre": {
+										"text": "Action",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Sci-Fi",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								}
+							],
+							"__typename": "TitleGenres"
+						},
+						"__typename": "Title"
+					},
+					"__typename": "MoreLikeThisEdge"
+				},
+				{
+					"node": {
+						"id": "tt1345836",
+						"titleText": {
+							"text": "The Dark Knight Rises",
+							"__typename": "TitleText"
+						},
+						"titleType": {
+							"id": "movie",
+							"text": "Movie",
+							"canHaveEpisodes": false,
+							"displayableProperty": {
+								"value": {
+									"plainText": "",
+									"__typename": "Markdown"
+								},
+								"__typename": "DisplayableTitleTypeProperty"
+							},
+							"__typename": "TitleType"
+						},
+						"originalTitleText": {
+							"text": "The Dark Knight Rises",
+							"__typename": "TitleText"
+						},
+						"primaryImage": {
+							"id": "rm834516224",
+							"width": 486,
+							"height": 720,
+							"url": "https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_.jpg",
+							"caption": {
+								"plainText": "Morgan Freeman, Gary Oldman, Christian Bale, Michael Caine, Matthew Modine, Anne Hathaway, Marion Cotillard, and Joseph Gordon-Levitt in The Dark Knight Rises (2012)",
+								"__typename": "Markdown"
+							},
+							"__typename": "Image"
+						},
+						"releaseYear": {
+							"year": 2012,
+							"endYear": null,
+							"__typename": "YearRange"
+						},
+						"ratingsSummary": {
+							"aggregateRating": 8.4,
+							"voteCount": 1956527,
+							"__typename": "RatingsSummary"
+						},
+						"runtime": {
+							"seconds": 9840,
+							"__typename": "Runtime"
+						},
+						"certificate": {
+							"rating": "12",
+							"__typename": "Certificate"
+						},
+						"canRate": {
+							"isRatable": true,
+							"__typename": "CanRate"
+						},
+						"titleGenres": {
+							"genres": [
+								{
+									"genre": {
+										"text": "Action",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Crime",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Drama",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								}
+							],
+							"__typename": "TitleGenres"
+						},
+						"__typename": "Title"
+					},
+					"__typename": "MoreLikeThisEdge"
+				},
+				{
+					"node": {
+						"id": "tt2395427",
+						"titleText": {
+							"text": "Avengers: Age of Ultron",
+							"__typename": "TitleText"
+						},
+						"titleType": {
+							"id": "movie",
+							"text": "Movie",
+							"canHaveEpisodes": false,
+							"displayableProperty": {
+								"value": {
+									"plainText": "",
+									"__typename": "Markdown"
+								},
+								"__typename": "DisplayableTitleTypeProperty"
+							},
+							"__typename": "TitleType"
+						},
+						"originalTitleText": {
+							"text": "Avengers: Age of Ultron",
+							"__typename": "TitleText"
+						},
+						"primaryImage": {
+							"id": "rm4050576640",
+							"width": 864,
+							"height": 1280,
+							"url": "https://m.media-amazon.com/images/M/MV5BODBhYTg1NGQtNGVmNS00ZTdiLThjYTYtZDFkNzRiNTZmNDZjXkEyXkFqcGc@._V1_.jpg",
+							"caption": {
+								"plainText": "Samuel L. Jackson, Robert Downey Jr., James Spader, Paul Bettany, Chris Evans, Scarlett Johansson, Elizabeth Olsen, Jeremy Renner, Mark Ruffalo, Aaron Taylor-Johnson, and Chris Hemsworth in Avengers: Age of Ultron (2015)",
+								"__typename": "Markdown"
+							},
+							"__typename": "Image"
+						},
+						"releaseYear": {
+							"year": 2015,
+							"endYear": null,
+							"__typename": "YearRange"
+						},
+						"ratingsSummary": {
+							"aggregateRating": 7.3,
+							"voteCount": 981104,
+							"__typename": "RatingsSummary"
+						},
+						"runtime": {
+							"seconds": 8460,
+							"__typename": "Runtime"
+						},
+						"certificate": {
+							"rating": "12",
+							"__typename": "Certificate"
+						},
+						"canRate": {
+							"isRatable": true,
+							"__typename": "CanRate"
+						},
+						"titleGenres": {
+							"genres": [
+								{
+									"genre": {
+										"text": "Action",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Adventure",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Sci-Fi",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								}
+							],
+							"__typename": "TitleGenres"
+						},
+						"__typename": "Title"
+					},
+					"__typename": "MoreLikeThisEdge"
+				},
+				{
+					"node": {
+						"id": "tt3501632",
+						"titleText": {
+							"text": "Thor: Ragnarok",
+							"__typename": "TitleText"
+						},
+						"titleType": {
+							"id": "movie",
+							"text": "Movie",
+							"canHaveEpisodes": false,
+							"displayableProperty": {
+								"value": {
+									"plainText": "",
+									"__typename": "Markdown"
+								},
+								"__typename": "DisplayableTitleTypeProperty"
+							},
+							"__typename": "TitleType"
+						},
+						"originalTitleText": {
+							"text": "Thor: Ragnarok",
+							"__typename": "TitleText"
+						},
+						"primaryImage": {
+							"id": "rm1413491712",
+							"width": 1382,
+							"height": 2048,
+							"url": "https://m.media-amazon.com/images/M/MV5BMjMyNDkzMzI1OF5BMl5BanBnXkFtZTgwODcxODg5MjI@._V1_.jpg",
+							"caption": {
+								"plainText": "Jeff Goldblum, Anthony Hopkins, Cate Blanchett, Idris Elba, Mark Ruffalo, Tom Hiddleston, Chris Hemsworth, and Tessa Thompson in Thor: Ragnarok (2017)",
+								"__typename": "Markdown"
+							},
+							"__typename": "Image"
+						},
+						"releaseYear": {
+							"year": 2017,
+							"endYear": null,
+							"__typename": "YearRange"
+						},
+						"ratingsSummary": {
+							"aggregateRating": 7.9,
+							"voteCount": 876843,
+							"__typename": "RatingsSummary"
+						},
+						"runtime": {
+							"seconds": 7800,
+							"__typename": "Runtime"
+						},
+						"certificate": {
+							"rating": "12",
+							"__typename": "Certificate"
+						},
+						"canRate": {
+							"isRatable": true,
+							"__typename": "CanRate"
+						},
+						"titleGenres": {
+							"genres": [
+								{
+									"genre": {
+										"text": "Action",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Adventure",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Comedy",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								}
+							],
+							"__typename": "TitleGenres"
+						},
+						"__typename": "Title"
+					},
+					"__typename": "MoreLikeThisEdge"
+				},
+				{
+					"node": {
+						"id": "tt0468569",
+						"titleText": {
+							"text": "The Dark Knight",
+							"__typename": "TitleText"
+						},
+						"titleType": {
+							"id": "movie",
+							"text": "Movie",
+							"canHaveEpisodes": false,
+							"displayableProperty": {
+								"value": {
+									"plainText": "",
+									"__typename": "Markdown"
+								},
+								"__typename": "DisplayableTitleTypeProperty"
+							},
+							"__typename": "TitleType"
+						},
+						"originalTitleText": {
+							"text": "The Dark Knight",
+							"__typename": "TitleText"
+						},
+						"primaryImage": {
+							"id": "rm4023877632",
+							"width": 1383,
+							"height": 2048,
+							"url": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg",
+							"caption": {
+								"plainText": "Christian Bale in The Dark Knight (2008)",
+								"__typename": "Markdown"
+							},
+							"__typename": "Image"
+						},
+						"releaseYear": {
+							"year": 2008,
+							"endYear": null,
+							"__typename": "YearRange"
+						},
+						"ratingsSummary": {
+							"aggregateRating": 9.1,
+							"voteCount": 3100278,
+							"__typename": "RatingsSummary"
+						},
+						"runtime": {
+							"seconds": 9120,
+							"__typename": "Runtime"
+						},
+						"certificate": {
+							"rating": "16",
+							"__typename": "Certificate"
+						},
+						"canRate": {
+							"isRatable": true,
+							"__typename": "CanRate"
+						},
+						"titleGenres": {
+							"genres": [
+								{
+									"genre": {
+										"text": "Action",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Crime",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Drama",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								}
+							],
+							"__typename": "TitleGenres"
+						},
+						"__typename": "Title"
+					},
+					"__typename": "MoreLikeThisEdge"
+				},
+				{
+					"node": {
+						"id": "tt6320628",
+						"titleText": {
+							"text": "Spider-Man: Far from Home",
+							"__typename": "TitleText"
+						},
+						"titleType": {
+							"id": "movie",
+							"text": "Movie",
+							"canHaveEpisodes": false,
+							"displayableProperty": {
+								"value": {
+									"plainText": "",
+									"__typename": "Markdown"
+								},
+								"__typename": "DisplayableTitleTypeProperty"
+							},
+							"__typename": "TitleType"
+						},
+						"originalTitleText": {
+							"text": "Spider-Man: Far from Home",
+							"__typename": "TitleText"
+						},
+						"primaryImage": {
+							"id": "rm2921502465",
+							"width": 1500,
+							"height": 2229,
+							"url": "https://m.media-amazon.com/images/M/MV5BMzNhNTE0NWQtN2E1Ny00NjcwLTg1YTctMGY1NmMwODJmY2NmXkEyXkFqcGc@._V1_.jpg",
+							"caption": {
+								"plainText": "Samuel L. Jackson, Jake Gyllenhaal, and Tom Holland in Spider-Man: Far from Home (2019)",
+								"__typename": "Markdown"
+							},
+							"__typename": "Image"
+						},
+						"releaseYear": {
+							"year": 2019,
+							"endYear": null,
+							"__typename": "YearRange"
+						},
+						"ratingsSummary": {
+							"aggregateRating": 7.3,
+							"voteCount": 619175,
+							"__typename": "RatingsSummary"
+						},
+						"runtime": {
+							"seconds": 7740,
+							"__typename": "Runtime"
+						},
+						"certificate": {
+							"rating": "12",
+							"__typename": "Certificate"
+						},
+						"canRate": {
+							"isRatable": true,
+							"__typename": "CanRate"
+						},
+						"titleGenres": {
+							"genres": [
+								{
+									"genre": {
+										"text": "Action",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Adventure",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Comedy",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								}
+							],
+							"__typename": "TitleGenres"
+						},
+						"__typename": "Title"
+					},
+					"__typename": "MoreLikeThisEdge"
+				},
+				{
+					"node": {
+						"id": "tt3498820",
+						"titleText": {
+							"text": "Captain America: Civil War",
+							"__typename": "TitleText"
+						},
+						"titleType": {
+							"id": "movie",
+							"text": "Movie",
+							"canHaveEpisodes": false,
+							"displayableProperty": {
+								"value": {
+									"plainText": "",
+									"__typename": "Markdown"
+								},
+								"__typename": "DisplayableTitleTypeProperty"
+							},
+							"__typename": "TitleType"
+						},
+						"originalTitleText": {
+							"text": "Captain America: Civil War",
+							"__typename": "TitleText"
+						},
+						"primaryImage": {
+							"id": "rm3907132929",
+							"width": 300,
+							"height": 424,
+							"url": "https://m.media-amazon.com/images/M/MV5BNDRlZThkZTAtZmFiMi00OTM5LTkyZmMtMDA5NTNiZGY4OWQ0XkEyXkFqcGc@._V1_.jpg",
+							"caption": {
+								"plainText": "Don Cheadle, Robert Downey Jr., Paul Bettany, Chris Evans, Scarlett Johansson, Elizabeth Olsen, Jeremy Renner, Anthony Mackie, Chadwick Boseman, and Sebastian Stan in Captain America: Civil War (2016)",
+								"__typename": "Markdown"
+							},
+							"__typename": "Image"
+						},
+						"releaseYear": {
+							"year": 2016,
+							"endYear": null,
+							"__typename": "YearRange"
+						},
+						"ratingsSummary": {
+							"aggregateRating": 7.8,
+							"voteCount": 909624,
+							"__typename": "RatingsSummary"
+						},
+						"runtime": {
+							"seconds": 8820,
+							"__typename": "Runtime"
+						},
+						"certificate": {
+							"rating": "12",
+							"__typename": "Certificate"
+						},
+						"canRate": {
+							"isRatable": true,
+							"__typename": "CanRate"
+						},
+						"titleGenres": {
+							"genres": [
+								{
+									"genre": {
+										"text": "Action",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Sci-Fi",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								}
+							],
+							"__typename": "TitleGenres"
+						},
+						"__typename": "Title"
+					},
+					"__typename": "MoreLikeThisEdge"
+				},
+				{
+					"node": {
+						"id": "tt1853728",
+						"titleText": {
+							"text": "Django Unchained",
+							"__typename": "TitleText"
+						},
+						"titleType": {
+							"id": "movie",
+							"text": "Movie",
+							"canHaveEpisodes": false,
+							"displayableProperty": {
+								"value": {
+									"plainText": "",
+									"__typename": "Markdown"
+								},
+								"__typename": "DisplayableTitleTypeProperty"
+							},
+							"__typename": "TitleType"
+						},
+						"originalTitleText": {
+							"text": "Django Unchained",
+							"__typename": "TitleText"
+						},
+						"primaryImage": {
+							"id": "rm958180352",
+							"width": 1382,
+							"height": 2048,
+							"url": "https://m.media-amazon.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_.jpg",
+							"caption": {
+								"plainText": "Leonardo DiCaprio, Jamie Foxx, and Christoph Waltz in Django Unchained (2012)",
+								"__typename": "Markdown"
+							},
+							"__typename": "Image"
+						},
+						"releaseYear": {
+							"year": 2012,
+							"endYear": null,
+							"__typename": "YearRange"
+						},
+						"ratingsSummary": {
+							"aggregateRating": 8.5,
+							"voteCount": 1840502,
+							"__typename": "RatingsSummary"
+						},
+						"runtime": {
+							"seconds": 9900,
+							"__typename": "Runtime"
+						},
+						"certificate": {
+							"rating": "16",
+							"__typename": "Certificate"
+						},
+						"canRate": {
+							"isRatable": true,
+							"__typename": "CanRate"
+						},
+						"titleGenres": {
+							"genres": [
+								{
+									"genre": {
+										"text": "Drama",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Western",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								}
+							],
+							"__typename": "TitleGenres"
+						},
+						"__typename": "Title"
+					},
+					"__typename": "MoreLikeThisEdge"
+				},
+				{
+					"node": {
+						"id": "tt0076759",
+						"titleText": {
+							"text": "Star Wars: Episode IV: A New Hope",
+							"__typename": "TitleText"
+						},
+						"titleType": {
+							"id": "movie",
+							"text": "Movie",
+							"canHaveEpisodes": false,
+							"displayableProperty": {
+								"value": {
+									"plainText": "",
+									"__typename": "Markdown"
+								},
+								"__typename": "DisplayableTitleTypeProperty"
+							},
+							"__typename": "TitleType"
+						},
+						"originalTitleText": {
+							"text": "Star Wars",
+							"__typename": "TitleText"
+						},
+						"primaryImage": {
+							"id": "rm4239237890",
+							"width": 1379,
+							"height": 1974,
+							"url": "https://m.media-amazon.com/images/M/MV5BZDExNThiYWYtN2VhOS00NmQ2LTk3NzUtMjAyOGZkNzk4NzBjXkEyXkFqcGc@._V1_.jpg",
+							"caption": {
+								"plainText": "Carrie Fisher, Mark Hamill, and David Prowse in Star Wars: Episode IV: A New Hope (1977)",
+								"__typename": "Markdown"
+							},
+							"__typename": "Image"
+						},
+						"releaseYear": {
+							"year": 1977,
+							"endYear": null,
+							"__typename": "YearRange"
+						},
+						"ratingsSummary": {
+							"aggregateRating": 8.6,
+							"voteCount": 1543001,
+							"__typename": "RatingsSummary"
+						},
+						"runtime": {
+							"seconds": 7260,
+							"__typename": "Runtime"
+						},
+						"certificate": {
+							"rating": "AL",
+							"__typename": "Certificate"
+						},
+						"canRate": {
+							"isRatable": true,
+							"__typename": "CanRate"
+						},
+						"titleGenres": {
+							"genres": [
+								{
+									"genre": {
+										"text": "Action",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Adventure",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Fantasy",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								}
+							],
+							"__typename": "TitleGenres"
+						},
+						"__typename": "Title"
+					},
+					"__typename": "MoreLikeThisEdge"
+				},
+				{
+					"node": {
+						"id": "tt1843866",
+						"titleText": {
+							"text": "Captain America: The Winter Soldier",
+							"__typename": "TitleText"
+						},
+						"titleType": {
+							"id": "movie",
+							"text": "Movie",
+							"canHaveEpisodes": false,
+							"displayableProperty": {
+								"value": {
+									"plainText": "",
+									"__typename": "Markdown"
+								},
+								"__typename": "DisplayableTitleTypeProperty"
+							},
+							"__typename": "TitleType"
+						},
+						"originalTitleText": {
+							"text": "Captain America: The Winter Soldier",
+							"__typename": "TitleText"
+						},
+						"primaryImage": {
+							"id": "rm2928226816",
+							"width": 1688,
+							"height": 2500,
+							"url": "https://m.media-amazon.com/images/M/MV5BNWY1NjFmNDItZDhmOC00NjI1LWE0ZDItMTM0MjBjZThiOTQ2XkEyXkFqcGc@._V1_.jpg",
+							"caption": {
+								"plainText": "Samuel L. Jackson, Robert Redford, Chris Evans, Scarlett Johansson, and Sebastian Stan in Captain America: The Winter Soldier (2014)",
+								"__typename": "Markdown"
+							},
+							"__typename": "Image"
+						},
+						"releaseYear": {
+							"year": 2014,
+							"endYear": null,
+							"__typename": "YearRange"
+						},
+						"ratingsSummary": {
+							"aggregateRating": 7.7,
+							"voteCount": 955277,
+							"__typename": "RatingsSummary"
+						},
+						"runtime": {
+							"seconds": 8160,
+							"__typename": "Runtime"
+						},
+						"certificate": {
+							"rating": "12",
+							"__typename": "Certificate"
+						},
+						"canRate": {
+							"isRatable": true,
+							"__typename": "CanRate"
+						},
+						"titleGenres": {
+							"genres": [
+								{
+									"genre": {
+										"text": "Action",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Adventure",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								},
+								{
+									"genre": {
+										"text": "Sci-Fi",
+										"__typename": "GenreItem"
+									},
+									"__typename": "TitleGenre"
+								}
+							],
+							"__typename": "TitleGenres"
+						},
+						"__typename": "Title"
+					},
+					"__typename": "MoreLikeThisEdge"
+				}
+			],
+			"__typename": "MoreLikeThisConnection"
+		},
+		"relatedInterests": {
+			"edges": [
+				{
+					"node": {
+						"id": "in0000002",
+						"primaryText": {
+							"text": "Action Epic",
+							"__typename": "InterestText"
+						},
+						"primaryImage": {
+							"caption": {
+								"plainText": "Charlize Theron in Mad Max: Fury Road (2015)",
+								"__typename": "Markdown"
+							},
+							"width": 1366,
+							"height": 768,
+							"url": "https://m.media-amazon.com/images/M/MV5BM2RkNmFkZTItODFkMS00Yjk5LTg2YTQtMGQ0Zjc0Mzk3ZGQ5XkEyXkFqcGc@._V1_.jpg",
+							"id": "rm1919706624",
+							"__typename": "Image"
+						},
+						"visibilityLevel": "PUBLIC",
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				},
+				{
+					"node": {
+						"id": "in0000015",
+						"primaryText": {
+							"text": "Adventure Epic",
+							"__typename": "InterestText"
+						},
+						"primaryImage": {
+							"caption": {
+								"plainText": "Peter O'Toole and Omar Sharif in Lawrence of Arabia (1962)",
+								"__typename": "Markdown"
+							},
+							"width": 1280,
+							"height": 720,
+							"url": "https://m.media-amazon.com/images/M/MV5BNGE4NjIwMGYtYWQ4MC00NGIyLWI1YjQtNjJmZjllYjFjMDgzXkEyXkFqcGc@._V1_.jpg",
+							"id": "rm3806746113",
+							"__typename": "Image"
+						},
+						"visibilityLevel": "PUBLIC",
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				},
+				{
+					"node": {
+						"id": "in0000077",
+						"primaryText": {
+							"text": "Epic",
+							"__typename": "InterestText"
+						},
+						"primaryImage": {
+							"caption": {
+								"plainText": "Orson Welles in Citizen Kane (1941)",
+								"__typename": "Markdown"
+							},
+							"width": 1200,
+							"height": 900,
+							"url": "https://m.media-amazon.com/images/M/MV5BZmZkMzI4YWEtMmIxMi00ZDA2LTk3MDMtNzVmOGQ1NzI5OTU2XkEyXkFqcGc@._V1_.jpg",
+							"id": "rm3123641601",
+							"__typename": "Image"
+						},
+						"visibilityLevel": "PUBLIC",
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				},
+				{
+					"node": {
+						"id": "in0000163",
+						"primaryText": {
+							"text": "Sci-Fi Epic",
+							"__typename": "InterestText"
+						},
+						"primaryImage": {
+							"caption": {
+								"plainText": "Timothée Chalamet in Dune (2021)",
+								"__typename": "Markdown"
+							},
+							"width": 2865,
+							"height": 1200,
+							"url": "https://m.media-amazon.com/images/M/MV5BODhjMDQ5MWMtMTFkMi00MjMyLTkyM2ItOTZmNzJkZjMyODg3XkEyXkFqcGc@._V1_.jpg",
+							"id": "rm2313158145",
+							"__typename": "Image"
+						},
+						"visibilityLevel": "PUBLIC",
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				},
+				{
+					"node": {
+						"id": "in0000164",
+						"primaryText": {
+							"text": "Space Sci-Fi",
+							"__typename": "InterestText"
+						},
+						"primaryImage": {
+							"caption": {
+								"plainText": "Leonard Nimoy and William Shatner in Star Trek (1966)",
+								"__typename": "Markdown"
+							},
+							"width": 900,
+							"height": 600,
+							"url": "https://m.media-amazon.com/images/M/MV5BOTY2NjMzNDk3NV5BMl5BanBnXkFtZTgwODI5Nzg0OTE@._V1_.jpg",
+							"id": "rm3508344064",
+							"__typename": "Image"
+						},
+						"visibilityLevel": "PUBLIC",
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				},
+				{
+					"node": {
+						"id": "in0000008",
+						"primaryText": {
+							"text": "Superhero",
+							"__typename": "InterestText"
+						},
+						"primaryImage": {
+							"caption": {
+								"plainText": "Robert Downey Jr., Chris Evans, Scarlett Johansson, Jeremy Renner, Mark Ruffalo, and Chris Hemsworth",
+								"__typename": "Markdown"
+							},
+							"width": 2048,
+							"height": 1152,
+							"url": "https://m.media-amazon.com/images/M/MV5BMTM2MzY1ODc1Nl5BMl5BanBnXkFtZTcwNTg4OTY3Nw@@._V1_.jpg",
+							"id": "rm1881388032",
+							"__typename": "Image"
+						},
+						"visibilityLevel": "PUBLIC",
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				},
+				{
+					"node": {
+						"id": "in0000166",
+						"primaryText": {
+							"text": "Time Travel",
+							"__typename": "InterestText"
+						},
+						"primaryImage": {
+							"caption": {
+								"plainText": "Michael J. Fox and Christopher Lloyd in Back to the Future (1985)",
+								"__typename": "Markdown"
+							},
+							"width": 1920,
+							"height": 1040,
+							"url": "https://m.media-amazon.com/images/M/MV5BY2YzZjcwNjktMTIyNi00Nzg0LWEyMDctOTdiZDZmOTEzOTQ2XkEyXkFqcGc@._V1_.jpg",
+							"id": "rm79903232",
+							"__typename": "Image"
+						},
+						"visibilityLevel": "PUBLIC",
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				},
+				{
+					"node": {
+						"id": "in0000090",
+						"primaryText": {
+							"text": "Tragedy",
+							"__typename": "InterestText"
+						},
+						"primaryImage": {
+							"caption": {
+								"plainText": "Casey Affleck and Michelle Williams in Manchester by the Sea (2016)",
+								"__typename": "Markdown"
+							},
+							"width": 2048,
+							"height": 1365,
+							"url": "https://m.media-amazon.com/images/M/MV5BMTc4MTQxMTIwMl5BMl5BanBnXkFtZTgwNzM2NzE4OTE@._V1_.jpg",
+							"id": "rm20121856",
+							"__typename": "Image"
+						},
+						"visibilityLevel": "PUBLIC",
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				},
+				{
+					"node": {
+						"id": "in0000001",
+						"primaryText": {
+							"text": "Action",
+							"__typename": "InterestText"
+						},
+						"primaryImage": {
+							"caption": {
+								"plainText": "Bruce Willis and Taniel in Die Hard (1988)",
+								"__typename": "Markdown"
+							},
+							"width": 1280,
+							"height": 720,
+							"url": "https://m.media-amazon.com/images/M/MV5BMDU4ZmM1NjYtNGY2MS00NmE1LThiMzAtNzU3NWZhYmM0ZjgxXkEyXkFqcGc@._V1_.jpg",
+							"id": "rm65426945",
+							"__typename": "Image"
+						},
+						"visibilityLevel": "PUBLIC",
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				},
+				{
+					"node": {
+						"id": "in0000012",
+						"primaryText": {
+							"text": "Adventure",
+							"__typename": "InterestText"
+						},
+						"primaryImage": {
+							"caption": {
+								"plainText": "Still frame",
+								"__typename": "Markdown"
+							},
+							"width": 1920,
+							"height": 816,
+							"url": "https://m.media-amazon.com/images/M/MV5BMTlmNjQxNGItMmM1My00YTk2LTk2NjYtNTc4YWFjYTgxNTRiXkEyXkFqcGc@._V1_.jpg",
+							"id": "rm4076771329",
+							"__typename": "Image"
+						},
+						"visibilityLevel": "PUBLIC",
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				},
+				{
+					"node": {
+						"id": "in0000162",
+						"primaryText": {
+							"text": "Sci-Fi",
+							"__typename": "InterestText"
+						},
+						"primaryImage": {
+							"caption": {
+								"plainText": "James Earl Jones and David Prowse in Star Wars: Episode V - The Empire Strikes Back (1980)",
+								"__typename": "Markdown"
+							},
+							"width": 1536,
+							"height": 1035,
+							"url": "https://m.media-amazon.com/images/M/MV5BOTkxMzc0MDg5MV5BMl5BanBnXkFtZTcwNjUxMzA4NA@@._V1_.jpg",
+							"id": "rm137476864",
+							"__typename": "Image"
+						},
+						"visibilityLevel": "PUBLIC",
+						"__typename": "Interest"
+					},
+					"__typename": "InterestEdge"
+				}
+			],
+			"__typename": "InterestConnection"
+		},
+		"triviaTotal": {
+			"total": 391,
+			"__typename": "TriviaConnection"
+		},
+		"trivia": {
+			"edges": [
+				{
+					"node": {
+						"text": {
+							"plaidHtml": "(at around 41 mins) <a class=\"ipc-md-link ipc-md-link--entity\" href=\"/name/nm0000375/?ref_=dyk_trv\">Robert Downey Jr.</a> once told <a class=\"ipc-md-link ipc-md-link--entity\" href=\"/name/nm0751577/?ref_=dyk_trv\">Anthony Russo</a> and <a class=\"ipc-md-link ipc-md-link--entity\" href=\"/name/nm0751648/?ref_=dyk_trv\">Joe Russo</a> about how one of his children said &quot;I love you 3000&quot; to him. The directors liked the phrase so much that they decided to include it in the film.",
+							"__typename": "Markdown"
+						},
+						"trademark": null,
+						"relatedNames": null,
+						"__typename": "TitleTrivia"
+					},
+					"__typename": "TriviaEdge"
+				}
+			],
+			"__typename": "TriviaConnection"
+		},
+		"goofsTotal": {
+			"total": 87,
+			"__typename": "GoofConnection"
+		},
+		"goofs": {
+			"edges": [
+				{
+					"node": {
+						"text": {
+							"plaidHtml": "(at around 2h 20 mins) Scott is in the van trying a jump start, we then cut away and he is seen in the background battling a flying monster.",
+							"__typename": "Markdown"
+						},
+						"__typename": "Goof"
+					},
+					"__typename": "GoofEdge"
+				}
+			],
+			"__typename": "GoofConnection"
+		},
+		"quotesTotal": {
+			"total": 226,
+			"__typename": "TitleQuoteConnection"
+		},
+		"quotes": {
+			"edges": [
+				{
+					"node": {
+						"lines": [
+							{
+								"characters": [
+									{
+										"character": "Steve Rogers",
+										"name": {
+											"id": "nm0262635",
+											"__typename": "Name"
+										},
+										"__typename": "TitleQuoteCharacter"
+									}
+								],
+								"text": "Avengers! Assemble.",
+								"stageDirection": null,
+								"__typename": "TitleQuoteLine"
+							}
+						],
+						"__typename": "TitleQuote"
+					},
+					"__typename": "TitleQuoteEdge"
+				}
+			],
+			"__typename": "TitleQuoteConnection"
+		},
+		"crazyCredits": {
+			"edges": [
+				{
+					"node": {
+						"text": {
+							"plaidHtml": "When the Marvel logo appears at the end of the closing credits, the sound of a hammer hitting metal can be heard several times (this is the sound of Tony Stark forging his suit in <a class=\"ipc-md-link ipc-md-link--entity\" href=\"/title/tt0371746/?ref_=dyk_cc\">Iron Man (2008)</a>, setting in motion the Marvel Cinematic Universe).",
+							"__typename": "Markdown"
+						},
+						"__typename": "CrazyCredit"
+					},
+					"__typename": "CrazyCreditEdge"
+				}
+			],
+			"__typename": "CrazyCreditConnection"
+		},
+		"alternateVersions": {
+			"total": 2,
+			"edges": [
+				{
+					"node": {
+						"text": {
+							"plaidHtml": "On June 28, 2019, the film was re-released with 6 minutes of extra footage after the credits.",
+							"__typename": "Markdown"
+						},
+						"__typename": "AlternateVersion"
+					},
+					"__typename": "AlternateVersionEdge"
+				}
+			],
+			"__typename": "AlternateVersionConnection"
+		},
+		"connections": {
+			"edges": [
+				{
+					"node": {
+						"associatedTitle": {
+							"id": "tt0848228",
+							"releaseYear": {
+								"year": 2012,
+								"__typename": "YearRange"
+							},
+							"titleText": {
+								"text": "The Avengers",
+								"__typename": "TitleText"
+							},
+							"originalTitleText": {
+								"text": "The Avengers",
+								"__typename": "TitleText"
+							},
+							"series": null,
+							"__typename": "Title"
+						},
+						"category": {
+							"text": "Edited from",
+							"__typename": "TitleConnectionCategory"
+						},
+						"__typename": "TitleConnection"
+					},
+					"__typename": "TitleConnectionEdge"
+				}
+			],
+			"__typename": "TitleConnectionConnection"
+		},
+		"soundtrack": {
+			"edges": [
+				{
+					"node": {
+						"text": "Dear Mr. Fantasy",
+						"comments": [
+							{
+								"plaidHtml": "Written by <a class=\"ipc-md-link ipc-md-link--entity\" href=\"/name/nm0005566/?ref_=dyk_snd\">Steve Winwood</a>, <a class=\"ipc-md-link ipc-md-link--entity\" href=\"/name/nm0132063/?ref_=dyk_snd\">Jim Capaldi</a>, and <a class=\"ipc-md-link ipc-md-link--entity\" href=\"/name/nm1140426/?ref_=dyk_snd\">Chris Wood</a>",
+								"__typename": "Markdown"
+							},
+							{
+								"plaidHtml": "Performed by <a class=\"ipc-md-link ipc-md-link--entity\" href=\"/name/nm0870605/?ref_=dyk_snd\">Traffic</a>",
+								"__typename": "Markdown"
+							},
+							{
+								"plaidHtml": "Courtesy of Island Records Ltd.",
+								"__typename": "Markdown"
+							},
+							{
+								"plaidHtml": "Under license from Universal Music Enterprises",
+								"__typename": "Markdown"
+							}
+						],
+						"__typename": "Track"
+					},
+					"__typename": "SoundtrackEdge"
+				}
+			],
+			"__typename": "SoundtrackConnection"
+		},
+		"topQuestions": {
+			"total": 18,
+			"edges": [
+				{
+					"node": {
+						"attributeId": "run-time",
+						"question": {
+							"plainText": "How long is Avengers: Endgame?",
+							"__typename": "Markdown"
+						},
+						"__typename": "AlexaQuestion"
+					},
+					"__typename": "AlexaQuestionEdge"
+				}
+			],
+			"__typename": "AlexaQuestionConnection"
+		},
+		"faqs": {
+			"total": 5,
+			"edges": [
+				{
+					"node": {
+						"id": "fq0093772",
+						"question": {
+							"plainText": "Is \"Avengers: Endgame\" based on a comic book?",
+							"__typename": "Markdown"
+						},
+						"__typename": "Faq"
+					},
+					"__typename": "FaqEdge"
+				},
+				{
+					"node": {
+						"id": "fq0094871",
+						"question": {
+							"plainText": "Do I need to see all Marvel superhero movies before this to understand this movie?",
+							"__typename": "Markdown"
+						},
+						"__typename": "Faq"
+					},
+					"__typename": "FaqEdge"
+				},
+				{
+					"node": {
+						"id": "fq0095125",
+						"question": {
+							"plainText": "Is there a post-credit scene in Avengers: Endgame?",
+							"__typename": "Markdown"
+						},
+						"__typename": "Faq"
+					},
+					"__typename": "FaqEdge"
+				}
+			],
+			"__typename": "FaqConnection"
+		},
+		"releaseDate": {
+			"day": 24,
+			"month": 4,
+			"year": 2019,
+			"country": {
+				"id": "NL",
+				"text": "Netherlands",
+				"__typename": "LocalizedDisplayableCountry"
+			},
+			"__typename": "ReleaseDate"
+		},
+		"countriesDetails": {
+			"countries": [
+				{
+					"id": "US",
+					"text": "United States",
+					"__typename": "CountryOfOrigin"
+				}
+			],
+			"__typename": "CountriesOfOrigin"
+		},
+		"detailsExternalLinks": {
+			"edges": [
+				{
+					"node": {
+						"url": "https://www.marvel.com/movies/avengers-endgame",
+						"label": "Marvel",
+						"externalLinkRegion": {
+							"text": "United States",
+							"__typename": "DisplayableCountry"
+						},
+						"__typename": "ExternalLink"
+					},
+					"__typename": "ExternalLinkEdge"
+				},
+				{
+					"node": {
+						"url": "https://www.facebook.com/avengers",
+						"label": "Official Facebook",
+						"externalLinkRegion": null,
+						"__typename": "ExternalLink"
+					},
+					"__typename": "ExternalLinkEdge"
+				}
+			],
+			"total": 4,
+			"__typename": "ExternalLinkConnection"
+		},
+		"spokenLanguages": {
+			"spokenLanguages": [
+				{
+					"id": "en",
+					"text": "English",
+					"__typename": "SpokenLanguage"
+				},
+				{
+					"id": "ja",
+					"text": "Japanese",
+					"__typename": "SpokenLanguage"
+				},
+				{
+					"id": "xh",
+					"text": "Xhosa",
+					"__typename": "SpokenLanguage"
+				},
+				{
+					"id": "de",
+					"text": "German",
+					"__typename": "SpokenLanguage"
+				}
+			],
+			"__typename": "SpokenLanguages"
+		},
+		"akas": {
+			"edges": [
+				{
+					"node": {
+						"text": "Avengers 4",
+						"__typename": "Aka"
+					},
+					"__typename": "AkaEdge"
+				}
+			],
+			"__typename": "AkaConnection"
+		},
+		"filmingLocations": {
+			"edges": [
+				{
+					"node": {
+						"text": "Durham Cathedral, The College, Durham, County Durham, England, UK",
+						"location": "Durham Cathedral, The College, Durham, County Durham, England, UK",
+						"attributes": [
+							{
+								"text": "Thor Meets His Mother In Asgard",
+								"__typename": "DisplayableAttribute"
+							}
+						],
+						"__typename": "FilmingLocation"
+					},
+					"__typename": "FilmingLocationEdge"
+				}
+			],
+			"total": 14,
+			"__typename": "FilmingLocationConnection"
+		},
+		"production": {
+			"edges": [
+				{
+					"node": {
+						"company": {
+							"id": "co0051941",
+							"companyText": {
+								"text": "Marvel Studios",
+								"__typename": "CompanyText"
+							},
+							"__typename": "Company"
+						},
+						"__typename": "CompanyCredit"
+					},
+					"__typename": "CompanyCreditEdge"
+				}
+			],
+			"__typename": "CompanyCreditConnection"
+		},
+		"companies": {
+			"total": 174,
+			"__typename": "CompanyCreditConnection"
+		},
+		"productionBudget": {
+			"budget": {
+				"amount": 356000000,
+				"currency": "USD",
+				"__typename": "Money"
+			},
+			"__typename": "ProductionBudget"
+		},
+		"lifetimeGross": {
+			"total": {
+				"amount": 858373000,
+				"currency": "USD",
+				"__typename": "Money"
+			},
+			"__typename": "BoxOfficeGross"
+		},
+		"openingWeekendGross": {
+			"gross": {
+				"total": {
+					"amount": 357115007,
+					"currency": "USD",
+					"__typename": "Money"
+				},
+				"__typename": "BoxOfficeGross"
+			},
+			"weekendEndDate": "2019-04-28",
+			"__typename": "OpeningWeekendGross"
+		},
+		"worldwideGross": {
+			"total": {
+				"amount": 2799439100,
+				"currency": "USD",
+				"__typename": "Money"
+			},
+			"__typename": "BoxOfficeGross"
+		},
+		"technicalSpecifications": {
+			"soundMixes": {
+				"items": [
+					{
+						"id": "dolby_atmos",
+						"text": "Dolby Atmos",
+						"attributes": [],
+						"__typename": "SoundMix"
+					},
+					{
+						"id": "auro_11.1",
+						"text": "Auro 11.1",
+						"attributes": [],
+						"__typename": "SoundMix"
+					},
+					{
+						"id": "dolby_surround 7.1",
+						"text": "Dolby Surround 7.1",
+						"attributes": [],
+						"__typename": "SoundMix"
+					},
+					{
+						"id": "dolby_digital",
+						"text": "Dolby Digital",
+						"attributes": [],
+						"__typename": "SoundMix"
+					},
+					{
+						"id": "sonics_ddp",
+						"text": "Sonics-DDP",
+						"attributes": [],
+						"__typename": "SoundMix"
+					},
+					{
+						"id": "12_track_digital sound",
+						"text": "12-Track Digital Sound",
+						"attributes": [],
+						"__typename": "SoundMix"
+					},
+					{
+						"id": "imax_6_track",
+						"text": "IMAX 6-Track",
+						"attributes": [],
+						"__typename": "SoundMix"
+					},
+					{
+						"id": "sdds",
+						"text": "SDDS",
+						"attributes": [],
+						"__typename": "SoundMix"
+					}
+				],
+				"__typename": "SoundMixes"
+			},
+			"aspectRatios": {
+				"items": [],
+				"__typename": "AspectRatios"
+			},
+			"colorations": {
+				"items": [],
+				"__typename": "Colorations"
+			},
+			"__typename": "TechnicalSpecifications"
+		},
+		"runtime": {
+			"displayableProperty": {
+				"value": {
+					"plainText": "3h 1m",
+					"__typename": "Markdown"
+				},
+				"__typename": "DisplayableTitleRuntimeProperty"
+			},
+			"seconds": 10860,
+			"__typename": "Runtime"
+		},
+		"series": null,
+		"__typename": "Title"
+	}
+}

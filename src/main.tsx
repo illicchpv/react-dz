@@ -48,7 +48,7 @@ const router = createBrowserRouter([
         errorElement: <RouterError title='У "MoviePage" что-то пошло не так' />,
         loader: async ({ params }) => {
           if (!params.id) throw new Error('ID не найден');
-          console.log('params.id: ', params.id);
+          // console.log('params.id: ', params.id);
           return defer({
             data: axios.get(`${API_URL}?tt=${params.id}`)
               .then(data => {
