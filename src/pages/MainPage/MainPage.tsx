@@ -9,8 +9,7 @@ import { convertToCards, markSelectedCards } from '../../utils';
 import Title from '../../components/Title/Title';
 import axios, { AxiosError } from 'axios';
 import { useSelector } from 'react-redux';
-import type { AppRootState } from '../../store/store';
-import { currentSelectedProfile } from '../../store/profiles.slice';
+import { selectedCardsForCurrentUser } from '../../store/selected.slice';
 
 function MainPage() {
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -19,8 +18,7 @@ function MainPage() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | undefined>();
 
-  const currentUserName = useSelector(currentSelectedProfile)?.name;
-  const selectedCards = useSelector((state: AppRootState) => state.selected.selectedCards).filter(card => card.userName === currentUserName);
+  const selectedCards = useSelector(selectedCardsForCurrentUser);
 
   const getCards = async () => {
     // console.log('searchInputRef.current?.value: ', searchInputRef.current?.value);

@@ -1,6 +1,8 @@
-import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
+import { createSelector, createSlice, type PayloadAction } from '@reduxjs/toolkit';
 import { SELECTED_CARDS_KEY, type ICard } from '../constant';
 import { loadState } from './storage';
+import type { AppRootState } from './store';
+import { currentSelectedProfile } from './profiles.slice';
 
 export interface ISelectedCardsState {
   selectedCards: ICard[];
@@ -27,3 +29,19 @@ export const selectedCardsSlice = createSlice({
 
 export default selectedCardsSlice.reducer
 export const selectedCardsActions = selectedCardsSlice.actions
+
+export const selectedCardsForCurrentUser = createSelector(
+  // 1. Массив входных селекторов - зависимости
+  [
+    currentSelectedProfile,                       // → возвращает IProfileItem | undefined
+    (state: AppRootState) => state.selected.selectedCards // → возвращает Card[]
+  ],
+  // 2. Функция-трансформер - получает результаты входных селекторов
+  (currentProfile, selectedCards) => {
+    // currentProfile - результат currentSelectedProfile
+    // selectedCards - результат state.selected.selectedCards
+    return currentProfile 
+      ? selectedCards.filter(card => card.userName === currentProfile.name)
+      : [];
+  }
+);

@@ -5,12 +5,10 @@ import Title from '../../components/Title/Title';
 import BodySection from '../../sections/BodySection/BodySection';
 import { markCards } from '../../utils';
 import { useSelector } from 'react-redux';
-import type { AppRootState } from '../../store/store';
-import { currentSelectedProfile } from '../../store/profiles.slice';
+import { selectedCardsForCurrentUser } from '../../store/selected.slice';
 
 function FavoritesPage() {
-  const currentUserName = useSelector(currentSelectedProfile)?.name;
-  const selectedCards = useSelector((state: AppRootState) => state.selected.selectedCards).filter(card => card.userName === currentUserName);
+  const selectedCards = useSelector(selectedCardsForCurrentUser);
 
   return (
     <>
