@@ -22,13 +22,26 @@ export interface ICardResp {
 
 export interface IMovie {
   imdbId: string,
-  main: {
-    id: string,
-    titleText: {
-      text: string
+  short: {
+    name: string, 
+    ['@type']: string,
+    description: string,
+    datePublished: string,
+    duration: string,
+    genre: string[],
+    image: string,
+
+    review: {
+      name: string,
+      dateCreated: string,
+      reviewBody: string
+    },
+    dateCreated: string,
+
+    aggregateRating: {
+      ratingValue: number
     }
-  },
-  short: { datePublished: string },
+  }
 }
 
 export interface IUserProfile {

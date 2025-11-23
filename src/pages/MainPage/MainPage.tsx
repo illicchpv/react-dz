@@ -1,5 +1,5 @@
 import styles from './MainPage.module.css';
-import { useContext, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import BodyCard from '../../components/BodyCard/BodyCard';
 import Search from '../../components/Search/Search';
 import { API_URL, type ICard, type ICardResp } from '../../constant';
@@ -9,8 +9,7 @@ import { convertToCards, markSelectedCards } from '../../utils';
 import Title from '../../components/Title/Title';
 import axios, { AxiosError } from 'axios';
 import { useSelector } from 'react-redux';
-import type { AppRootState } from '../../store/store';
-import { UserContext } from '../../context/user.context';
+import { selectedCardsForCurrentUser } from '../../store/selected.slice';
 
 function MainPage() {
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -19,8 +18,7 @@ function MainPage() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | undefined>();
 
-  const { currentUserName} = useContext(UserContext);
-  const selectedCards = useSelector((state: AppRootState) => state.selected.selectedCards).filter(card => card.userName === currentUserName);
+  const selectedCards = useSelector(selectedCardsForCurrentUser);
 
   const getCards = async () => {
     // console.log('searchInputRef.current?.value: ', searchInputRef.current?.value);

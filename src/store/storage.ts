@@ -2,7 +2,8 @@ export function loadState<T>(key: string): T | undefined {
   try {
     const jsonState = localStorage.getItem(key);
     if(!jsonState) return undefined;
-    return JSON.parse(jsonState);
+    const r = JSON.parse(jsonState)
+    return r;
   } catch (e) {
     console.warn('loadState parsing error', e);
     return undefined;

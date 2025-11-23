@@ -1,6 +1,5 @@
 import { lazy, StrictMode, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
-import { UserContextProvider } from './context/user.provider';
 import { createBrowserRouter, defer, RouterProvider, useRouteError } from 'react-router-dom';
 import MainLayout from './layout/MainLayout';
 import LoginPage from './pages/LoginPage/LoginPage';
@@ -49,7 +48,7 @@ const router = createBrowserRouter([
         errorElement: <RouterError title='У "MoviePage" что-то пошло не так' />,
         loader: async ({ params }) => {
           if (!params.id) throw new Error('ID не найден');
-          console.log('params.id: ', params.id);
+          // console.log('params.id: ', params.id);
           return defer({
             data: axios.get(`${API_URL}?tt=${params.id}`)
               .then(data => {
@@ -75,11 +74,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>
-    <UserContextProvider>
-      {/* <App /> */}
       <Provider store={store}>
         <RouterProvider router={router} />
       </Provider>
-    </UserContextProvider>
   </StrictMode>
 );

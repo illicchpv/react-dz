@@ -1,16 +1,16 @@
-import { useContext, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import Button from '../../components/Button/Button';
 import Input from '../../components/Input/Input';
 import LoginSection from '../../sections/LoginSection/LoginSection';
-import { UserContext } from '../../context/user.context';
-import { useLocalStorage } from '../../hooks/use-localstorage.hook';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import type { AppDispatch } from '../../store/store';
+import { profilesActions } from '../../store/profiles.slice';
 
 function LoginPage() {
   const loginNameInputRef = useRef<HTMLInputElement>(null);
-  const { setCurrentUserName } = useContext(UserContext);
-  const [profiles, setProfiles] = useLocalStorage('user-profiles', []);
   const navigate = useNavigate();
+  const dispatch = useDispatch<AppDispatch>();
 
   useEffect(() => {
     if (loginNameInputRef.current) {
@@ -23,19 +23,8 @@ function LoginPage() {
     e.preventDefault();
 
     const name = loginNameInputRef.current?.value;
-    if (!name || !setCurrentUserName) return
-    setCurrentUserName(name);
-    localStorage.setItem('jwtLike', name);
-
-    const p = profiles.find(profile => profile.name === name);
-    if (p) {
-      profiles.forEach(profile => profile.isLogined = false);
-      p.isLogined = true;
-      setProfiles([...profiles]);
-    } else {
-      const newProfile = { name, isLogined: true };
-      setProfiles([...profiles, newProfile]);
-    }
+    if (!name) return
+    dispatch(profilesActions.loginAction(name));
     navigate('/');
   };
 

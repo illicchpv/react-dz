@@ -4,31 +4,22 @@ import HeaderSection from '../sections/HeaderSection/HeaderSection';
 import Logo from '../components/Logo/Logo';
 import Navigation from '../components/Navigation/Navigation';
 import Counter from '../components/Counter/Counter';
-import { useContext, useRef } from 'react';
-import { UserContext } from '../context/user.context';
-import { useLocalStorage } from '../hooks/use-localstorage.hook';
 import NavigationLink from '../components/NavigationLink/NavigationLink';
-import { useSelector } from 'react-redux';
-import type { AppRootState } from '../store/store';
+import { useDispatch, useSelector } from 'react-redux';
+import type { AppDispatch, AppRootState } from '../store/store';
+import { currentSelectedProfile, profilesActions } from '../store/profiles.slice';
 
 function MainLayout() {
-  const loginNameInputRef = useRef<HTMLInputElement>(null);
-  const { currentUserName, setCurrentUserName } = useContext(UserContext);
-  const [profiles, setProfiles] = useLocalStorage('user-profiles', []);
+  const dispatch = useDispatch<AppDispatch>();
 
-  const selectedCount = useSelector((state: AppRootState) => state.selected.selectedCards).filter(card => card.userName === currentUserName)?.length || 0;  
+  const currentUserName = useSelector(currentSelectedProfile)?.name;
+
+  const selectedCount = useSelector((state: AppRootState) => state.selected.selectedCards).filter(card => card.userName === currentUserName)?.length || 0;
 
   const navigate = useNavigate();
 
   const logoutButtonClickHandler = () => {
-    setCurrentUserName?.('');
-
-    profiles.forEach(profile => profile.isLogined = false);
-    setProfiles([...profiles]);
-    if (loginNameInputRef.current) {
-      loginNameInputRef.current.value = '';
-    }
-    localStorage.setItem('jwtLike', '');
+    dispatch(profilesActions.logoutAction());
     navigate('/')
   };
 

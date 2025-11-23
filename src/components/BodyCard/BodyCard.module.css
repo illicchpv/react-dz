@@ -63,7 +63,7 @@
   margin-block: 8px 16px;
 }
 
-.cardSelectedMark {
+/* .cardSelectedMark {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -85,4 +85,4 @@
   border: none;
   cursor: pointer;
   display: contents;
-}
+} */

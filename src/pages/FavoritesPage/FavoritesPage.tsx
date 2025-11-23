@@ -4,14 +4,11 @@ import BodyCard from '../../components/BodyCard/BodyCard';
 import Title from '../../components/Title/Title';
 import BodySection from '../../sections/BodySection/BodySection';
 import { markCards } from '../../utils';
-import { useContext } from 'react';
-import { UserContext } from '../../context/user.context';
 import { useSelector } from 'react-redux';
-import type { AppRootState } from '../../store/store';
+import { selectedCardsForCurrentUser } from '../../store/selected.slice';
 
 function FavoritesPage() {
-  const { currentUserName } = useContext(UserContext);
-  const selectedCards = useSelector((state: AppRootState) => state.selected.selectedCards).filter(card => card.userName === currentUserName);
+  const selectedCards = useSelector(selectedCardsForCurrentUser);
 
   return (
     <>
